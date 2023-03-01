@@ -553,6 +553,7 @@ h3 {
 /* line 73, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_btn.scss */
 .boxed-btn-white {
   background: linear-gradient(to right, #7628c7, #6b40d0, #6152d7, #5961dd, #536fe0, #3d7fe9, #248def, #069bf3, #00aefa, #00c1fd, #00d2fc, #30e2fa);
+  /* background: linear-gradient(90deg, rgba(69,26,56,1) 0%, rgba(15,3,10,1) 27%, rgba(1,1,2,1) 47%, rgba(3,25,40,1) 67%, rgba(18,78,116,1) 100%); */
   display: inline-block;
   padding: 16px 43px;
   font-family: "Poppins", sans-serif;
@@ -846,7 +847,7 @@ h3 {
   top: 0;
   width: 100%;
   align-self: center;
-  background: linear-gradient(to right top, #210454, #27055b, #2d0762, #340869, #3a0a70, #3f0b79, #430c82, #480d8b, #4b0e99, #4d10a7, #4e12b5, #4e15c4);
+  /* background: linear-gradient(to right top, #210454, #27055b, #2d0762, #340869, #3a0a70, #3f0b79, #430c82, #480d8b, #4b0e99, #4d10a7, #4e12b5, #4e15c4); */
 }
 
 /* line 6, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
@@ -912,7 +913,8 @@ h3 {
 
 /* line 36, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu {
-  text-align: center;
+  text-align: right;
+
   /* padding: 12px 0; */
 }
 
@@ -925,7 +927,8 @@ h3 {
 /* line 43, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a {
   color: #fff;
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: 1.5rem;
   font-weight: 600;
   display: inline-block;
   padding: 35px 23px 35px 23px;
@@ -1044,7 +1047,11 @@ h3 {
   left: 0;
   right: 0;
   z-index: 99;
-  background: linear-gradient(to right top, #210454, #27055b, #2d0762, #340869, #3a0a70, #3f0b79, #430c82, #480d8b, #4b0e99, #4d10a7, #4e12b5, #4e15c4);
+  /* background: linear-gradient(to right top, #210454, #27055b, #2d0762, #340869, #3a0a70, #3f0b79, #430c82, #480d8b, #4b0e99, #4d10a7, #4e12b5, #4e15c4); */
+  background: #3d79fa98;
+  background: #542CC5;
+  background: rgba(18, 78, 116, 0.89);
+background: linear-gradient(90deg, rgba(18,78,116,1) 0%, rgba(3,25,40,1) 20%, rgba(1,1,2,1) 50%, rgba(15,3,10,1) 80%, rgba(69,26,56,1) 100%);
   transform: translateY(70px);
   transition: transform 500ms ease, background 500ms ease;
   -webkit-transition: transform 500ms ease, background 500ms ease;
@@ -1108,9 +1115,12 @@ h3 {
 
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
 .slider_bg_1 {
-  background-image: url(../img/hackathon-bg.png), linear-gradient(to right top, #210454, #27055b, #2d0762, #340869, #3a0a70, #3f0b79, #430c82, #480d8b, #4b0e99, #4d10a7, #4e12b5, #4e15c4);
-  background-size: 90% 90% !important;
-  height: 100vh;
+  /* background-image: url(../img/hackathon-bg.png), linear-gradient(to right top, #210454, #27055b, #2d0762, #340869, #3a0a70, #3f0b79, #430c82, #480d8b, #4b0e99, #4d10a7, #4e12b5, #4e15c4); */
+  background-image: url("../img/back1.png");
+  /* transform: scaleX(-1); */
+  /* background-size: 100% 100% !important; */
+  background-size: auto;
+  height: 120vh;
   background-color: #12104d;
   background-position: center !important;
 }
@@ -1269,7 +1279,8 @@ h3 {
 
 /* line 97, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
 .slider_area .title_text h3 {
-  font-size: 60px;
+  /* font-size: 60px; */
+  font-size: 4rem;
   font-weight: 600;
   color: #fff;
 }
@@ -1307,8 +1318,9 @@ h3 {
 
 /* line 121, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
 .slider_area .single_date {
+  font-family: 'Poppins',sans-serif;
   color: #fff;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 600;
 }
 
@@ -1932,7 +1944,7 @@ h3 {
   margin-bottom: 56px;
 }
 
-.
+
 .resister_book .resister_text li {
   font-size: 38px;
   font-weight: 700;

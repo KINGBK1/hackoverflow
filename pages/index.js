@@ -88,9 +88,9 @@ export default function IndexPage() {
                   <div className='col-xl-9'>
                     <div className='title_text ml-3'>
                       <h3>
-                        HackOverflow 5.0
+                        HackOverflow 6.0
                         <br />
-                        Aarohan, 2022
+                        Aarohan, 2023
                       </h3>
                       <br />
                       <a
@@ -135,7 +135,7 @@ export default function IndexPage() {
               </div>
             </div>
           </div>
-          <div className='countDOwn_area'>
+          {/* <div className='countDOwn_area'>
             <div className='container'>
               <div className='row align-items-center justify-center'>
                 <div className='col-xl-4 col-md-6 col-lg-6 flex flex-wrap justify-center'>
@@ -154,6 +154,14 @@ export default function IndexPage() {
                   <Timer />
                 </div>
               </div>
+            </div>
+          </div> */}
+          <div className='flex flex-col items-center md:items-start px-6 lg:px-52 text-center md:text-left my-6'>
+            <Timer/>
+            <div className='flex flex-col md:flex-row justify-between gap-4 mt-4'>
+            <p className='text-2xl font-bold text-white'>Online</p>
+            <p className='text-2xl font-bold text-white'>9th March, 2023</p>
+
             </div>
           </div>
           <div
