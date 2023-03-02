@@ -112,7 +112,7 @@ export default function SchedulePage() {
                                     />
                                     <h3>Event Schedule</h3>
                                     <br />
-                                    <h3>Aarohan 2022</h3>
+                                    <h3>Aarohan 2023</h3>
                                 </div>
                             </div>
                         </div>
@@ -128,7 +128,7 @@ export default function SchedulePage() {
                                     <div className='col-xl-4 col-md-6 col-lg-6 flex flex-wrap justify-center'>
                                         <div className='single_date'>
                                             <i className='ti-alarm-clock' />
-                                            <span>4th March, 2022</span>
+                                            <span>9th March, 2023</span>
                                         </div>
                                     </div>
                                     <div className='col-xl-4 col-md-12 col-lg-12 flex flex-wrap justify-center'>
@@ -207,7 +207,7 @@ export default function SchedulePage() {
                                 <div className="row">
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
-                                            <h3 style={{ color: 'blue' }}>22 February, 2022</h3>
+                                            <h3 style={{ color: 'blue' }}>4 March, 2023</h3>
                                         </div>
                                     </div>
                                     <div className="col-xl-9 col-lg-9">
@@ -230,7 +230,7 @@ export default function SchedulePage() {
                                 <div className="row">
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
-                                            <h3 style={{ color: 'blue' }}>3 March, 2022</h3>
+                                            <h3 style={{ color: 'blue' }}>9 March, 2023</h3>
                                         </div>
                                     </div>
                                     <div className="col-xl-9 col-lg-9">
@@ -240,7 +240,7 @@ export default function SchedulePage() {
                                                 <div className="heading d-flex justify-content-between align-items-center">
                                                     <span>Application Submission Phase Ends</span>
                                                     <div className="time">
-                                                        09:59 PM
+                                                        12:00 PM
                                                     </div>
                                                 </div>
                                             </div>
@@ -252,7 +252,7 @@ export default function SchedulePage() {
                                 <div className="row">
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
-                                            <h3 style={{ color: 'blue' }}>04 March, 2022</h3>
+                                            <h3 style={{ color: 'blue' }}>10 March, 2023</h3>
                                         </div>
                                     </div>
                                     <div className="col-xl-9 col-lg-9">
@@ -262,7 +262,7 @@ export default function SchedulePage() {
                                                 <div className="heading d-flex justify-content-between align-items-center">
                                                     <span>Hackoverflow flags off!</span>
                                                     <div className="time">
-                                                        10:00 AM
+                                                        12:00 AM
                                                     </div>
                                                 </div>
                                                 <p>Ready! Set! Go!</p>
@@ -287,24 +287,24 @@ export default function SchedulePage() {
                                 <div className="row">
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
-                                            <h3 style={{ color: 'blue' }}>05 March, 2022</h3>
+                                            <h3 style={{ color: 'blue' }}>11 March, 2023</h3>
                                         </div>
                                     </div>
                                     <div className="col-xl-9 col-lg-9">
                                         <div className="single_speaker">
-                                            <img src="/podium.png" style={{ width: 80, height: 80 }} alt />
+                                            <img src="/finish-line.png" style={{ width: 80, height: 80 }} alt />
                                             <div className="speaker-name">
                                                 <div className="heading d-flex justify-content-between align-items-center">
-                                                    <span>Judges' Address</span>
+                                                    <span>Coding period ends</span>
                                                     <div className="time">
-                                                        02:00 PM
+                                                        11:59 PM
                                                     </div>
                                                 </div>
-                                                <p>Few words of motivation from our knowledgeable and experienced judges!</p>
+                                                <p>Contestants stop the coding and submit their codes for further evaluation process.</p>
                                             </div>
                                         </div>
 
-                                        <div className="single_speaker">
+                                        {/* <div className="single_speaker">
                                             <img src="/keyboard.png" style={{ width: 80, height: 80 }} alt />
                                             <div className="speaker-name">
                                                 <div className="heading d-flex justify-content-between align-items-center">
@@ -315,17 +315,66 @@ export default function SchedulePage() {
                                                 </div>
                                                 <p>Whose fingers are the fastest in the west?</p>
                                             </div>
+                                        </div> */}
+                                       <div className="single_speaker">
+                                            <img src="/podium.png" style={{ width: 80, height: 80 }} alt />
+                                            <div className="speaker-name">
+                                                <div className="heading d-flex justify-content-between align-items-center">
+                                                    <span>Judges' Address</span>
+                                                    <div className="time">
+                                                        Afternoon
+                                                    </div>
+                                                </div>
+                                                <p>Few words of motivation from our knowledgeable and experienced judges!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="double_line">
+                                <div className="row">
+                                    <div className="col-xl-3 col-lg-3">
+                                        <div className="date">
+                                            <h3 style={{ color: 'blue' }}>12 March, 2023</h3>
+                                        </div>
+                                    </div>
+                                    <div className="col-xl-9 col-lg-9">
+                                        <div className="single_speaker">
+                                            <img src="/lightbulb.png" style={{ width: 80, height: 80 }} alt />
+                                            <div className="speaker-name">
+                                                <div className="heading d-flex justify-content-between align-items-center">
+                                                    <span>Evaluation Starts</span>
+                                                    <div className="time">
+                                                        9:00 am
+                                                    </div>
+                                                </div>
+                                                <p>Each of the top 15 teams will present their projects.</p>
+                                            </div>
+                                        </div>
+
+                                       
+                                       <div className="single_speaker">
+                                            <img src="/podium.png" style={{ width: 80, height: 80 }} alt />
+                                            <div className="speaker-name">
+                                                <div className="heading d-flex justify-content-between align-items-center">
+                                                    <span>Evaluation Completes</span>
+                                                    <div className="time">
+                                                        1:00 pm
+                                                    </div>
+                                                </div>
+                                                <p>Teams will be evaluated by the judges.</p>
+                                            </div>
                                         </div>
                                         <div className="single_speaker">
                                             <img src="/finish-line.png" style={{ width: 80, height: 80 }} alt />
                                             <div className="speaker-name">
                                                 <div className="heading d-flex justify-content-between align-items-center">
-                                                    <span>Coding period ends</span>
+                                                    <span>Results are Published</span>
                                                     <div className="time">
-                                                        10:00 PM
+                                                        6:00 pm
                                                     </div>
                                                 </div>
-                                                <p>Contestants stop the coding and submit their codes for further evaluation process.</p>
+                                                <p>Results are published based on the evaluations.</p>
                                             </div>
                                         </div>
                                     </div>
