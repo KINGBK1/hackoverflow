@@ -22,7 +22,7 @@ export default function IndexPage() {
       <Head>
         <meta charSet='utf-8' />
         <meta httpEquiv='x-ua-compatible' content='ie=edge' />
-        <title>Hackoverflow 5.0</title>
+        <title>Hackoverflow 6.0</title>
         <meta name='description' content />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link
@@ -129,9 +129,9 @@ export default function IndexPage() {
                   data-button-theme='dark'
                   style={{ height: 44, width: 312 }}
                 />
-                <h3>Hackoverflow 5.0</h3>
+                <h3>Hackoverflow 6.0</h3>
                 <br />
-                <h3>Aarohan 2022</h3>
+                <h3>Aarohan 2023</h3>
               </div>
             </div>
           </div>
@@ -218,13 +218,13 @@ export default function IndexPage() {
                     <h3>
                       The Biggest Technical <br />
                       Fest of the <br />
-                      Year 2022
+                      Year 2023
                     </h3>
                   </div>
                   <p>
                     <br />
                     <br />
-                    Hackoverflow 5.0 is conducted by team Aavishkar during
+                    Hackoverflow 6.0 is conducted by team Aavishkar during
                     Aarohan, the second largest techno-management of Eastern
                     India!
                   </p>
@@ -532,13 +532,13 @@ export default function IndexPage() {
                   <ul style={{ fontFamily: 'Poppins' }}>
                     <li>
                       <div
-                        className='p-4 flex flex-col md:flex-row items-center bg-white justify-around rounded shadow'
+                        className='p-4 flex flex-col items-center bg-white justify-around rounded shadow md:w-3/5 md:mx-auto'
                         style={{ marginBottom: '15px' }}
                       >
                         <Link href='https://polygon.technology/'>
-                          <img src='/Portis_Logo-Colored.png' />
+                          <img className="mb-10" src='/Portis_Logo-Colored.png' />
                         </Link>
-                        <span className='text-black'>
+                        <span className='text-black text-center'>
                           ₹10,000 for the best hack built on Ethereum!
                           <br />
                           ₹15,000 for the best hack built on Ethereum + Polygon!
@@ -551,13 +551,13 @@ export default function IndexPage() {
                     </li>
                     <li>
                       <div
-                        className='p-4 flex flex-col md:flex-row items-center bg-white justify-around rounded shadow'
+                        className='p-4 flex flex-col items-center bg-white justify-around rounded shadow md:w-3/5 md:mx-auto' 
                         style={{ marginBottom: '15px' }}
                       >
                         <Link href='https://tezos.com/'>
-                          <img src='/tezos.png' className='w-45 h-20' />
+                          <img src='/tezos.png' className='w-45 h-20 mb-10' />
                         </Link>
-                        <span className='text-black'>
+                        <span className='text-black text-center'>
                           Best Dapp built on Tezos gets ₹20,000 !
                           <br /> Continuity grant opportunity up to 5,000 USD for an outstanding project!
                           <br /> Every <a href="https://www.notion.so/Tezos-Devfolio-Hackathon-Season-Prize-e90b6811b0df43e5a7dadf534fc000ff#f4bf92eacb9f47bcbe1f1e63d09e6736">valid submission</a> made in the Tezos track will be rewarded with exclusive Schwag Kits.
@@ -566,13 +566,13 @@ export default function IndexPage() {
                     </li>
                     <li>
                       <div
-                        className='p-4 flex flex-col md:flex-row items-center bg-white justify-around rounded shadow'
+                        className='p-4 flex flex-col  items-center bg-white justify-around rounded shadow md:w-3/5 md:mx-auto'
                         style={{ marginBottom: '15px' }}
                       >
                         <Link href='https://celo.org'>
-                          <img src='/Celo_Logo_Color.png' className='w-45 h-20' />
+                          <img src='/Celo_Logo_Color.png' className='w-45 h-20 mb-10' />
                         </Link>
-                        <span className='text-black'>
+                        <span className='text-black text-center'>
                           20000 INR for best Dapp built on Celo
                           <br />
                           <br />
@@ -581,13 +581,13 @@ export default function IndexPage() {
                     </li>
                     <li>
                       <div
-                        className='p-4 flex flex-col md:flex-row items-center bg-white justify-around rounded shadow'
+                        className='p-4 flex flex-col  items-center bg-white justify-around rounded shadow md:w-3/5 md:mx-auto'
                         style={{ marginBottom: '15px' }}
                       >
                         <Link href='https://filecoin.io'>
-                          <img src='/Filecoin.png' className='w-45 h-20' />
+                          <img src='/Filecoin.png' className='w-45 h-20 mb-10' />
                         </Link>
-                        <span className='text-black'>
+                        <span className='text-black text-center'>
                           20000 INR for best use of IPFS and/or Filecoin
                         </span>
                       </div>

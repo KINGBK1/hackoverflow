@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import { useEffect } from "react";
 import Timer from '../components/Timer'
 import Sponsors from "../components/sponsors";
-
+// import './a.css'
 export default function SchedulePage() {
     useEffect(() => {
         const script = document.createElement('script');
@@ -21,7 +21,7 @@ export default function SchedulePage() {
             <Head>
                 <meta charSet="utf-8" />
                 <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-                <title>Hackoverflow 5.0</title>
+                <title>Hackoverflow 6.0</title>
                 <meta name="description" content />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="shortcut icon" type="image/x-icon" href="img/aarohan-logo.png" />
@@ -169,6 +169,37 @@ export default function SchedulePage() {
                             </div>
                         </div>
                     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     <div className="event_area plus_padding">
                         <h1 className="vr_text d-none d-lg-block">Event Schedule</h1>
                         <div className="container">
