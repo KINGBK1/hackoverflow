@@ -4,9 +4,9 @@ import Link from 'next/link'
 export default function Footer () {
   return (
     <footer className='footer footer_bg_1'>
-      <div className='circle_ball d-none d-lg-block'>
+      {/* <div className='circle_ball d-none d-lg-block'>
         <img src='img/banner/footer_ball.png' alt />
-      </div>
+      </div> */}
       <div className='footer_top'>
         <div className='container'>
           <div className='row'>

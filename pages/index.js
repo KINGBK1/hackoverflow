@@ -257,8 +257,8 @@ export default function IndexPage() {
 
             <div className='flex flex-col md:flex-row justify-center items-center'>
 
-              <div class="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100 mb-10 md:mr-10 bg-purple-100">
-	<img src="https://source.unsplash.com/150x150/?portrait?3" alt="" class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square"/>
+              <div class="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100 mb-10 md:mr-10 bg-gray-100 border">
+	<img src="/img/sabyasachi.jpeg" alt="" class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square"/>
 	<div class="space-y-4 text-center divide-y divide-gray-700">
 		<div class="my-2 space-y-1">
 			<h2 class="text-xl font-semibold sm:text-2xl">Leroy Jenkins</h2>
@@ -289,8 +289,8 @@ export default function IndexPage() {
 	</div>
               </div>
 
-              <div class="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100 mb-10 md:mr-10 bg-purple-100">   
-	<img src="https://source.unsplash.com/150x150/?portrait?3" alt="" class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square"/>
+              <div class="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100 mb-10 md:mr-10 bg-gray-100 border">   
+	<img src="/img/aditya.jpeg" alt="" class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square"/>
 	<div class="space-y-4 text-center divide-y divide-gray-700">
 		<div class="my-2 space-y-1">
 			<h2 class="text-xl font-semibold sm:text-2xl">Leroy Jenkins</h2>
@@ -321,8 +321,8 @@ export default function IndexPage() {
 	</div>
               </div>
 
-              <div class="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100 mb-10 bg-purple-100">
-	<img src="https://source.unsplash.com/150x150/?portrait?3" alt="" class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square"/>
+              <div class="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100 mb-10 md:mr-10 bg-gray-100 border">
+	<img src="/img/rajith.jpeg" alt="" class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square"/>
 	<div class="space-y-4 text-center divide-y divide-gray-700">
 		<div class="my-2 space-y-1">
 			<h2 class="text-xl font-semibold sm:text-2xl">Leroy Jenkins</h2>
