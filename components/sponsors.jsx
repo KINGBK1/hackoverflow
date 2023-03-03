@@ -28,13 +28,13 @@ export default function Sponsors () {
           </Link>
         </div>
         <div className='p-1'>
-          <Link href='https://tezos.com/'>
-            <img src='/tezos.png' />
+          <Link href='https://replit.com/'>
+            <img src='/Replit-light-background.png' className='h-20' />
           </Link>
         </div>
         <div className='p-1'>
-          <Link href='https://celo.org'>
-            <img src='/Celo_Logo_Color.png' />
+          <Link href='https://solana.com/'>
+            <img src='/Solana-Colored.svg' />
           </Link>
         </div>
       </div>
@@ -44,14 +44,10 @@ export default function Sponsors () {
       >
         <div className='p-1'>
           <Link href='https://filecoin.io'>
-            <img src='/Filecoin.png' />
+            <img src='/Filecoin.png' className='h-20' />
           </Link>
         </div>
-        <div className='p-1'>
-          <Link href='https://geeksforgeeks.org/'>
-            <img src='/gfg.png' />
-          </Link>
-        </div>
+        
       </div>
     </React.Fragment>
   )
