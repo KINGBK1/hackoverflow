@@ -75,7 +75,7 @@ export default function SchedulePage() {
                                                 </h3>
                                                 <br />
                                                 <a
-                                                    href='https://calendar.google.com/calendar/r/eventedit?text=Hackoverflow+5.0&dates=20220304/20220306'
+                                                    href='https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+6.0&dates=20230310/20230312'
                                                     className='boxed-btn-white'
                                                 >
                                                     Add to your Calendar
@@ -92,7 +92,7 @@ export default function SchedulePage() {
                                                     className='apply-button'
                                                     data-hackathon-slug='hackoverflow5'
                                                     data-button-theme='dark'
-                                                    style={{ height: 44, width: 312 }}
+                                                    style={{ height: 44, width: 312,zIndex:100 }}
                                                 />
                                             </div>
                                         </div>
@@ -149,7 +149,7 @@ export default function SchedulePage() {
                         >
                             <a
                                 className='boxed-btn-white'
-                                href='https://discord.gg/srz2gvnRtR'
+                                href='https://discord.com/invite/tVesEFkR'
                                 id='register-2'
                             >
                                 Join Discord
@@ -217,7 +217,7 @@ export default function SchedulePage() {
                                                 <div className="heading d-flex justify-content-between align-items-center">
                                                     <span>Application Submission Phase Starts</span>
                                                     <div className="time">
-                                                        17:01 PM
+                                                        12:00 AM
                                                     </div>
                                                 </div>
                                                 <p>Period for applications starts. Participants can submit the application on Devfolio. </p>
@@ -240,7 +240,7 @@ export default function SchedulePage() {
                                                 <div className="heading d-flex justify-content-between align-items-center">
                                                     <span>Application Submission Phase Ends</span>
                                                     <div className="time">
-                                                        12:00 PM
+                                                        11:59 PM
                                                     </div>
                                                 </div>
                                             </div>
@@ -273,9 +273,9 @@ export default function SchedulePage() {
                                             <div className="speaker-name">
                                                 <div className="heading d-flex justify-content-between align-items-center">
                                                     <span>Judges' Address</span>
-                                                    <div className="time">
+                                                    {/* <div className="time">
                                                         06:00 PM to 8:00 PM
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                                 <p>Few words of motivation from our knowledgeable and experienced judges!</p>
                                             </div>
@@ -321,9 +321,9 @@ export default function SchedulePage() {
                                             <div className="speaker-name">
                                                 <div className="heading d-flex justify-content-between align-items-center">
                                                     <span>Judges' Address</span>
-                                                    <div className="time">
+                                                    {/* <div className="time">
                                                         Afternoon
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                                 <p>Few words of motivation from our knowledgeable and experienced judges!</p>
                                             </div>

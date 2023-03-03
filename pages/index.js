@@ -94,7 +94,7 @@ export default function IndexPage() {
                       </h3>
                       <br />
                       <a
-                        href='https://calendar.google.com/calendar/r/eventedit?text=Hackoverflow+5.0&dates=20220304/20220306'
+                        href='https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+6.0&dates=20230310/20230312'
                         className='boxed-btn-white'
                       >
                         Add to your Calendar
@@ -109,7 +109,7 @@ export default function IndexPage() {
                       </a> */}
                       <div
                         className='apply-button'
-                        data-hackathon-slug='hackoverflow5'
+                        data-hackathon-slug='hackoverflow6'
                         data-button-theme='dark'
                         style={{ height: 44, width: 312 }}
                       />
@@ -125,7 +125,7 @@ export default function IndexPage() {
               <div className="position_relv text-center">
                 <div
                   className='apply-button'
-                  data-hackathon-slug='hackoverflow5'
+                  data-hackathon-slug='hackoverflow06'
                   data-button-theme='dark'
                   style={{ height: 44, width: 312 }}
                 />
@@ -176,7 +176,7 @@ export default function IndexPage() {
           >
             <a
               className='boxed-btn-white'
-              href='https://discord.gg/srz2gvnRtR'
+              href='https://discord.com/invite/tVesEFkR'
               id='register-2'
             >
               Join Discord
@@ -646,41 +646,24 @@ export default function IndexPage() {
                           <img className="mb-10" src='/Portis_Logo-Colored.png' />
                         </Link>
                         <span className='text-black text-center'>
-                          ₹10,000 for the best hack built on Ethereum!
+                         $200 for best hack built on Ethereum + Polygon  
                           <br />
-                          ₹15,000 for the best hack built on Ethereum + Polygon!
-                          <br />
-                          Eligibility to apply for internship/full-time roles
-                          and <br />
-                          seed funding of up to 5,000 USD for winners!
+                          $150 for best hack built on Ethereum 
+                          
                         </span>
                       </div>
                     </li>
-                    <li>
-                      <div
-                        className='p-4 flex flex-col items-center bg-white justify-around rounded shadow md:w-3/5 md:mx-auto' 
-                        style={{ marginBottom: '15px' }}
-                      >
-                        <Link href='https://tezos.com/'>
-                          <img src='/tezos.png' className='w-45 h-20 mb-10' />
-                        </Link>
-                        <span className='text-black text-center'>
-                          Best Dapp built on Tezos gets ₹20,000 !
-                          <br /> Continuity grant opportunity up to 5,000 USD for an outstanding project!
-                          <br /> Every <a href="https://www.notion.so/Tezos-Devfolio-Hackathon-Season-Prize-e90b6811b0df43e5a7dadf534fc000ff#f4bf92eacb9f47bcbe1f1e63d09e6736">valid submission</a> made in the Tezos track will be rewarded with exclusive Schwag Kits.
-                        </span>
-                      </div>
-                    </li>
+                    
                     <li>
                       <div
                         className='p-4 flex flex-col  items-center bg-white justify-around rounded shadow md:w-3/5 md:mx-auto'
                         style={{ marginBottom: '15px' }}
                       >
-                        <Link href='https://celo.org'>
-                          <img src='/Celo_Logo_Color.png' className='w-45 h-20 mb-10' />
+                        <Link href='https://replit.com/'>
+                          <img src='/Replit-light-background.png' className=' h-20 mb-4 ' />
                         </Link>
                         <span className='text-black text-center'>
-                          20000 INR for best Dapp built on Celo
+                         $50 for winning Project deployed on Replit  
                           <br />
                           <br />
                         </span>
@@ -692,10 +675,28 @@ export default function IndexPage() {
                         style={{ marginBottom: '15px' }}
                       >
                         <Link href='https://filecoin.io'>
-                          <img src='/Filecoin.png' className='w-45 h-20 mb-10' />
+                          <img src='/Filecoin.png' className='w-45 h-20 mb-6' />
                         </Link>
                         <span className='text-black text-center'>
-                          20000 INR for best use of IPFS and/or Filecoin
+                         $250 for best use of Filecoin and/or IPFS  
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <div
+                        className='p-4 flex flex-col  items-center bg-white justify-around rounded shadow md:w-3/5 md:mx-auto'
+                        style={{ marginBottom: '15px' }}
+                      >
+                        <Link href='https://solana.com/'>
+                          <img src='/Solana-Colored.svg' className='w-45 h-10 mb-10' />
+                        </Link>
+                        <span className='text-black text-center'>
+                        $USDC 100 for the best project beginners just starting out on Solana 
+                        </span>
+                        <span className='text-black text-center'>
+                       $USDC 250 for the best project that goes into depth, demonstrating higher-order code 
+                        </span><span className='text-black text-center'>
+                       $USDC 500 for the best advanced project that is almost ready for full-time development. 
                         </span>
                       </div>
                     </li>
