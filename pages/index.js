@@ -253,9 +253,9 @@ export default function IndexPage() {
               </div>
             </div>
 
+            <h2 className='text-4xl text-gray-700'>To be Declared...</h2>
 
-
-            <div className='flex flex-col md:flex-row justify-center items-center'>
+            {/* <div className='flex flex-col md:flex-row justify-center items-center'>
 
               <div class="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100 mb-10 md:mr-10 bg-gray-100 border">
 	<img src="/img/sabyasachi.jpeg" alt="" class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square"/>
@@ -353,7 +353,7 @@ export default function IndexPage() {
 	</div>
               </div>
 
-            </div>
+            </div> */}
 
 
 

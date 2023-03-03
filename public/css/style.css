@@ -1150,7 +1150,7 @@ background: linear-gradient(90deg, rgba(18,78,116,1) 0%, rgba(3,25,40,1) 20%, rg
 
 @media (max-width: 990px) {
   .slider_bg_1 {
-    background-image: url(../img/hackathon-bg.jpg), linear-gradient(to right top, #210454, #27055b, #2d0762, #340869, #3a0a70, #3f0b79, #430c82, #480d8b, #4b0e99, #4d10a7, #4e12b5, #4e15c4);
+    background-image: url(../img/2.png), linear-gradient(to right top, #210454, #27055b, #2d0762, #340869, #3a0a70, #3f0b79, #430c82, #480d8b, #4b0e99, #4d10a7, #4e12b5, #4e15c4);
     background-size: 92% 92% !important;
     height: 100vh;
     background-color: #12104d;
