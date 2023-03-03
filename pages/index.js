@@ -109,7 +109,7 @@ export default function IndexPage() {
                       </a> */}
                       <div
                         className='apply-button'
-                        data-hackathon-slug='hackoverflow6'
+                        data-hackathon-slug='hackoverflow06'
                         data-button-theme='dark'
                         style={{ height: 44, width: 312 }}
                       />

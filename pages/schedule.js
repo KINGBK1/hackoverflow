@@ -92,7 +92,7 @@ export default function SchedulePage() {
                       </a> */}
                         <div
                           className="apply-button"
-                          data-hackathon-slug="hackoverflow5"
+                          data-hackathon-slug="hackoverflow06"
                           data-button-theme="dark"
                           style={{ height: 44, width: 312, zIndex: 100 }}
                         />
@@ -108,7 +108,7 @@ export default function SchedulePage() {
                 <div className="position_relv text-center">
                   <div
                     className="apply-button"
-                    data-hackathon-slug="hackoverflow5"
+                    data-hackathon-slug="hackoverflow06"
                     data-button-theme="dark"
                     style={{ height: 44, width: 312 }}
                   />
