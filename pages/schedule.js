@@ -124,7 +124,7 @@ export default function SchedulePage() {
               <Timer />
               <div className="flex flex-col md:flex-row justify-between gap-4 mt-4">
                 <p className="text-2xl font-bold text-white">Online</p>
-                <p className="text-2xl font-bold text-white">9th March, 2023</p>
+                <p className="text-2xl font-bold text-white">10th March, 2023</p>
               </div>
             </div>
             {/* <div className='countDOwn_area'>

@@ -179,7 +179,7 @@ export default function IndexPage() {
                                     Online
                                 </p>
                                 <p className="text-2xl font-bold text-white">
-                                    9th March, 2023
+                                    10th March, 2023
                                 </p>
                             </div>
                         </div>
