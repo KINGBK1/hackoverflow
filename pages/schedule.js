@@ -91,7 +91,7 @@ export default function SchedulePage() {
                         Register
                       </a> */}
                         <div
-                          className="apply-button"
+                          className="apply-button ml-6"
                           data-hackathon-slug="hackoverflow06"
                           data-button-theme="dark"
                           style={{ height: 44, width: 312, zIndex: 100 }}
@@ -104,17 +104,19 @@ export default function SchedulePage() {
             </div>
 
             <div className="slider_text_mobile">
-              <div className="container flex flex-wrap flex-column justify-center">
+              <div className="container flex flex-wrap flex-column justify-center items-center ">
                 <div className="position_relv text-center">
-                  <div
+                  
+                  <h3>Event Schedule</h3>
+                  <br />
+                  <h3>Aarohan 2023</h3>
+                  <br />
+<div
                     className="apply-button"
                     data-hackathon-slug="hackoverflow06"
                     data-button-theme="dark"
                     style={{ height: 44, width: 312 }}
                   />
-                  <h3>Event Schedule</h3>
-                  <br />
-                  <h3>Aarohan 2023</h3>
                 </div>
               </div>
             </div>
@@ -169,7 +171,7 @@ export default function SchedulePage() {
               </a>
               <div>
                 <a
-                  href="https://calendar.google.com/calendar/r/eventedit?text=Hackoverflow+5.0&dates=20220304/20220306"
+                  href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+6.0&dates=20230310/20230312"
                   className="boxed-btn-white my-2 sm:ml-3 block"
                   id="register-2"
                 >
