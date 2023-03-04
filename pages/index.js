@@ -80,6 +80,7 @@ export default function IndexPage() {
       </Head>
       <div>
         <Navbar />
+        <div className='class'>
         <div className='slider_area slider_bg_1'>
           <div className='slider_text'>
             <div className='container'>
@@ -127,9 +128,9 @@ export default function IndexPage() {
                   className='apply-button'
                   data-hackathon-slug='hackoverflow06'
                   data-button-theme='dark'
-                  style={{ height: 44, width: 312 }}
+                  style={{ height: 44, width: 300 }}
                 />
-                <h3>Hackoverflow 6.0</h3>
+                <h3 className='md:mt-5'>Hackoverflow 6.0</h3>
                 <br />
                 <h3>Aarohan 2023</h3>
               </div>
@@ -196,6 +197,8 @@ export default function IndexPage() {
             </div>
           </div>
         </div>
+        </div>
+        
 
         <div className='about_area'>
           <div className='shape-1 d-none d-xl-block'>

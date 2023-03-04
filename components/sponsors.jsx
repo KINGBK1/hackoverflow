@@ -17,29 +17,29 @@ export default function Sponsors () {
         className='w-full pt-2 md:pt-6 md:pb-4 flex md:flex-row flex-col items-center md:justify-around'
         style={{ marginTop: '30px', marginBottom: '20px' }}
       >
-        <div className='p-3'>
+        <div className='p-3 mb-10'>
           <Link href='https://devfolio.co/'>
             <img src='/devfolio.png' />
           </Link>
         </div>
-        <div className='p-1'>
+        <div className='p-1 mb-10'>
           <Link href='https://polygon.technology/'>
             <img src='/Portis_Logo-Colored.png' />
           </Link>
         </div>
-        <div className='p-1'>
+        <div className='p-1 mb-10'>
           <Link href='https://replit.com/'>
             <img src='/Replit-light-background.png' className='h-20' />
           </Link>
         </div>
-        <div className='p-1'>
+        <div className='p-1 mb-10'>
           <Link href='https://solana.com/'>
             <img src='/Solana-Colored.svg' />
           </Link>
         </div>
       </div>
       <div
-        className='w-full pt-2 md:pt-6 md:pb-8 flex md:flex-row flex-col items-center md:justify-around'
+        className='w-full flex md:flex-row flex-col items-center md:justify-around'
         style={{ marginBottom: '80px' }}
       >
         <div className='p-1'>
