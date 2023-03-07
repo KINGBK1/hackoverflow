@@ -33,6 +33,11 @@ export default function Sponsors () {
           </Link>
         </div>
         <div className='p-1 mb-10'>
+          <Link href='https://wolframlanguage.org/'>
+            <img src='/wolf.jpg' className='h-20' />
+          </Link>
+        </div>
+        <div className='p-1 mb-10'>
           <Link href='https://solana.com/'>
             <img src='/Solana-Colored.svg' />
           </Link>
