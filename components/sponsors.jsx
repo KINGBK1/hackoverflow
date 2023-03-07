@@ -19,17 +19,17 @@ export default function Sponsors () {
       >
         <div className='p-3 mb-10'>
           <Link href='https://devfolio.co/'>
-            <img src='/devfolio.png' />
+            <img src='/devfolio.png' className='h-10 md:h-18'/>
           </Link>
         </div>
         <div className='p-1 mb-10'>
           <Link href='https://polygon.technology/'>
-            <img src='/Portis_Logo-Colored.png' />
+            <img src='/Portis_Logo-Colored.png' className='h-10 md:h-18' />
           </Link>
         </div>
         <div className='p-1 mb-10'>
           <Link href='https://replit.com/'>
-            <img src='/Replit-light-background.png' className='h-20' />
+            <img src='/Replit-light-background.png' className='h-12 md:h-18' />
           </Link>
         </div>
         <div className='p-1 mb-10'>
@@ -39,7 +39,7 @@ export default function Sponsors () {
         </div>
         <div className='p-1 mb-10'>
           <Link href='https://solana.com/'>
-            <img src='/Solana-Colored.svg' />
+            <img src='/Solana-Colored.svg' className='h-7 md:h-10' />
           </Link>
         </div>
       </div>
@@ -49,7 +49,7 @@ export default function Sponsors () {
       >
         <div className='p-1'>
           <Link href='https://filecoin.io'>
-            <img src='/Filecoin.png' className='h-20' />
+            <img src='/Filecoin.png' className='h-12 md:h-20' />
           </Link>
         </div>
         
