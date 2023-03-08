@@ -361,7 +361,7 @@ export default function IndexPage() {
                                 </div>
                             </div> */}
 
-                            <div class="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100 mb-10 md:mr-10 bg-purple-100">
+                            <div class="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100 mb-10 md:mr-10 bg-purple-100 hover:bg-white hover:shadow-lg transition">
                                 <img
                                     src="/img/Vipul_Tiwari.png"
                                     alt="Vipul Tiwari"
@@ -378,9 +378,19 @@ export default function IndexPage() {
                                         </p>
                                     </div>
                                 </div>
+                                <div class="flex justify-center pt-2 space-x-4 align-center">
+                                    <a
+                                        rel="noopener noreferrer"
+                                        href="https://www.linkedin.com/in/vipul-tiwari-7277a2146/"
+                                        aria-label="GitHub"
+                                        class="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400"
+                                    >
+                                        <img src="/img/linkedin.svg"></img>
+                                    </a>
+                                </div>
                             </div>
 
-                            <div class="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100 mb-10 bg-purple-100">
+                            <div class="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100 mb-10 bg-purple-100 hover:bg-white hover:shadow-lg transition ">
                                 <img
                                     src="/img/Shamik_Guha.jpeg"
                                     alt="Shamik Guha"
@@ -396,6 +406,16 @@ export default function IndexPage() {
                                             Tank India, Smart mobility
                                         </p>
                                     </div>
+                                </div>
+                                <div class="flex justify-center pt-2 space-x-4 align-center">
+                                    <a
+                                        rel="noopener noreferrer"
+                                        href="https://www.linkedin.com/in/shamik-guha/"
+                                        aria-label="GitHub"
+                                        class="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400"
+                                    >
+                                        <img src="/img/linkedin.svg"></img>
+                                    </a>
                                 </div>
                             </div>
                         </div>
