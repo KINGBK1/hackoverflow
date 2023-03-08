@@ -1,9 +1,9 @@
 import React from "react";
 
 export default function Navbar() {
-  return (
-    <header>
-      {/* <nav className="navbar navbar-expand-lg navbar-dark fixed bg-transparent">
+    return (
+        <header>
+            {/* <nav className="navbar navbar-expand-lg navbar-dark fixed bg-transparent">
         <div className="container-fluid bg-transparent">
           <div className="logo-img">
             <a href="#" style={{ display: "flex" }}>
@@ -52,54 +52,64 @@ export default function Navbar() {
         </div>
       </nav> */}
 
-
-      <div className="header-area ">
-        <div id="sticky-header" className="main-header-area ">
-          <div className="container-fluid p-0">
-            <div className="row align-items-center justify-content-between no-gutters">
-              <div className="col-xl-2 col-lg-2">
-                <div className="logo-img">
-                  <a href="/" style={{ display: "flex"}}>
-                   <img src="img/aarohan-logo.png" style={{
-                      height: "50px",
-                      width: "50px",
-                      borderRadius: "50%",
-                      float: "left",
-                    }} />&nbsp;&nbsp;
-                  </a>
-                </div>
-              </div>
-              <div className="col-xl-8 col-lg-8">
-                <div className="main-menu d-none d-lg-block">
-                  <nav>
-                    <ul id="navigation">
-                      <li>
-                        <a className="active" href="/">Home</a>
-                      </li>
-                      <li>
-                        <a href="/schedule">Schedule</a>
-                      </li>
-                      <li>
-                        <a target="_blank" href="https://discord.com/invite/tVesEFkR">Discord</a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-              {/* <div className="col-xl-2 col-lg-2 d-none d-lg-block">
+            <div className="header-area ">
+                <div id="sticky-header" className="main-header-area ">
+                    <div className="container-fluid p-0">
+                        <div className="row align-items-center justify-content-between no-gutters">
+                            <div className="col-xl-2 col-lg-2">
+                                <div className="logo-img">
+                                    <a href="/" style={{ display: "flex" }}>
+                                        <img
+                                            src="img/aarohan-logo.png"
+                                            style={{
+                                                height: "50px",
+                                                width: "50px",
+                                                borderRadius: "50%",
+                                                float: "left",
+                                            }}
+                                        />
+                                        &nbsp;&nbsp;
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="col-xl-8 col-lg-8">
+                                <div className="main-menu d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li>
+                                                <a className="active" href="/">
+                                                    Home
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/schedule">Schedule</a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    target="_blank"
+                                                    href="https://discord.gg/dUe9m53m"
+                                                >
+                                                    Discord
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            {/* <div className="col-xl-2 col-lg-2 d-none d-lg-block">
                 <div className="buy_ticket">
                   <a href="#" className="boxed-btn-white">
                     Register!
                   </a>
                 </div>
               </div> */}
-              <div className="col-12">
-                <div className="mobile_menu d-block d-lg-none" />
-              </div>
+                            <div className="col-12">
+                                <div className="mobile_menu d-block d-lg-none" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </header>
-  );
+        </header>
+    );
 }
