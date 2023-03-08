@@ -811,6 +811,30 @@ export default function IndexPage() {
                                                 </span>
                                             </div>
                                         </li>
+                                        <li>
+                                            <div
+                                                className="p-4 flex flex-col  items-center bg-white justify-around rounded shadow md:w-3/5 md:mx-auto"
+                                                style={{ marginBottom: "15px" }}
+                                            >
+                                                <Link href="https://solana.com/">
+                                                    <img
+                                                        src="/img/wolf.jpg"
+                                                        className="w-45 h-20 mb-10"
+                                                    />
+                                                </Link>
+                                                <span className="text-black text-center">
+                                                    A year of Wolfram|One
+                                                    Personal Edition plus a
+                                                    one-year subscription to
+                                                    Wolfram|Alpha Pro to all the
+                                                    members of top 10 teams
+                                                </span>
+                                                <span className="text-black text-center">
+                                                    The value of each individual
+                                                    award is $375.00
+                                                </span>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
