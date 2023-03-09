@@ -816,6 +816,30 @@ export default function IndexPage() {
                                                 className="p-4 flex flex-col  items-center bg-white justify-around rounded shadow md:w-3/5 md:mx-auto"
                                                 style={{ marginBottom: "15px" }}
                                             >
+                                                <Link href="https://wolfram.com/">
+                                                    <img
+                                                        src="/digital_ocean.png"
+                                                        className="w-45 h-12 md:h-16 mb-10"
+                                                    />
+                                                </Link>
+                                                <span className="text-black text-center">
+                                                    A total of $2,000 in credits
+                                                    to the winning team(s) -
+                                                    these can be distributed
+                                                    only in sums of $100, $125,
+                                                    and $250, per winning team.
+                                                </span>
+                                                <span className="text-black text-center">
+                                                    $50, 30-day free trial for
+                                                    all the attendees
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div
+                                                className="p-4 flex flex-col  items-center bg-white justify-around rounded shadow md:w-3/5 md:mx-auto"
+                                                style={{ marginBottom: "15px" }}
+                                            >
                                                 <Link href="https://solana.com/">
                                                     <img
                                                         src="/img/wolf.jpg"
