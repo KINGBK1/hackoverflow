@@ -22,7 +22,7 @@ export default function IndexPage() {
             <Head>
                 <meta charSet="utf-8" />
                 <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-                <title>Hackoverflow 6.0</title>
+                <title>Hackoverflow 7.0</title>
                 <meta name="description" content />
                 <meta
                     name="viewport"
@@ -98,13 +98,13 @@ export default function IndexPage() {
                                         <div className="col-xl-9">
                                             <div className="title_text ml-3">
                                                 <h3>
-                                                    HackOverflow 6.0
+                                                    HackOverflow 7.0
                                                     <br />
-                                                    Aarohan, 2023
+                                                    Aarohan, 2024
                                                 </h3>
                                                 <br />
                                                 <a
-                                                    href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+6.0&dates=20230310/20230312"
+                                                    href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+7.0&dates=20240328/20240331"
                                                     className="boxed-btn-white"
                                                 >
                                                     Add to your Calendar
@@ -137,10 +137,10 @@ export default function IndexPage() {
                             <div className="container flex flex-wrap flex-column justify-center">
                                 <div className="position_relv flex flex-col gap-4 items-center text-center">
                                     <h3 className="md:mt-5">
-                                        Hackoverflow 6.0
+                                        Hackoverflow 7.0
                                     </h3>
 
-                                    <h3>Aarohan 2023</h3>
+                                    <h3>Aarohan 2024</h3>
 
                                     <div
                                         className="apply-button"
@@ -179,7 +179,7 @@ export default function IndexPage() {
                                     Online
                                 </p>
                                 <p className="text-2xl font-bold text-white">
-                                    10th March, 2023
+                                    28th March, 2024
                                 </p>
                             </div>
                         </div>
@@ -195,7 +195,7 @@ export default function IndexPage() {
                         >
                             <a
                                 className="boxed-btn-white"
-                                href="https://discord.gg/dUe9m53m"
+                                href="https://discord.gg/aUpg65Er"
                                 id="register-2"
                             >
                                 Join Discord
@@ -210,7 +210,7 @@ export default function IndexPage() {
                             </a>
                             <div>
                                 <a
-                                    href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+6.0&dates=20230310/20230312"
+                                    href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+6.0&dates=20240328/20240331"
                                     className="boxed-btn-white my-2 sm:ml-3 block"
                                     id="register-2"
                                 >
@@ -244,13 +244,13 @@ export default function IndexPage() {
                                         <h3>
                                             The Biggest Technical <br />
                                             Fest of the <br />
-                                            Year 2023
+                                            Year 2024
                                         </h3>
                                     </div>
                                     <p>
                                         <br />
                                         <br />
-                                        Hackoverflow 6.0 is conducted by team
+                                        Hackoverflow 7.0 is conducted by team
                                         Aavishkar during Aarohan, the second
                                         largest techno-management of Eastern
                                         India!
