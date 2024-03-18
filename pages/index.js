@@ -135,7 +135,7 @@ export default function IndexPage() {
 
                         <div className="slider_text_mobile">
                             <div className="container flex flex-wrap flex-column justify-center">
-                                <div className="position_relv flex flex-col gap-4 items-center text-center">
+                                <div className="position_relv flex flex-col gap-2 items-center text-center">
                                     <h3 className="md:mt-5">
                                         Hackoverflow 7.0
                                     </h3>
@@ -172,7 +172,7 @@ export default function IndexPage() {
               </div>
             </div>
           </div> */}
-                        <div className="flex flex-col items-center md:items-start px-6 lg:px-52 text-center md:text-left my-6">
+                        <div className="mobile-timer  flex flex-col items-center md:items-start px-6 lg:px-52 text-center md:text-left my-8">
                             <Timer />
                             <div className="flex flex-col md:flex-row justify-between gap-4 mt-4">
                                 <p className="text-2xl font-bold text-white">

@@ -33,7 +33,7 @@ export default function Timer() {
   }, []);
 
   return (
-    <div>
+    <div className="text-3xl">
       <div className="countdown_time">
         <div className="single_countdown">
           <h3>{day.toString().lpad("0", 2)}</h3>
