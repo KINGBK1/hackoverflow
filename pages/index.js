@@ -172,9 +172,9 @@ export default function IndexPage() {
               </div>
             </div>
           </div> */}
-                        <div className="mobile-timer  flex flex-col items-center md:items-start px-6 lg:px-52 text-center md:text-left my-8">
+                        <div className="flex mt-72 flex-col items-center md:items-start md:px-6 lg:px-52 text-center md:text-left md:my-8">
                             <Timer />
-                            <div className="flex flex-col md:flex-row justify-between gap-4 mt-4">
+                            <div className="flex flex-col md:flex-row justify-between md:gap-4 md:mt-4">
                                 <p className="text-2xl font-bold text-white">
                                     Online
                                 </p>

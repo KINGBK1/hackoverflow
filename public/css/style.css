@@ -1155,13 +1155,10 @@ background: linear-gradient(90deg, rgba(18,78,116,1) 0%, rgba(3,25,40,1) 20%, rg
     background-size: cover;
     height: 100vh;
     background-color: #101424;
-    background-position: center top -120px !important;
+    background-position: center top -178px !important;
     
   }
 
-  .mobile-timer {
-    padding-top: 140px;
-  }
   
 }
 
@@ -1375,7 +1372,7 @@ background: linear-gradient(90deg, rgba(18,78,116,1) 0%, rgba(3,25,40,1) 20%, rg
 @media (min-width: 576px) and (max-width: 770px) {
   /* line 4, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area {
-    padding-top: 140px;
+    padding-top: 100px;
     padding-bottom: 30px;
   }
 
@@ -1390,7 +1387,7 @@ background: linear-gradient(90deg, rgba(18,78,116,1) 0%, rgba(3,25,40,1) 20%, rg
 
 @media (max-width: 576px) {
   .slider_area {
-    padding-top: 100px;
+    padding-top: 78px;
     padding-bottom: 30px;
   }
 

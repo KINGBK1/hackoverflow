@@ -35,19 +35,19 @@ export default function Timer() {
   return (
     <div className="text-3xl">
       <div className="countdown_time">
-        <div className="single_countdown">
+        <div className="md:font-normal font-bold single_countdown">
           <h3>{day.toString().lpad("0", 2)}</h3>
           <span className="text-lg">days</span>
         </div>
-        <div className="single_countdown">
+        <div className="md:font-normal font-bold single_countdown">
           <h3>{hour.toString().lpad("0", 2)}</h3>
           <span>Hours</span>
         </div>
-        <div className="single_countdown">
+        <div className="md:font-normal font-bold single_countdown">
           <h3>{minute.toString().lpad("0", 2)}</h3>
           <span>Minutes</span>
         </div>
-        <div className="single_countdown">
+        <div className="md:font-normal font-bold single_countdown">
           <h3>{second.toString().lpad("0", 2)}</h3>
           <span>Seconds</span>
         </div>
