@@ -89,7 +89,7 @@ export default function IndexPage() {
             </Head>
             <div>
                 <Navbar />
-                <div className="class">
+                <div>
                     <div className="slider_area slider_bg_1">
                         <div className="slider_text">
                             <div className="container">
@@ -172,10 +172,8 @@ export default function IndexPage() {
               </div>
             </div>
           </div> */}
-                        <div className="flex  flex-col items-center md:items-start md:px-6 lg:px-52 text-center md:text-left md:my-8"
-                        style={{
-                            marginTop:"17.5rem",
-                        }}
+                        <div className="mobile-timer flex flex-col items-center md:items-start md:px-6 lg:px-52 text-center md:text-left md:my-8"
+                        
                         >
                             <Timer />
                             <div className="flex flex-col md:flex-row justify-between md:gap-4 md:mt-4">
