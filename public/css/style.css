@@ -578,7 +578,7 @@ h3 {
   background: linear-gradient(to right, #7628c7, #6b40d0, #6152d7, #5961dd, #536fe0, #3d7fe9, #248def, #069bf3, #00aefa, #00c1fd, #00d2fc, #30e2fa);
   /* background: linear-gradient(90deg, rgba(69,26,56,1) 0%, rgba(15,3,10,1) 27%, rgba(1,1,2,1) 47%, rgba(3,25,40,1) 67%, rgba(18,78,116,1) 100%); */
   display: inline-block;
-  padding: 16px 43px;
+  padding: 10px 10px;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;

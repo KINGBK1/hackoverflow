@@ -172,7 +172,11 @@ export default function IndexPage() {
               </div>
             </div>
           </div> */}
-                        <div className="flex mt-72 flex-col items-center md:items-start md:px-6 lg:px-52 text-center md:text-left md:my-8">
+                        <div className="flex  flex-col items-center md:items-start md:px-6 lg:px-52 text-center md:text-left md:my-8"
+                        style={{
+                            marginTop:"17.5rem",
+                        }}
+                        >
                             <Timer />
                             <div className="flex flex-col md:flex-row justify-between md:gap-4 md:mt-4">
                                 <p className="text-2xl font-bold text-white">
@@ -183,18 +187,17 @@ export default function IndexPage() {
                                 </p>
                             </div>
                         </div>
-                        <div
+                        <div className="p-6 pt-2" 
                             style={{
                                 width: "100%",
                                 height: "100px",
                                 display: "flex",
                                 justifyContent: "center",
-                                alignItems: "center",
                                 flexWrap: "wrap",
                             }}
                         >
-                            <a
-                                className="boxed-btn-white"
+                            {/* <a
+                                className="boxed btn-white"
                                 href="https://discord.gg/aUpg65Er"
                                 id="register-2"
                             >
@@ -207,11 +210,11 @@ export default function IndexPage() {
                                 id="register-2"
                             >
                                 Schedule
-                            </a>
+                            </a> */}
                             <div>
                                 <a
                                     href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+6.0&dates=20240328/20240331"
-                                    className="boxed-btn-white my-2 sm:ml-3 block"
+                                    className="  boxed-btn-white md:my-2 sm:ml-3 block"
                                     id="register-2"
                                 >
                                     Add to your Calendar
