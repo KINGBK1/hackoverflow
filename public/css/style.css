@@ -78,33 +78,34 @@
 .event_area .double_line::before,
 .event_area .double_line::after {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff9600+0,fe531e+26,c022a5+57,1bb8f9+100 */
-  background: #ff9600;
+  background: rgb(238,49,49);
+background: linear-gradient(90deg, rgba(238,49,49,1) 0%, rgba(50,11,11,1) 51%, rgba(0,0,0,1) 100%, rgba(252,156,69,1) 100%);
   /* Old browsers */
-  background: -moz-linear-gradient(
+  /* background: -moz-linear-gradient(
     left,
     #1100ff 0%,
     #1e99fe 26%,
     #a1acaf 57%,
     #f1f4f5 100%
-  );
+  ); */
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(
+  /* background: -webkit-linear-gradient(
     left,
     #1100ff 0%,
     #1e99fe 26%,
     #a1acaf 57%,
     #f1f4f5 100%
-  );
+  ); */
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     #1100ff 0%,
     #1e99fe 26%,
     #a1acaf 57%,
     #f1f4f5 100%
-  );
+  ); */
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1100ff', endColorstr='#f1f4f5',GradientType=1 );
+  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1100ff', endColorstr='#f1f4f5',GradientType=1 ); */
   /* IE6-9 */
 }
 
@@ -525,17 +526,17 @@ h3 {
   font-size: 16px;
   font-weight: 500;
   border: 0;
-  border: 2px solid #1566fd;
+  border: 2px solid #eb591f;
   text-align: center;
-  color: #1566fd !important;
+  color: #eb591f !important;
   text-transform: capitalize;
 }
 
 /* line 41, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_btn.scss */
 .boxed-btn-red:hover {
-  background: #1566fd;
+  background: #eb591f;
   color: #fff !important;
-  border: 2px solid #1566fd;
+  border: 2px solid #eb591f;
 }
 
 /* line 46, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_btn.scss */
@@ -575,7 +576,9 @@ h3 {
 
 /* line 73, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_btn.scss */
 .boxed-btn-white {
-  background: linear-gradient(to right, #7628c7, #6b40d0, #6152d7, #5961dd, #536fe0, #3d7fe9, #248def, #069bf3, #00aefa, #00c1fd, #00d2fc, #30e2fa);
+  /* background: linear-gradient(to right, #7628c7, #6b40d0, #6152d7, #5961dd, #536fe0, #3d7fe9, #248def, #069bf3, #00aefa, #00c1fd, #00d2fc, #30e2fa); */
+  background: rgb(231,11,11);
+  background: linear-gradient(90deg, rgba(231,11,11,1) 21%, rgba(238,161,49,1) 79%);
   /* background: linear-gradient(90deg, rgba(69,26,56,1) 0%, rgba(15,3,10,1) 27%, rgba(1,1,2,1) 47%, rgba(3,25,40,1) 67%, rgba(18,78,116,1) 100%); */
   display: inline-block;
   padding: 18px 20px;
@@ -599,7 +602,7 @@ h3 {
 .boxed-btn-white:hover {
   background: #fff;
   color: #000 !important;
-  border: 2px solid #fff;
+  /* border: 2px solid #fff; */
 }
 
 /* line 96, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_btn.scss */
@@ -614,11 +617,12 @@ h3 {
 
 /* line 2, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_section_title.scss */
 .section_title .sub_heading {
-  color: #c9c9c9;
+  color: #cf1616;
   display: block;
-  font-size: 15px;
+
+  font-size: 30px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   font-family: "Poppins", sans-serif;
   margin-bottom: 22px;
 }
@@ -764,7 +768,9 @@ h3 {
 
 /* line 13, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav {
-  background: linear-gradient(to right top, #210454, #27055b, #2d0762, #340869, #3a0a70, #3f0b79, #430c82, #480d8b, #4b0e99, #4d10a7, #4e12b5, #4e15c4);
+  /* background: linear-gradient(to right top, #210454, #27055b, #2d0762, #340869, #3a0a70, #3f0b79, #430c82, #480d8b, #4b0e99, #4d10a7, #4e12b5, #4e15c4); */
+  background: rgb(238,49,49);
+background: linear-gradient(90deg, rgba(238,49,49,1) 0%, rgba(50,11,11,1) 51%, rgba(0,0,0,1) 100%, rgba(252,156,69,1) 100%);
   float: right;
   margin-top: 0;
   padding: 0;
@@ -782,12 +788,12 @@ h3 {
 /* line 28, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav a:hover {
   background: transparent;
-  color: #0181f5;
+  color: black;
 }
 
 /* line 32, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav a.active {
-  color: #0181f5;
+  color: #0d0c08;
 }
 
 @media (max-width: 767px) {
@@ -995,12 +1001,12 @@ h3 {
 
 /* line 92, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a:hover {
-  color: #0181f5;
+  color: #eb591f;
 }
 
 /* line 95, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
-.header-area .main-header-area .main-menu ul li a.active {
-  color: #0181f5;
+.header-area .main-header-area .main-menu ul li a:active {
+  color: #eb591f !important;
 }
 
 /* line 99, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
@@ -1070,11 +1076,14 @@ h3 {
   left: 0;
   right: 0;
   z-index: 99;
+  background: rgb(238,49,49);
+background: linear-gradient(90deg, rgba(238,49,49,1) 0%, rgba(50,11,11,1) 51%, rgba(0,0,0,1) 100%, rgba(252,156,69,1) 100%);
   /* background: linear-gradient(to right top, #210454, #27055b, #2d0762, #340869, #3a0a70, #3f0b79, #430c82, #480d8b, #4b0e99, #4d10a7, #4e12b5, #4e15c4); */
-  background: #3d79fa98;
+  /* background: #3d79fa98;
   background: #542CC5;
   background: rgba(18, 78, 116, 0.89);
-background: linear-gradient(90deg, rgba(18,78,116,1) 0%, rgba(3,25,40,1) 20%, rgba(1,1,2,1) 50%, rgba(15,3,10,1) 80%, rgba(69,26,56,1) 100%);
+background: linear-gradient(90deg, rgba(18,78,116,1) 0%, rgba(3,25,40,1) 20%, rgba(1,1,2,1) 50%, rgba(15,3,10,1) 80%, rgba(69,26,56,1) 100%); */
+
   transform: translateY(70px);
   transition: transform 500ms ease, background 500ms ease;
   -webkit-transition: transform 500ms ease, background 500ms ease;
@@ -1638,7 +1647,7 @@ background: linear-gradient(90deg, rgba(18,78,116,1) 0%, rgba(3,25,40,1) 20%, rg
 
 /* line 93, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_about.scss */
 .about_area .about_info p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 28px;
   color: #808080;
@@ -2262,6 +2271,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .event_area .double_line {
     padding-top: 40px;
     margin-bottom: 20px;
+    margin-top: 20px;
   }
 }
 
@@ -2373,7 +2383,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */
 .footer_bg_1 {
   /* background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)), url(../img/footer_bkg.jpeg); */
-  background: linear-gradient(90deg, rgba(18,78,116,1) 0%, rgba(3,25,40,1) 20%, rgba(1,1,2,1) 50%, rgba(15,3,10,1) 80%, rgba(69,26,56,1) 100%);;
+  background: rgb(238,49,49);
+  background: linear-gradient(90deg, rgba(238,49,49,1) 0%, rgba(50,11,11,1) 51%, rgba(0,0,0,1) 100%, rgba(252,156,69,1) 100%);
 }
 
 /* line 4, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_footer.scss */

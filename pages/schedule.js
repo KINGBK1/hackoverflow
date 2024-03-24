@@ -21,7 +21,7 @@ export default function SchedulePage() {
             <Head>
                 <meta charSet="utf-8" />
                 <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-                <title>Hackoverflow 6.0</title>
+                <title>Hackoverflow 7.0</title>
                 <meta name="description" content />
                 <meta
                     name="viewport"
@@ -80,7 +80,7 @@ export default function SchedulePage() {
                                                 <h3>Event Schedule</h3>
                                                 <br />
                                                 <a
-                                                    href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+6.0&dates=20230310/20230312"
+                                                    href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+6.0&dates=20240409/20240409"
                                                     className="boxed-btn-white"
                                                 >
                                                     Add to your Calendar
@@ -115,7 +115,7 @@ export default function SchedulePage() {
                                 <div className="position_relv text-center">
                                     <h3>Event Schedule</h3>
                                     <br />
-                                    <h3>Aarohan 2023</h3>
+                                    <h3>Aarohan 2024</h3>
                                     <br />
                                     <div
                                         className="apply-button"
@@ -126,14 +126,16 @@ export default function SchedulePage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-col items-center md:items-start px-6 lg:px-52 text-center md:text-left my-6">
+                        <div className="mobile-timer flex flex-col items-center md:items-start md:px-6 lg:px-52 text-center md:text-left md:my-8"
+
+                        >
                             <Timer />
-                            <div className="flex flex-col md:flex-row justify-between gap-4 mt-4">
+                            <div className="flex flex-col md:flex-row justify-between md:gap-4 md:mt-4">
                                 <p className="text-2xl font-bold text-white">
                                     Online
                                 </p>
                                 <p className="text-2xl font-bold text-white">
-                                    10th March, 2023
+                                    09th April, 2024
                                 </p>
                             </div>
                         </div>
@@ -158,7 +160,7 @@ export default function SchedulePage() {
                                 </div>
                             </div>
                         </div> */}
-                        <div
+                        <div className="p-6 pt-2"
                             style={{
                                 width: "100%",
                                 height: "100px",
@@ -168,21 +170,21 @@ export default function SchedulePage() {
                                 flexWrap: "wrap",
                             }}
                         >
-                            <a
+                            {/* <a
                                 className="boxed-btn-white"
                                 href="https://discord.gg/dUe9m53m"
                                 id="register-2"
                             >
                                 Join Discord
                             </a>
-                            &nbsp; &nbsp; &nbsp;
-                            <a
+                            &nbsp; &nbsp; &nbsp; */}
+                            {/* <a
                                 className="boxed-btn-white"
                                 href="/schedule"
                                 id="register-2"
                             >
                                 Schedule
-                            </a>
+                            </a> */}
                             <div>
                                 <a
                                     href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+6.0&dates=20230310/20230312"
@@ -204,7 +206,7 @@ export default function SchedulePage() {
                                 <div className="row">
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
-                                            <h3 style={{ color: "blue" }}>
+                                            <h3 style={{ color: "#eb591f" }}>
                                                 4 March, 2023
                                             </h3>
                                         </div>
@@ -244,7 +246,7 @@ export default function SchedulePage() {
                                 <div className="row">
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
-                                            <h3 style={{ color: "blue" }}>
+                                            <h3 style={{ color: "#eb591f" }}>
                                                 9 March, 2023
                                             </h3>
                                         </div>
@@ -277,7 +279,7 @@ export default function SchedulePage() {
                                 <div className="row">
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
-                                            <h3 style={{ color: "blue" }}>
+                                            <h3 style={{ color: "#eb591f" }}>
                                                 10 March, 2023
                                             </h3>
                                         </div>
@@ -334,7 +336,7 @@ export default function SchedulePage() {
                                 <div className="row">
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
-                                            <h3 style={{ color: "blue" }}>
+                                            <h3 style={{ color: "#eb591f" }}>
                                                 11 March, 2023
                                             </h3>
                                         </div>
@@ -408,7 +410,7 @@ export default function SchedulePage() {
                                 <div className="row">
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
-                                            <h3 style={{ color: "blue" }}>
+                                            <h3 style={{ color: "#eb591f" }}>
                                                 12 March, 2023
                                             </h3>
                                         </div>

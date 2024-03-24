@@ -53,7 +53,7 @@ export default function Navbar() {
       </nav> */}
 
             <div className="header-area ">
-                <div id="sticky-header" className="main-header-area ">
+                <div id="sticky-header" className="main-header-area">
                     <div className="container-fluid p-0">
                         <div className="row align-items-center justify-content-between no-gutters">
                             <div className="col-xl-2 col-lg-2">
@@ -77,7 +77,7 @@ export default function Navbar() {
                                     <nav>
                                         <ul id="navigation">
                                             <li>
-                                                <a className="active" href="/">
+                                                <a href="/" className="active:active-color">
                                                     Home
                                                 </a>
                                             </li>

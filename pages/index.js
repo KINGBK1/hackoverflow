@@ -5,6 +5,7 @@ import Timer from "../components/Timer";
 import Sponsors from "../components/sponsors";
 import Link from "next/link";
 import { useEffect } from "react";
+import { BorderAll } from "@material-ui/icons";
 
 export default function IndexPage() {
     useEffect(() => {
@@ -103,12 +104,14 @@ export default function IndexPage() {
                                                     Aarohan, 2024
                                                 </h3>
                                                 <br />
-                                                <a
-                                                    href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+7.0&dates=20240328/20240331"
-                                                    className="boxed-btn-white"
-                                                >
-                                                    Add to your Calendar
-                                                </a>
+                                                <div className="relative ">
+                                                    <a
+                                                        href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+7.0&dates=20240409/20240411"
+                                                        className="boxed-btn-white"
+                                                    >
+                                                        Add to your Calendar
+                                                    </a>
+                                                </div>
                                                 <br />
                                                 <br />
                                                 {/* <a
@@ -173,7 +176,7 @@ export default function IndexPage() {
             </div>
           </div> */}
                         <div className="mobile-timer flex flex-col items-center md:items-start md:px-6 lg:px-52 text-center md:text-left md:my-8"
-                        
+
                         >
                             <Timer />
                             <div className="flex flex-col md:flex-row justify-between md:gap-4 md:mt-4">
@@ -181,11 +184,11 @@ export default function IndexPage() {
                                     Online
                                 </p>
                                 <p className="text-2xl font-bold text-white">
-                                    28th March, 2024
+                                    9th April, 2024
                                 </p>
                             </div>
                         </div>
-                        <div className="p-6 pt-2" 
+                        <div className="p-6 pt-2"
                             style={{
                                 width: "100%",
                                 height: "100px",
@@ -211,7 +214,7 @@ export default function IndexPage() {
                             </a> */}
                             <div>
                                 <a
-                                    href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+6.0&dates=20240328/20240331"
+                                    href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+6.0&dates=20240409/20240411"
                                     className="  boxed-btn-white md:my-2 sm:ml-3 block"
                                     id="register-2"
                                 >
@@ -285,7 +288,7 @@ export default function IndexPage() {
 
                         {/* <h2 className="text-3xl">To be Announced...</h2> */}
 
-                        <div className="flex flex-col md:flex-row justify-center items-center">
+                        <div className="flex flex-col md:flex-row justify-center gap-6 items-center">
                             {/* <div class="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100 mb-10 md:mr-10 bg-purple-100">
                                 <img
                                     src="https://source.unsplash.com/150x150/?portrait?3"
@@ -362,7 +365,7 @@ export default function IndexPage() {
                                 </div>
                             </div> */}
 
-                            <div class="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100 mb-10 md:mr-10 bg-purple-100 hover:bg-white hover:shadow-lg transition">
+                            {/* <div class="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100 mb-10 md:mr-10 bg-purple-100 hover:bg-white hover:shadow-lg transition">
                                 <img
                                     src="/img/Vipul_Tiwari.png"
                                     alt="Vipul Tiwari"
@@ -389,9 +392,177 @@ export default function IndexPage() {
                                         <img src="/img/linkedin.svg"></img>
                                     </a>
                                 </div>
+                            </div> */}
+                            <div class="flex flex-col rounded-lg items-center justify-between w-72 border-4 border-white" style={{ outline: "1px solid rgba(54, 69, 79,0.2)" }}>
+                                <div class="rounded-lg bg-gray-800 text-white p-4 w-full text-center italic">
+                                "Code hard, dream big, hackathon strong."
+                                </div>
+                                <div class="rounded-full self-start  " style={{
+                                    marginTop: "-2rem", marginLeft: "1rem",
+                                    border: "4px solid white",
+
+                                }}>
+                                    <img
+                                        src="/img/Vipul_Tiwari.png"
+                                        alt="Vipul Tiwari"
+                                        class="w-20 h-20 mx-auto rounded-full dark:bg-gray-500 aspect-square border-white"
+                                    />
+
+                                </div>
+                                <div class="flex flex-col gap-2 justify-start" style={{padding: "1rem" }}>
+                                    <div class="flex justify-between items-center">
+                                        <div class="text-xl">
+                                            Karthik
+                                        </div>
+                                        {/* <div class="flex gap-1 rounded-2xl border-2 border-blue-800" style={{padding:"0 0.24rem 0 0.24rem"}}>
+                                           Follow */}
+                                            <a
+                                                rel="noopener noreferrer"
+                                                href="https://www.linkedin.com/in/vipul-tiwari-7277a2146/"
+                                                aria-label="GitHub"
+                                                class="rounded-md dark:text-gray-100 hover:dark:text-violet-400"
+                                            >
+                                                <img src="/img/linkedin.svg"></img>
+                                            </a>
+                                        {/* </div> */}
+
+                                    </div>
+                                    <div>
+                                        <p class="text-xs sm:text-base dark:text-gray-400">
+                                            SIH Judge'2020, Twice RPA Hackathon
+                                            winner, Amazonian
+                                        </p>
+
+                                    </div>
+                                    <div>
+                                        <h6 class="">
+                                           <span class="font-bold">500+</span>  <span class="text-gray-500">Connections</span>
+                                        </h6>
+                                    </div>
+                                    <div class="flex gap-2">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(54, 69, 79,0.4)"><path d="M12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364L12 23.7279ZM16.9497 15.9497C19.6834 13.2161 19.6834 8.78392 16.9497 6.05025C14.2161 3.31658 9.78392 3.31658 7.05025 6.05025C4.31658 8.78392 4.31658 13.2161 7.05025 15.9497L12 20.8995L16.9497 15.9497ZM12 13C10.8954 13 10 12.1046 10 11C10 9.89543 10.8954 9 12 9C13.1046 9 14 9.89543 14 11C14 12.1046 13.1046 13 12 13Z"></path></svg>
+                                    <p class="">India</p>
+                                    </div>
+
+
+                                </div>
+
                             </div>
 
-                            <div class="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100 mb-10 bg-purple-100 hover:bg-white hover:shadow-lg transition ">
+                            <div class="flex flex-col rounded-lg items-center justify-between w-72 border-4 border-white" style={{ outline: "1px solid rgba(54, 69, 79,0.2)" }}>
+                                <div class="rounded-lg bg-gray-800 text-white p-4 w-full text-center italic">
+                                "Hackathons: where passion turns into code."
+                                </div>
+                                <div class="rounded-full self-start  " style={{
+                                    marginTop: "-2rem", marginLeft: "1rem",
+                                    border: "4px solid white",
+
+                                }}>
+                                    <img
+                                        src="/img/Vipul_Tiwari.png"
+                                        alt="Vipul Tiwari"
+                                        class="w-20 h-20 mx-auto rounded-full dark:bg-gray-500 aspect-square border-white"
+                                    />
+
+                                </div>
+                                <div class="flex flex-col gap-2 justify-start" style={{padding: "1rem" }}>
+                                    <div class="flex justify-between items-center">
+                                        <div class="text-xl">
+                                            Karthik
+                                        </div>
+                                        {/* <div class="flex gap-1 rounded-2xl border-2 border-blue-800" style={{padding:"0 0.24rem 0 0.24rem"}}>
+                                           Follow */}
+                                            <a
+                                                rel="noopener noreferrer"
+                                                href="https://www.linkedin.com/in/vipul-tiwari-7277a2146/"
+                                                aria-label="GitHub"
+                                                class="rounded-md dark:text-gray-100 hover:dark:text-violet-400"
+                                            >
+                                                <img src="/img/linkedin.svg"></img>
+                                            </a>
+                                        {/* </div> */}
+
+                                    </div>
+                                    <div>
+                                        <p class="text-xs sm:text-base dark:text-gray-400">
+                                            SIH Judge'2020, Twice RPA Hackathon
+                                            winner, Amazonian
+                                        </p>
+
+                                    </div>
+                                    <div>
+                                        <h6 class="">
+                                           <span class="font-bold">500+</span>  <span class="text-gray-500">Connections</span>
+                                        </h6>
+                                    </div>
+                                    <div class="flex gap-2">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(54, 69, 79,0.4)"><path d="M12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364L12 23.7279ZM16.9497 15.9497C19.6834 13.2161 19.6834 8.78392 16.9497 6.05025C14.2161 3.31658 9.78392 3.31658 7.05025 6.05025C4.31658 8.78392 4.31658 13.2161 7.05025 15.9497L12 20.8995L16.9497 15.9497ZM12 13C10.8954 13 10 12.1046 10 11C10 9.89543 10.8954 9 12 9C13.1046 9 14 9.89543 14 11C14 12.1046 13.1046 13 12 13Z"></path></svg>
+                                    <p class="">India</p>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="flex flex-col rounded-lg items-center justify-between w-72 border-4 border-white" style={{ outline: "1px solid rgba(54, 69, 79,0.2)" }}>
+                                <div class="rounded-lg bg-gray-800 text-white p-4 w-full text-center italic">
+                                "Coding is the poetry of logical ideas."
+                                </div>
+                                <div class="rounded-full self-start  " style={{
+                                    marginTop: "-2rem", marginLeft: "1rem",
+                                    border: "4px solid white",
+
+                                }}>
+                                    <img
+                                        src="/img/Vipul_Tiwari.png"
+                                        alt="Vipul Tiwari"
+                                        class="w-20 h-20 mx-auto rounded-full dark:bg-gray-500 aspect-square border-white"
+                                    />
+
+                                </div>
+                                <div class="flex flex-col gap-2 justify-start" style={{padding: "1rem" }}>
+                                    <div class="flex justify-between items-center">
+                                        <div class="text-xl">
+                                            Karthik
+                                        </div>
+                                        {/* <div class="flex gap-1 rounded-2xl border-2 border-blue-800" style={{padding:"0 0.24rem 0 0.24rem"}}>
+                                           Follow */}
+                                            <a
+                                                rel="noopener noreferrer"
+                                                href="https://www.linkedin.com/in/vipul-tiwari-7277a2146/"
+                                                aria-label="GitHub"
+                                                class="rounded-md dark:text-gray-100 hover:dark:text-violet-400"
+                                            >
+                                                <img src="/img/linkedin.svg"></img>
+                                            </a>
+                                        {/* </div> */}
+
+                                    </div>
+                                    <div>
+                                        <p class="text-xs sm:text-base dark:text-gray-400">
+                                            SIH Judge'2020, Twice RPA Hackathon
+                                            winner, Amazonian
+                                        </p>
+
+                                    </div>
+                                    <div>
+                                        <h6 class="">
+                                           <span class="font-bold">500+</span>  <span class="text-gray-500">Connections</span>
+                                        </h6>
+                                    </div>
+                                    <div class="flex gap-2">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(54, 69, 79,0.4)"><path d="M12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364L12 23.7279ZM16.9497 15.9497C19.6834 13.2161 19.6834 8.78392 16.9497 6.05025C14.2161 3.31658 9.78392 3.31658 7.05025 6.05025C4.31658 8.78392 4.31658 13.2161 7.05025 15.9497L12 20.8995L16.9497 15.9497ZM12 13C10.8954 13 10 12.1046 10 11C10 9.89543 10.8954 9 12 9C13.1046 9 14 9.89543 14 11C14 12.1046 13.1046 13 12 13Z"></path></svg>
+                                    <p class="">India</p>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            
+
+                            {/* <div class="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100 mb-10 bg-purple-100 hover:bg-white hover:shadow-lg transition ">
                                 <img
                                     src="/img/Shamik_Guha.jpeg"
                                     alt="Shamik Guha"
@@ -418,7 +589,7 @@ export default function IndexPage() {
                                         <img src="/img/linkedin.svg"></img>
                                     </a>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
 
                         {/* <div className='row justify-center'>
@@ -560,7 +731,7 @@ export default function IndexPage() {
                                         className="date"
                                         style={{ color: "blue" }}
                                     >
-                                        <h3 style={{ color: "blue" }}>
+                                        <h3 style={{ color: "#eb591f" }}>
                                             Hackathon Themes
                                         </h3>
                                     </div>

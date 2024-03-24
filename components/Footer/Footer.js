@@ -89,7 +89,7 @@ export default function Footer () {
                 />
               </Link>
               <p className='copy_right text-center'>
-                Aarohan, 2023 | Made with{' '}
+                Aarohan, 2024 | Made with{' '}
                 <i className='fa fa-heart-o' aria-hidden='true' /> by{' '}
                 <a href='' target='_blank'>
                   Team Aavishkar
