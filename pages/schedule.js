@@ -111,10 +111,9 @@ export default function SchedulePage() {
                         </div>
 
                         <div className="slider_text_mobile">
-                            <div className="container flex flex-wrap flex-column justify-center items-center ">
+                            <div className="container flex flex-wrap flex-column justify-center items-center text-center">
                                 <div className="position_relv text-center">
-                                    <h3>Event Schedule</h3>
-                                    <br />
+                                    <h3 className="md:mt-5">Event Schedule</h3>
                                     <h3>Aarohan 2024</h3>
                                     <br />
                                     <div
