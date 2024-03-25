@@ -205,7 +205,7 @@ export default function SchedulePage() {
                                 <div className="row">
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
-                                            <h3 style={{ color: "#eb591f" }}>
+                                            <h3 style={{ color: "rgb(30, 63, 140)" }}>
                                                 4 March, 2023
                                             </h3>
                                         </div>
@@ -245,7 +245,7 @@ export default function SchedulePage() {
                                 <div className="row">
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
-                                            <h3 style={{ color: "#eb591f" }}>
+                                            <h3 style={{ color: "rgb(30, 63, 140)" }}>
                                                 9 March, 2023
                                             </h3>
                                         </div>
@@ -278,7 +278,7 @@ export default function SchedulePage() {
                                 <div className="row">
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
-                                            <h3 style={{ color: "#eb591f" }}>
+                                            <h3 style={{ color: "rgb(30, 63, 140)" }}>
                                                 10 March, 2023
                                             </h3>
                                         </div>
@@ -335,7 +335,7 @@ export default function SchedulePage() {
                                 <div className="row">
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
-                                            <h3 style={{ color: "#eb591f" }}>
+                                            <h3 style={{ color: "rgb(30, 63, 140)" }}>
                                                 11 March, 2023
                                             </h3>
                                         </div>
@@ -409,7 +409,7 @@ export default function SchedulePage() {
                                 <div className="row">
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
-                                            <h3 style={{ color: "#eb591f" }}>
+                                            <h3 style={{ color: "rgb(30, 63, 140)" }}>
                                                 12 March, 2023
                                             </h3>
                                         </div>

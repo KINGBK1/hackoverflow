@@ -32,7 +32,7 @@ export default function IndexPage() {
                 <link
                     rel="shortcut icon"
                     type="image/x-icon"
-                    href="img/aarohan-logo.png"
+                    href="img/IMG-20240307-WA0009.jpg"
                 />
 
                 <link
@@ -731,7 +731,7 @@ export default function IndexPage() {
                                         className="date"
                                         style={{ color: "blue" }}
                                     >
-                                        <h3 style={{ color: "#eb591f" }}>
+                                        <h3 style={{ color: "#0e1973" }}>
                                             Hackathon Themes
                                         </h3>
                                     </div>
