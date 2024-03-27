@@ -7,13 +7,14 @@ export default function Sponsors() {
             <div className="container" style={{ marginTop: "40px" }}>
                 <div className="row">
                     <div className="col-xl-12">
-                        <div className="serction_title_large mb-16">
+                        <div className="serction_title_large mb-3 md:mb-4">
                             <h3>Sponsors</h3>
                         </div>
+                        <div  class="flex justify-center align-middle text-xl md:text-3xl mb-2 font-bold">To be released soon!!</div>
                     </div>
                 </div>
             </div>
-            <div
+            {/* <div
                 className="w-full pt-2 md:pt-6 md:pb-4 flex md:flex-row flex-col items-center md:justify-around"
                 style={{ marginTop: "30px", marginBottom: "20px" }}
             >
@@ -64,7 +65,7 @@ export default function Sponsors() {
                         />
                     </Link>
                 </div>
-            </div>
+            </div> */}
         </React.Fragment>
     );
 }

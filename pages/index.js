@@ -393,7 +393,9 @@ export default function IndexPage() {
                                     </a>
                                 </div>
                             </div> */}
-                            <div class="flex flex-col rounded-lg items-center justify-between w-72 border-4 border-white" style={{ outline: "1px solid rgba(54, 69, 79,0.2)" }}>
+
+                        
+                            {/* <div class="flex flex-col rounded-lg items-center justify-between w-72 border-4 border-white" style={{ outline: "1px solid rgba(54, 69, 79,0.2)" }}>
                                 <div class="rounded-lg bg-gray-800 text-white p-4 w-full text-center italic">
                                 "Code hard, dream big, hackathon strong."
                                 </div>
@@ -414,8 +416,7 @@ export default function IndexPage() {
                                         <div class="text-xl">
                                             Karthik
                                         </div>
-                                        {/* <div class="flex gap-1 rounded-2xl border-2 border-blue-800" style={{padding:"0 0.24rem 0 0.24rem"}}>
-                                           Follow */}
+                                        
                                             <a
                                                 rel="noopener noreferrer"
                                                 href="https://www.linkedin.com/in/vipul-tiwari-7277a2146/"
@@ -424,7 +425,7 @@ export default function IndexPage() {
                                             >
                                                 <img src="/img/linkedin.svg"></img>
                                             </a>
-                                        {/* </div> */}
+                                        
 
                                     </div>
                                     <div>
@@ -470,8 +471,7 @@ export default function IndexPage() {
                                         <div class="text-xl">
                                             Karthik
                                         </div>
-                                        {/* <div class="flex gap-1 rounded-2xl border-2 border-blue-800" style={{padding:"0 0.24rem 0 0.24rem"}}>
-                                           Follow */}
+                                       
                                             <a
                                                 rel="noopener noreferrer"
                                                 href="https://www.linkedin.com/in/vipul-tiwari-7277a2146/"
@@ -480,7 +480,7 @@ export default function IndexPage() {
                                             >
                                                 <img src="/img/linkedin.svg"></img>
                                             </a>
-                                        {/* </div> */}
+                                        
 
                                     </div>
                                     <div>
@@ -526,8 +526,7 @@ export default function IndexPage() {
                                         <div class="text-xl">
                                             Karthik
                                         </div>
-                                        {/* <div class="flex gap-1 rounded-2xl border-2 border-blue-800" style={{padding:"0 0.24rem 0 0.24rem"}}>
-                                           Follow */}
+                                        
                                             <a
                                                 rel="noopener noreferrer"
                                                 href="https://www.linkedin.com/in/vipul-tiwari-7277a2146/"
@@ -536,7 +535,7 @@ export default function IndexPage() {
                                             >
                                                 <img src="/img/linkedin.svg"></img>
                                             </a>
-                                        {/* </div> */}
+                                        
 
                                     </div>
                                     <div>
@@ -559,7 +558,7 @@ export default function IndexPage() {
 
                                 </div>
 
-                            </div>
+                            </div> */ } 
                             
 
                             {/* <div class="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100 mb-10 bg-purple-100 hover:bg-white hover:shadow-lg transition ">
@@ -590,6 +589,7 @@ export default function IndexPage() {
                                     </a>
                                 </div>
                             </div> */}
+                            <div class="flex justify-center align-middle text-4xl font-bold">To be released soon!!</div>
                         </div>
 
                         {/* <div className='row justify-center'>
@@ -886,7 +886,7 @@ export default function IndexPage() {
                     </div>
                 </div>
                 <Sponsors />
-                <div className="resister_book resister_bg_1">
+                {/* <div className="resister_book resister_bg_1">
                     <div className="container">
                         <div className="row">
                             <div className="col-xl-12">
@@ -1455,7 +1455,7 @@ export default function IndexPage() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <Footer />
             </div>
         </>
