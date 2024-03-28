@@ -80,7 +80,7 @@ export default function SchedulePage() {
                                                 <h3>Event Schedule</h3>
                                                 <br />
                                                 <a
-                                                    href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+6.0&dates=20240409/20240409"
+                                                    href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+7.0&dates=20240408/20240410"
                                                     className="boxed-btn-white"
                                                 >
                                                     Add to your Calendar
@@ -134,7 +134,7 @@ export default function SchedulePage() {
                                     Online
                                 </p>
                                 <p className="text-2xl font-bold text-white">
-                                    09th April, 2024
+                                    08th April, 2024
                                 </p>
                             </div>
                         </div>
@@ -206,7 +206,7 @@ export default function SchedulePage() {
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
                                             <h3 style={{ color: "rgb(30, 63, 140)" }}>
-                                                4 March, 2023
+                                                2 April, 2024
                                             </h3>
                                         </div>
                                     </div>
@@ -246,7 +246,7 @@ export default function SchedulePage() {
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
                                             <h3 style={{ color: "rgb(30, 63, 140)" }}>
-                                                9 March, 2023
+                                                7 April, 2024
                                             </h3>
                                         </div>
                                     </div>
@@ -266,7 +266,7 @@ export default function SchedulePage() {
                                                         Phase Ends
                                                     </span>
                                                     <div className="time">
-                                                        11:59 PM
+                                                        10:00 PM
                                                     </div>
                                                 </div>
                                             </div>
@@ -279,7 +279,7 @@ export default function SchedulePage() {
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
                                             <h3 style={{ color: "rgb(30, 63, 140)" }}>
-                                                10 March, 2023
+                                                8 April, 2024
                                             </h3>
                                         </div>
                                     </div>
@@ -299,7 +299,7 @@ export default function SchedulePage() {
                                                         Hackoverflow flags off!
                                                     </span>
                                                     <div className="time">
-                                                        12:00 AM
+                                                        10:00 AM
                                                     </div>
                                                 </div>
                                                 <p>Ready! Set! Go!</p>
@@ -318,7 +318,7 @@ export default function SchedulePage() {
                                                 <div className="heading d-flex justify-content-between align-items-center">
                                                     <span>Judges' Address</span>
                                                     <div className="time">
-                                                        12:00 PM to 1:00 PM
+                                                        10:00 AM to 12:00 AM
                                                     </div>
                                                 </div>
                                                 <p>
@@ -336,7 +336,7 @@ export default function SchedulePage() {
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
                                             <h3 style={{ color: "rgb(30, 63, 140)" }}>
-                                                11 March, 2023
+                                                9 April, 2024
                                             </h3>
                                         </div>
                                     </div>
@@ -356,7 +356,7 @@ export default function SchedulePage() {
                                                         Coding period ends
                                                     </span>
                                                     <div className="time">
-                                                        11:59 PM
+                                                        1:59 PM
                                                     </div>
                                                 </div>
                                                 <p>
@@ -410,7 +410,7 @@ export default function SchedulePage() {
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
                                             <h3 style={{ color: "rgb(30, 63, 140)" }}>
-                                                12 March, 2023
+                                                10 April, 2024
                                             </h3>
                                         </div>
                                     </div>
@@ -479,7 +479,7 @@ export default function SchedulePage() {
                                                         Results are Published
                                                     </span>
                                                     <div className="time">
-                                                        6:00 pm
+                                                        7:00 pm
                                                     </div>
                                                 </div>
                                                 <p>

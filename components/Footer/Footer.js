@@ -84,7 +84,7 @@ export default function Footer () {
             >
               <Link href=''>
                 <img
-                  src='img/aarohan-logo.png'
+                  src='img/IMG-20240307-WA0009.jpg'
                   style={{ width: '80px', height: '80px', cursor: 'pointer' }}
                 />
               </Link>

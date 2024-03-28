@@ -106,7 +106,7 @@ export default function IndexPage() {
                                                 <br />
                                                 <div className="relative ">
                                                     <a
-                                                        href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+7.0&dates=20240409/20240411"
+                                                        href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+7.0&dates=20240408/20240410"
                                                         className="boxed-btn-white"
                                                     >
                                                         Add to your Calendar
@@ -184,7 +184,7 @@ export default function IndexPage() {
                                     Online
                                 </p>
                                 <p className="text-2xl font-bold text-white">
-                                    9th April, 2024
+                                    8th April, 2024
                                 </p>
                             </div>
                         </div>
@@ -214,7 +214,7 @@ export default function IndexPage() {
                             </a> */}
                             <div>
                                 <a
-                                    href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+6.0&dates=20240409/20240411"
+                                    href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+7.0&dates=20240408/20240410"
                                     className="  boxed-btn-white md:my-2 sm:ml-3 block"
                                     id="register-2"
                                 >
