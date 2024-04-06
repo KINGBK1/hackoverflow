@@ -95,7 +95,7 @@ export default function SchedulePage() {
                       </a> */}
                                                 <div
                                                     className="apply-button ml-6"
-                                                    data-hackathon-slug="hackoverflow06"
+                                                    data-hackathon-slug="hackoverflow07"
                                                     data-button-theme="dark"
                                                     style={{
                                                         height: 44,
