@@ -122,7 +122,7 @@ export default function IndexPage() {
                       </a> */}
                                                 <div
                                                     className="apply-button"
-                                                    data-hackathon-slug="hackoverflow06"
+                                                    data-hackathon-slug="hackoverflow07"
                                                     data-button-theme="dark"
                                                     style={{
                                                         height: 44,
@@ -147,7 +147,7 @@ export default function IndexPage() {
 
                                     <div
                                         className="apply-button"
-                                        data-hackathon-slug="hackoverflow06"
+                                        data-hackathon-slug="hackoverflow07"
                                         data-button-theme="dark"
                                         style={{ height: 44, width: 300 }}
                                     />
