@@ -622,7 +622,7 @@ export default function IndexPage() {
                                         className="date"
                                         style={{ color: "blue" }}
                                     >
-                                        <h3 style={{ color: "#0e1973" }}>
+                                        <h3 style={{ color: "#00444C" }}>
                                             Hackathon Themes
                                         </h3>
                                     </div>
