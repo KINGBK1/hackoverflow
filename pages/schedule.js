@@ -80,7 +80,7 @@ export default function SchedulePage() {
                                                 <h3>Event Schedule</h3>
                                                 <br />
                                                 <a
-                                                    href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+7.0&dates=20240408/20240410"
+                                                    href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
                                                     className="boxed-btn-white"
                                                 >
                                                     Add to your Calendar
@@ -134,7 +134,7 @@ export default function SchedulePage() {
                                     Online
                                 </p>
                                 <p className="text-2xl font-bold text-white">
-                                    08th April, 2024
+                                    21st March, 2025
                                 </p>
                             </div>
                         </div>
@@ -186,7 +186,7 @@ export default function SchedulePage() {
                             </a> */}
                             <div>
                                 <a
-                                    href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+6.0&dates=20230310/20230312"
+                                    href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
                                     className="boxed-btn-white my-2 sm:ml-3 block"
                                     id="register-2"
                                 >

@@ -87,7 +87,7 @@ export default function Navbar() {
                                             <li>
                                                 <a
                                                     target="_blank"
-                                                    href="https://discord.com/invite/PdfbZwDnJ4"
+                                                    href="https://discord.com/invite/v9j8kd2Vz7"
                                                 >
                                                     Discord
                                                 </a>

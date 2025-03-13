@@ -99,14 +99,14 @@ export default function IndexPage() {
                                         <div className="col-xl-9">
                                             <div className="title_text ml-3">
                                                 <h3>
-                                                    HackOverflow 7.0
+                                                    HackOverflow 8.0
                                                     <br />
-                                                    Aarohan, 2024
+                                                    Aarohan, 2025
                                                 </h3>
                                                 <br />
                                                 <div className="relative ">
                                                     <a
-                                                        href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+7.0&dates=20240408/20240410"
+                                                        href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
                                                         className="boxed-btn-white"
                                                     >
                                                         Add to your Calendar
@@ -184,7 +184,7 @@ export default function IndexPage() {
                                     Online
                                 </p>
                                 <p className="text-2xl font-bold text-white">
-                                    8th April, 2024
+                                    21st March, 2025
                                 </p>
                             </div>
                         </div>
@@ -214,7 +214,7 @@ export default function IndexPage() {
                             </a> */}
                             <div>
                                 <a
-                                    href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+7.0&dates=20240408/20240410"
+                                    href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
                                     className="  boxed-btn-white md:my-2 sm:ml-3 block"
                                     id="register-2"
                                 >
@@ -248,13 +248,13 @@ export default function IndexPage() {
                                         <h3>
                                             The Biggest Technical <br />
                                             Fest of the <br />
-                                            Year 2024
+                                            Year 2025
                                         </h3>
                                     </div>
                                     <p>
                                         <br />
                                         <br />
-                                        Hackoverflow 7.0 is conducted by team
+                                        Hackoverflow 8.0 is conducted by team
                                         Aavishkar during Aarohan, the second
                                         largest techno-management of Eastern
                                         India!
