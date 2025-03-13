@@ -60,7 +60,7 @@ export default function Navbar() {
                                 <div className="logo-img">
                                     <a href="/" style={{ display: "flex" }}>
                                         <img
-                                            src="img/IMG-20240307-WA0009.jpg"
+                                            src="/img/IMG-20240307-WA0009.jpg"
                                             style={{
                                                 height: "50px",
                                                 width: "50px",
