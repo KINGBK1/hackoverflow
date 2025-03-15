@@ -1462,6 +1462,7 @@ background: linear-gradient(90deg, rgba(18,78,116,1) 0%, rgba(3,25,40,1) 20%, rg
 
 .mobile-timer p {
     font-size: 1.2em; 
+    margin-top: -10px;
 }
 
   .boxed-btn-white {
@@ -1473,7 +1474,7 @@ background: linear-gradient(90deg, rgba(18,78,116,1) 0%, rgba(3,25,40,1) 20%, rg
         color: black;
         text-decoration: none;
         border-radius: 5px;
-        margin-top: 10px;
+        margin-top: -5px;
   }
 
   .slider_area {
@@ -1513,8 +1514,18 @@ background: linear-gradient(90deg, rgba(18,78,116,1) 0%, rgba(3,25,40,1) 20%, rg
 @media (max-width: 767px) {
 
   /* line 138, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-  .slider_area .countdown_time {
+  /* .slider_area .countdown_time {
     text-align: left;
+  } */
+  .slider_area .countdown_time .single_countdown h3 {
+    font-size: 20px;
+    margin-bottom: -10px; 
+    margin-top: -30px;
+  }
+
+  .slider_area .countdown_time .single_countdown span {
+    font-size: 14px; 
+    
   }
 }
 
@@ -1538,7 +1549,8 @@ background: linear-gradient(90deg, rgba(18,78,116,1) 0%, rgba(3,25,40,1) 20%, rg
   /* line 150, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
   .slider_area .countdown_time .single_countdown {
     margin-right: 10px;
-    margin-top: 20px;
+    margin-top: 50px;
+    /* margin-top: 20px; */
   }
 }
 

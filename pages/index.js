@@ -181,10 +181,12 @@ export default function IndexPage() {
                             >
                                 <Timer />
                                 <div className="flex flex-col md:flex-row justify-between md:gap-4 md:mt-4">
+                                {/* <div className="flex flex-col md:flex-row justify-between gap-0 md:gap-4 md:mt-4"> */}
                                     <p className="text-2xl font-bold text-white">
                                         Online
                                     </p>
                                     <p className="text-2xl font-bold text-white">
+                                    {/* <p className="text-2xl font-bold text-white -mt-2"> */}
                                         21st March, 2025
                                     </p>
                                 </div>
@@ -291,7 +293,7 @@ export default function IndexPage() {
                             </div>
                         </div>
 
-                        {/* <h2 className="text-3xl">To be Announced...</h2> */}
+                        <h2 className="text-3xl">To be Announced...</h2>
 
                         <div className="flex flex-col md:flex-row justify-center gap-6 items-center">
                             {/* <div class="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100 mb-10 md:mr-10 bg-purple-100">
@@ -399,8 +401,8 @@ export default function IndexPage() {
                                 </div>
                             </div> */}
 
-
-                            <div class="flex flex-col rounded-lg items-center justify-between w-72 border-4 border-white" style={{ outline: "1px solid rgba(54, 69, 79,0.2)" }}>
+                                {/* Judges */}
+                            {/* <div class="flex flex-col rounded-lg items-center justify-between w-72 border-4 border-white" style={{ outline: "1px solid rgba(54, 69, 79,0.2)" }}>
                                 <div class="rounded-lg bg-gray-800 text-white p-4 w-full text-center italic">
                                     "Code hard, dream big, hackathon strong."
                                 </div>
@@ -452,7 +454,7 @@ export default function IndexPage() {
 
                                 </div>
 
-                            </div>
+                            </div> */}
 
 
 

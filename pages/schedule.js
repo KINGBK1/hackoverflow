@@ -125,41 +125,21 @@ export default function SchedulePage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="mobile-timer flex flex-col items-center md:items-start md:px-6 lg:px-52 text-center md:text-left md:my-8"
+                        <div className="monocolor-rectangle">
+                            <div className="mobile-timer flex flex-col items-center md:items-start md:px-6 lg:px-52 text-center md:text-left md:my-8"
 
-                        >
-                            <Timer />
-                            <div className="flex flex-col md:flex-row justify-between md:gap-4 md:mt-4">
-                                <p className="text-2xl font-bold text-white">
-                                    Online
-                                </p>
-                                <p className="text-2xl font-bold text-white">
-                                    21st March, 2025
-                                </p>
-                            </div>
-                        </div>
-                        {/* <div className='countDOwn_area'>
-                            <div className='container'>
-                                <div className='row align-items-center justify-center'>
-                                    <div className='col-xl-4 col-md-6 col-lg-6 flex flex-wrap justify-center'>
-                                        <div className='single_date'>
-                                            <i className='ti-location-pin' />
-                                            <span>Online</span>
-                                        </div>
-                                    </div>
-                                    <div className='col-xl-4 col-md-6 col-lg-6 flex flex-wrap justify-center'>
-                                        <div className='single_date'>
-                                            <i className='ti-alarm-clock' />
-                                            <span>9th March, 2023</span>
-                                        </div>
-                                    </div>
-                                    <div className='col-xl-4 col-md-12 col-lg-12 flex flex-wrap justify-center'>
-                                        <Timer />
-                                    </div>
+                            >
+                                <Timer />
+                                <div className="flex flex-col md:flex-row justify-between md:gap-4 md:mt-4">
+                                    <p className="text-2xl font-bold text-white">
+                                        Online
+                                    </p>
+                                    <p className="text-2xl font-bold text-white">
+                                        21st March, 2025
+                                    </p>
                                 </div>
                             </div>
-                        </div> */}
-                        <div className="p-6 pt-2"
+                            <div className="p-6 pt-2"
                             style={{
                                 width: "100%",
                                 height: "100px",
@@ -195,6 +175,30 @@ export default function SchedulePage() {
                             </div>
                         </div>
                     </div>
+                        </div>
+
+                        {/* <div className='countDOwn_area'>
+                            <div className='container'>
+                                <div className='row align-items-center justify-center'>
+                                    <div className='col-xl-4 col-md-6 col-lg-6 flex flex-wrap justify-center'>
+                                        <div className='single_date'>
+                                            <i className='ti-location-pin' />
+                                            <span>Online</span>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-4 col-md-6 col-lg-6 flex flex-wrap justify-center'>
+                                        <div className='single_date'>
+                                            <i className='ti-alarm-clock' />
+                                            <span>9th March, 2023</span>
+                                        </div>
+                                    </div>
+                                    <div className='col-xl-4 col-md-12 col-lg-12 flex flex-wrap justify-center'>
+                                        <Timer />
+                                    </div>
+                                </div>
+                            </div>
+                        </div> */}
+                        
 
                     <div className="event_area plus_padding">
                         <h1 className="vr_text d-none d-lg-block">
