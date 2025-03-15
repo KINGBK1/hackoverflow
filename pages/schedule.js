@@ -21,7 +21,7 @@ export default function SchedulePage() {
             <Head>
                 <meta charSet="utf-8" />
                 <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-                <title>Hackoverflow 7.0</title>
+                <title>Hackoverflow 8.0</title>
                 <meta name="description" content />
                 <meta
                     name="viewport"
@@ -95,7 +95,7 @@ export default function SchedulePage() {
                       </a> */}
                                                 <div
                                                     className="apply-button ml-6"
-                                                    data-hackathon-slug="hackoverflow07"
+                                                    data-hackathon-slug="hackoverflow08"
                                                     data-button-theme="dark"
                                                     style={{
                                                         height: 44,

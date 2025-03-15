@@ -23,7 +23,7 @@ export default function IndexPage() {
             <Head>
                 <meta charSet="utf-8" />
                 <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-                <title>Hackoverflow 7.0</title>
+                <title>Hackoverflow 8.0</title>
                 <meta name="description" content />
                 <meta
                     name="viewport"
@@ -122,7 +122,7 @@ export default function IndexPage() {
                       </a> */}
                                                 <div
                                                     className="apply-button"
-                                                    data-hackathon-slug="hackoverflow07"
+                                                    data-hackathon-slug="hackoverflow08"
                                                     data-button-theme="dark"
                                                     style={{
                                                         height: 44,
@@ -140,14 +140,14 @@ export default function IndexPage() {
                             <div className="container flex flex-wrap flex-column justify-center">
                                 <div className="position_relv flex flex-col gap-2 items-center text-center">
                                     <h3 className="md:mt-5">
-                                        Hackoverflow 7.0
+                                        Hackoverflow 8.0
                                     </h3>
 
-                                    <h3>Aarohan 2024</h3>
+                                    <h3>Aarohan 2025</h3>
 
                                     <div
                                         className="apply-button"
-                                        data-hackathon-slug="hackoverflow07"
+                                        data-hackathon-slug="hackoverflow08"
                                         data-button-theme="dark"
                                         style={{ height: 44, width: 300 }}
                                     />
@@ -155,49 +155,63 @@ export default function IndexPage() {
                             </div>
                         </div>
                         {/* <div className='countDOwn_area'>
-            <div className='container'>
-              <div className='row align-items-center justify-center'>
-                <div className='col-xl-4 col-md-6 col-lg-6 flex flex-wrap justify-center'>
-                  <div className='single_date'>
-                    <i className='ti-location-pin' />
-                    <span>Online</span>
-                  </div>
-                </div>
-                <div className='col-xl-4 col-md-6 col-lg-6 flex flex-wrap justify-center'>
-                  <div className='single_date'>
-                    <i className='ti-alarm-clock' />
-                    <span>4th March, 2022</span>
-                  </div>
-                </div>
-                <div className='col-xl-4 col-md-12 col-lg-12 flex flex-wrap justify-center'>
-                  <Timer />
-                </div>
-              </div>
-            </div>
-          </div> */}
-                        <div className="mobile-timer flex flex-col items-center md:items-start md:px-6 lg:px-52 text-center md:text-left md:my-8"
+                        <div className='container'>
+                          <div className='row align-items-center justify-center'>
+                           <div className='col-xl-4 col-md-6 col-lg-6 flex flex-wrap justify-center'>
+                             <div className='single_date'>
+                          <i className='ti-location-pin' />
+                               <span>Online</span>
+                        </div>
+                       </div>
+                        <div className='col-xl-4 col-md-6 col-lg-6 flex flex-wrap justify-center'>
+                          <div className='single_date'>
+                            <i className='ti-alarm-clock' />
+                        <span>4th March, 2022</span>
+                      </div>
+                        </div>
+                           <div className='col-xl-4 col-md-12 col-lg-12 flex flex-wrap justify-center'>
+                         <Timer />
+                       </div>
+                      </div>
+                        </div>
+                        </div> */}
+                        <div className="monocolor-rectangle">
+                            <div className="mobile-timer flex flex-col items-center md:items-start md:px-6 lg:px-52 text-center md:text-left md:my-8"
 
-                        >
-                            <Timer />
-                            <div className="flex flex-col md:flex-row justify-between md:gap-4 md:mt-4">
-                                <p className="text-2xl font-bold text-white">
-                                    Online
-                                </p>
-                                <p className="text-2xl font-bold text-white">
-                                    21st March, 2025
-                                </p>
+                            >
+                                <Timer />
+                                <div className="flex flex-col md:flex-row justify-between md:gap-4 md:mt-4">
+                                    <p className="text-2xl font-bold text-white">
+                                        Online
+                                    </p>
+                                    <p className="text-2xl font-bold text-white">
+                                        21st March, 2025
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="p-6 pt-2"
+                                style={{
+                                    width: "100%",
+                                    height: "100px",
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    flexWrap: "wrap",
+                                }}
+                            >
+                                <div>
+                                <a
+                                    href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
+                                    className="  boxed-btn-white md:my-2 sm:ml-3 block"
+                                    id="register-2"
+                                >
+                                    Add to your Calendar
+                                </a>
+                                </div>
                             </div>
                         </div>
-                        <div className="p-6 pt-2"
-                            style={{
-                                width: "100%",
-                                height: "100px",
-                                display: "flex",
-                                justifyContent: "center",
-                                flexWrap: "wrap",
-                            }}
-                        >
-                            {/* <a
+
+
+                        {/* <a
                                 className="boxed btn-white"
                                 href="https://discord.gg/aUpg65Er"
                                 id="register-2"
@@ -212,16 +226,7 @@ export default function IndexPage() {
                             >
                                 Schedule
                             </a> */}
-                            <div>
-                                <a
-                                    href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
-                                    className="  boxed-btn-white md:my-2 sm:ml-3 block"
-                                    id="register-2"
-                                >
-                                    Add to your Calendar
-                                </a>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
 
@@ -394,10 +399,10 @@ export default function IndexPage() {
                                 </div>
                             </div> */}
 
-                        
-                             <div class="flex flex-col rounded-lg items-center justify-between w-72 border-4 border-white" style={{ outline: "1px solid rgba(54, 69, 79,0.2)" }}>
+
+                            <div class="flex flex-col rounded-lg items-center justify-between w-72 border-4 border-white" style={{ outline: "1px solid rgba(54, 69, 79,0.2)" }}>
                                 <div class="rounded-lg bg-gray-800 text-white p-4 w-full text-center italic">
-                                "Code hard, dream big, hackathon strong."
+                                    "Code hard, dream big, hackathon strong."
                                 </div>
                                 <div class="rounded-full self-start  " style={{
                                     marginTop: "-2rem", marginLeft: "1rem",
@@ -411,37 +416,37 @@ export default function IndexPage() {
                                     />
 
                                 </div>
-                                <div class="flex flex-col gap-2 justify-start" style={{padding: "1rem" }}>
+                                <div class="flex flex-col gap-2 justify-start" style={{ padding: "1rem" }}>
                                     <div class="flex justify-between items-center">
                                         <div class="text-xl">
                                             Devendra Dev
                                         </div>
-                                        
-                                            <a
-                                                rel="noopener noreferrer"
-                                                href="https://www.linkedin.com/in/devendra-parihar/"
-                                                aria-label="GitHub"
-                                                class="rounded-md dark:text-gray-100 hover:dark:text-violet-400"
-                                            >
-                                                <img src="/img/linkedin.svg"></img>
-                                            </a>
-                                        
+
+                                        <a
+                                            rel="noopener noreferrer"
+                                            href="https://www.linkedin.com/in/devendra-parihar/"
+                                            aria-label="GitHub"
+                                            class="rounded-md dark:text-gray-100 hover:dark:text-violet-400"
+                                        >
+                                            <img src="/img/linkedin.svg"></img>
+                                        </a>
+
 
                                     </div>
                                     <div>
                                         <p class="text-xs sm:text-base dark:text-gray-400">
-                                        Lead Data Scientist at KainSkep,3x Kaggle Expert and Microsoft Certified AI Engineer
+                                            Lead Data Scientist at KainSkep,3x Kaggle Expert and Microsoft Certified AI Engineer
                                         </p>
 
                                     </div>
                                     <div>
                                         <h6 class="">
-                                           <span class="font-bold">500+</span>  <span class="text-gray-500">Connections</span>
+                                            <span class="font-bold">500+</span>  <span class="text-gray-500">Connections</span>
                                         </h6>
                                     </div>
                                     <div class="flex gap-2">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(54, 69, 79,0.4)"><path d="M12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364L12 23.7279ZM16.9497 15.9497C19.6834 13.2161 19.6834 8.78392 16.9497 6.05025C14.2161 3.31658 9.78392 3.31658 7.05025 6.05025C4.31658 8.78392 4.31658 13.2161 7.05025 15.9497L12 20.8995L16.9497 15.9497ZM12 13C10.8954 13 10 12.1046 10 11C10 9.89543 10.8954 9 12 9C13.1046 9 14 9.89543 14 11C14 12.1046 13.1046 13 12 13Z"></path></svg>
-                                    <p class="">India</p>
+                                        <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(54, 69, 79,0.4)"><path d="M12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364L12 23.7279ZM16.9497 15.9497C19.6834 13.2161 19.6834 8.78392 16.9497 6.05025C14.2161 3.31658 9.78392 3.31658 7.05025 6.05025C4.31658 8.78392 4.31658 13.2161 7.05025 15.9497L12 20.8995L16.9497 15.9497ZM12 13C10.8954 13 10 12.1046 10 11C10 9.89543 10.8954 9 12 9C13.1046 9 14 9.89543 14 11C14 12.1046 13.1046 13 12 13Z"></path></svg>
+                                        <p class="">India</p>
                                     </div>
 
 
@@ -449,8 +454,8 @@ export default function IndexPage() {
 
                             </div>
 
-                            
-                            
+
+
 
                             {/* <div class="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100 mb-10 bg-purple-100 hover:bg-white hover:shadow-lg transition ">
                                 <img
