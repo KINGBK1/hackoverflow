@@ -210,7 +210,7 @@ export default function SchedulePage() {
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
                                             <h3 style={{ color: "rgb(30, 63, 140)" }}>
-                                                2 April, 2024
+                                                17 March, 2025
                                             </h3>
                                         </div>
                                     </div>
@@ -231,7 +231,7 @@ export default function SchedulePage() {
                                                         Phase Starts
                                                     </span>
                                                     <div className="time">
-                                                        12:00 AM
+                                                        00:00 AM
                                                     </div>
                                                 </div>
                                                 <p>
@@ -250,7 +250,7 @@ export default function SchedulePage() {
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
                                             <h3 style={{ color: "rgb(30, 63, 140)" }}>
-                                                7 April, 2024
+                                                20 March, 2025
                                             </h3>
                                         </div>
                                     </div>
@@ -270,7 +270,7 @@ export default function SchedulePage() {
                                                         Phase Ends
                                                     </span>
                                                     <div className="time">
-                                                        10:00 PM
+                                                        11:59 PM
                                                     </div>
                                                 </div>
                                             </div>
@@ -283,7 +283,7 @@ export default function SchedulePage() {
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
                                             <h3 style={{ color: "rgb(30, 63, 140)" }}>
-                                                8 April, 2024
+                                                21 March, 2025
                                             </h3>
                                         </div>
                                     </div>
@@ -340,7 +340,7 @@ export default function SchedulePage() {
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
                                             <h3 style={{ color: "rgb(30, 63, 140)" }}>
-                                                9 April, 2024
+                                                24 March, 2025
                                             </h3>
                                         </div>
                                     </div>
@@ -360,7 +360,7 @@ export default function SchedulePage() {
                                                         Coding period ends
                                                     </span>
                                                     <div className="time">
-                                                        1:59 PM
+                                                        2:00 AM
                                                     </div>
                                                 </div>
                                                 <p>
@@ -396,7 +396,7 @@ export default function SchedulePage() {
                                                 <div className="heading d-flex justify-content-between align-items-center">
                                                     <span>Judges' Address</span>
                                                     <div className="time">
-                                                        12:00 PM to 12:30 PM
+                                                        4:00 PM to 5:00 PM
                                                     </div>
                                                 </div>
                                                 <p>
@@ -414,7 +414,7 @@ export default function SchedulePage() {
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
                                             <h3 style={{ color: "rgb(30, 63, 140)" }}>
-                                                10 April, 2024
+                                                24 March, 2025
                                             </h3>
                                         </div>
                                     </div>
@@ -483,7 +483,7 @@ export default function SchedulePage() {
                                                         Results are Published
                                                     </span>
                                                     <div className="time">
-                                                        7:00 pm
+                                                        5:00 pm
                                                     </div>
                                                 </div>
                                                 <p>

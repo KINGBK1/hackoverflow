@@ -13,6 +13,14 @@ export default function IndexPage() {
         script.src = "https://apply.devfolio.co/v2/sdk.js";
         script.async = true;
         script.defer = true;
+
+        script.onload = () => {
+            console.log("Devfolio SDK loaded");
+            if (window.Devfolio) {
+                window.Devfolio.setup(); // Ensure it initializes after loading
+            }
+        };
+    
         document.body.appendChild(script);
         return () => {
             document.body.removeChild(script);
