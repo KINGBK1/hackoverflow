@@ -212,7 +212,7 @@ export default function IndexPage() {
                                     </p>
                                     <p className="text-2xl font-bold text-white">
                                         {/* <p className="text-2xl font-bold text-white -mt-2"> */}
-                                        21st March, 2025
+                                        20th March, 2025
                                     </p>
                                 </div>
                             </div>

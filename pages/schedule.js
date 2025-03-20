@@ -153,7 +153,7 @@ export default function SchedulePage() {
                                         Online
                                     </p>
                                     <p className="text-2xl font-bold text-white">
-                                        21st March, 2025
+                                        20st March, 2025
                                     </p>
                                 </div>
                             </div>
@@ -228,7 +228,7 @@ export default function SchedulePage() {
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
                                             <h3 style={{ color: "rgb(30, 63, 140)" }}>
-                                                17 March, 2025
+                                                20 March, 2025
                                             </h3>
                                         </div>
                                     </div>
@@ -249,7 +249,7 @@ export default function SchedulePage() {
                                                         Phase Starts
                                                     </span>
                                                     <div className="time">
-                                                        00:00 AM
+                                                        8:00 PM
                                                     </div>
                                                 </div>
                                                 <p>
@@ -268,7 +268,7 @@ export default function SchedulePage() {
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
                                             <h3 style={{ color: "rgb(30, 63, 140)" }}>
-                                                20 March, 2025
+                                                21 March, 2025
                                             </h3>
                                         </div>
                                     </div>
@@ -288,7 +288,7 @@ export default function SchedulePage() {
                                                         Phase Ends
                                                     </span>
                                                     <div className="time">
-                                                        11:59 PM
+                                                        6:00 PM
                                                     </div>
                                                 </div>
                                             </div>
@@ -301,7 +301,7 @@ export default function SchedulePage() {
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
                                             <h3 style={{ color: "rgb(30, 63, 140)" }}>
-                                                21 March, 2025
+                                                22 March, 2025
                                             </h3>
                                         </div>
                                     </div>
@@ -321,7 +321,7 @@ export default function SchedulePage() {
                                                         Hackoverflow flags off!
                                                     </span>
                                                     <div className="time">
-                                                        10:00 AM
+                                                        00:00 AM
                                                     </div>
                                                 </div>
                                                 <p>Ready! Set! Go!</p>
@@ -378,7 +378,7 @@ export default function SchedulePage() {
                                                         Coding period ends
                                                     </span>
                                                     <div className="time">
-                                                        12:00 PM
+                                                        1:00 PM
                                                     </div>
                                                 </div>
                                                 <p>
