@@ -318,7 +318,7 @@ export default function IndexPage() {
                             </div>
                         </div>
 
-                        <h2 className="text-3xl">To be Announced...</h2>
+                        {/* <h2 className="text-3xl">To be Announced...</h2> */}
 
                         <div className="flex flex-col md:flex-row justify-center gap-6 items-center">
                             {/* <div class="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100 mb-10 md:mr-10 bg-purple-100">
@@ -427,9 +427,9 @@ export default function IndexPage() {
                             </div> */}
 
                             {/* Judges */}
-                            {/* <div class="flex flex-col rounded-lg items-center justify-between w-72 border-4 border-white" style={{ outline: "1px solid rgba(54, 69, 79,0.2)" }}>
+                            <div class="flex flex-col rounded-lg items-center justify-between w-72 border-4 border-white" style={{ outline: "1px solid rgba(54, 69, 79,0.2)" }}>
                                 <div class="rounded-lg bg-gray-800 text-white p-4 w-full text-center italic">
-                                    "Code hard, dream big, hackathon strong."
+                                    
                                 </div>
                                 <div class="rounded-full self-start  " style={{
                                     marginTop: "-2rem", marginLeft: "1rem",
@@ -437,8 +437,8 @@ export default function IndexPage() {
 
                                 }}>
                                     <img
-                                        src="/img/speakers/judge2024.jpeg"
-                                        alt="Devendra Dev"
+                                        src="/img/speakers/judge2025.jpeg"
+                                        alt="Veer Pratap Singh"
                                         class="w-20 h-20 mx-auto rounded-full dark:bg-gray-500 aspect-square border-white"
                                     />
 
@@ -446,12 +446,12 @@ export default function IndexPage() {
                                 <div class="flex flex-col gap-2 justify-start" style={{ padding: "1rem" }}>
                                     <div class="flex justify-between items-center">
                                         <div class="text-xl">
-                                            Devendra Dev
+                                        Veer Pratap Singh
                                         </div>
 
                                         <a
                                             rel="noopener noreferrer"
-                                            href="https://www.linkedin.com/in/devendra-parihar/"
+                                            href="https://www.linkedin.com/in/veer-pratap-singh/"
                                             aria-label="GitHub"
                                             class="rounded-md dark:text-gray-100 hover:dark:text-violet-400"
                                         >
@@ -462,7 +462,7 @@ export default function IndexPage() {
                                     </div>
                                     <div>
                                         <p class="text-xs sm:text-base dark:text-gray-400">
-                                            Lead Data Scientist at KainSkep,3x Kaggle Expert and Microsoft Certified AI Engineer
+                                        Senior Software Developer at Antier Solutions; Tech Lead; Technical Speaker
                                         </p>
 
                                     </div>
@@ -479,7 +479,7 @@ export default function IndexPage() {
 
                                 </div>
 
-                            </div> */}
+                            </div>
 
 
 
