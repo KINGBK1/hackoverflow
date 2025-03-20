@@ -20,13 +20,7 @@ export default function Sponsors() {
           style={{ marginTop: "30px", marginBottom: "20px" }}
         >
           <div className="p-3 mb-10">
-            <Link href="https://devfolio.co/">
-              <img
-                alt="DEVFOLIO LOGO"
-                src="/Devfolio.png"
-                className="h-10 md:h-24"
-              />
-            </Link>
+            
           </div>
           <div className="p-1 mb-10">
             <Link href="https://polygon.technology/">

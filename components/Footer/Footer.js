@@ -62,7 +62,7 @@ export default function Footer () {
               <div className='footer_widget'>
                 <h3 className='footer_title'>Venue</h3>
                 <p>
-                  Online (Discord, DevFolio) <br /> National Institute of
+                  Online (Discord) <br /> National Institute of
                   Technology, Durgapur
                 </p>
               </div>

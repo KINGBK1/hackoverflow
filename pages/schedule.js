@@ -8,7 +8,7 @@ import Sponsors from "../components/sponsors";
 export default function SchedulePage() {
     useEffect(() => {
         const script = document.createElement("script");
-        script.src = "https://apply.devfolio.co/v2/sdk.js";
+        // script.src = "https://apply.devfolio.co/v2/sdk.js";
         script.async = true;
         script.defer = true;
         document.body.appendChild(script);
@@ -79,12 +79,20 @@ export default function SchedulePage() {
                                             <div className="title_text ml-3">
                                                 <h3>Event Schedule</h3>
                                                 <br />
-                                                <a
-                                                    href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
-                                                    className="boxed-btn-white"
-                                                >
-                                                    Add to your Calendar
-                                                </a>
+                                                <div className="flex gap-4">
+                                                    <a
+                                                        href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
+                                                        className="boxed-btn-white"
+                                                    >
+                                                        Add to your Calendar
+                                                    </a>
+                                                    <a
+                                                        href="https://unstop.com/p/hackoverflow-80-gnulinux-users-group-nit-durgapur-1437266"
+                                                        className="boxed-btn-white"
+                                                    >
+                                                        Apply
+                                                    </a>
+                                                </div>
                                                 <br />
                                                 <br />
                                                 {/* <a
@@ -116,12 +124,22 @@ export default function SchedulePage() {
                                     <h3 className="md:mt-5">Event Schedule</h3>
                                     <h3>Aarohan 2024</h3>
                                     <br />
-                                    <div
+                                    <div className="relative">
+
+                                        <a
+                                            href="https://unstop.com/p/hackoverflow-80-gnulinux-users-group-nit-durgapur-1437266"
+                                            className="boxed-btn-white"
+                                        >
+                                            Apply
+                                        </a>
+                                    </div>
+                                    
+                                    {/* <div
                                         className="apply-button"
                                         data-hackathon-slug="hackoverflow08"
                                         data-button-theme="dark"
                                         style={{ height: 44, width: 312 }}
-                                    />
+                                    /> */}
                                 </div>
                             </div>
                         </div>
@@ -140,16 +158,16 @@ export default function SchedulePage() {
                                 </div>
                             </div>
                             <div className="p-6 pt-2"
-                            style={{
-                                width: "100%",
-                                height: "100px",
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                flexWrap: "wrap",
-                            }}
-                        >
-                            {/* <a
+                                style={{
+                                    width: "100%",
+                                    height: "100px",
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    flexWrap: "wrap",
+                                }}
+                            >
+                                {/* <a
                                 className="boxed-btn-white"
                                 href="https://discord.gg/dUe9m53m"
                                 id="register-2"
@@ -157,27 +175,27 @@ export default function SchedulePage() {
                                 Join Discord
                             </a>
                             &nbsp; &nbsp; &nbsp; */}
-                            {/* <a
+                                {/* <a
                                 className="boxed-btn-white"
                                 href="/schedule"
                                 id="register-2"
                             >
                                 Schedule
                             </a> */}
-                            <div>
-                                <a
-                                    href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
-                                    className="boxed-btn-white my-2 sm:ml-3 block"
-                                    id="register-2"
-                                >
-                                    Add to your Calendar
-                                </a>
+                                <div>
+                                    <a
+                                        href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
+                                        className="boxed-btn-white my-2 sm:ml-3 block"
+                                        id="register-2"
+                                    >
+                                        Add to your Calendar
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                        </div>
 
-                        {/* <div className='countDOwn_area'>
+                    {/* <div className='countDOwn_area'>
                             <div className='container'>
                                 <div className='row align-items-center justify-center'>
                                     <div className='col-xl-4 col-md-6 col-lg-6 flex flex-wrap justify-center'>
@@ -198,7 +216,7 @@ export default function SchedulePage() {
                                 </div>
                             </div>
                         </div> */}
-                        
+
 
                     <div className="event_area plus_padding">
                         <h1 className="vr_text d-none d-lg-block">
@@ -340,7 +358,7 @@ export default function SchedulePage() {
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
                                             <h3 style={{ color: "rgb(30, 63, 140)" }}>
-                                                24 March, 2025
+                                                23 March, 2025
                                             </h3>
                                         </div>
                                     </div>
@@ -360,7 +378,7 @@ export default function SchedulePage() {
                                                         Coding period ends
                                                     </span>
                                                     <div className="time">
-                                                        2:00 AM
+                                                        12:00 PM
                                                     </div>
                                                 </div>
                                                 <p>
@@ -414,7 +432,7 @@ export default function SchedulePage() {
                                     <div className="col-xl-3 col-lg-3">
                                         <div className="date">
                                             <h3 style={{ color: "rgb(30, 63, 140)" }}>
-                                                24 March, 2025
+                                                23 March, 2025
                                             </h3>
                                         </div>
                                     </div>
@@ -434,7 +452,7 @@ export default function SchedulePage() {
                                                         Evaluation Starts
                                                     </span>
                                                     <div className="time">
-                                                        9:00 am
+                                                        2:00 pm
                                                     </div>
                                                 </div>
                                                 <p>
@@ -459,7 +477,7 @@ export default function SchedulePage() {
                                                         Evaluation Completes
                                                     </span>
                                                     <div className="time">
-                                                        1:00 pm
+                                                        4:00 pm
                                                     </div>
                                                 </div>
                                                 <p>
@@ -518,7 +536,7 @@ export default function SchedulePage() {
 </div>
     </div>
   </div> */}
-                    <Sponsors />
+                    {/* <Sponsors /> */}
 
                     <Footer />
                 </div>

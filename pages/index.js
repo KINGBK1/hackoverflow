@@ -10,17 +10,17 @@ import { BorderAll } from "@material-ui/icons";
 export default function IndexPage() {
     useEffect(() => {
         const script = document.createElement("script");
-        script.src = "https://apply.devfolio.co/v2/sdk.js";
+        //script.src = "https://apply.devfolio.co/v2/sdk.js";
         script.async = true;
         script.defer = true;
 
-        script.onload = () => {
-            console.log("Devfolio SDK loaded");
-            if (window.Devfolio) {
-                window.Devfolio.setup(); // Ensure it initializes after loading
-            }
-        };
-    
+        // script.onload = () => {
+        //     console.log("Devfolio SDK loaded");
+        //     if (window.Devfolio) {
+        //         window.Devfolio.setup(); // Ensure it initializes after loading
+        //     }
+        // };
+
         document.body.appendChild(script);
         return () => {
             document.body.removeChild(script);
@@ -112,23 +112,29 @@ export default function IndexPage() {
                                                     Aarohan, 2025
                                                 </h3>
                                                 <br />
-                                                <div className="relative ">
+                                                <div className="relative flex gap-4">
                                                     <a
                                                         href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
                                                         className="boxed-btn-white"
                                                     >
                                                         Add to your Calendar
                                                     </a>
+                                                    <a
+                                                        href="https://unstop.com/p/hackoverflow-80-gnulinux-users-group-nit-durgapur-1437266"
+                                                        className="boxed-btn-white"
+                                                    >
+                                                        Apply
+                                                    </a>
                                                 </div>
                                                 <br />
                                                 <br />
                                                 {/* <a
-                        className="boxed-btn-white"
-                        id="register-2"
-                      >
-                        Register
-                      </a> */}
-                                                <div
+                                                 className="boxed-btn-white"
+                                                  id="register-2"
+                                                                   >
+                                                    Register
+                                                     </a> */}
+                                                {/* <div
                                                     className="apply-button"
                                                     data-hackathon-slug="hackoverflow08"
                                                     data-button-theme="dark"
@@ -136,7 +142,7 @@ export default function IndexPage() {
                                                         height: 44,
                                                         width: 312,
                                                     }}
-                                                />
+                                                /> */}
                                             </div>
                                         </div>
                                     </div>
@@ -153,12 +159,23 @@ export default function IndexPage() {
 
                                     <h3>Aarohan 2025</h3>
 
-                                    <div
-                                        className="apply-button"
-                                        data-hackathon-slug="hackoverflow08"
-                                        data-button-theme="dark"
+                                    <div className="relative">
+
+                                        <a
+                                            href="https://unstop.com/p/hackoverflow-80-gnulinux-users-group-nit-durgapur-1437266"
+                                            className="boxed-btn-white"
+                                        >
+                                            Apply
+                                        </a>
+                                    </div>
+                                    {/* <div
+                                        // className="apply-button"
+                                        // data-hackathon-slug="hackoverflow08"
+                                        // data-button-theme="dark"
+
                                         style={{ height: 44, width: 300 }}
-                                    />
+                                    /> */}
+
                                 </div>
                             </div>
                         </div>
@@ -189,12 +206,12 @@ export default function IndexPage() {
                             >
                                 <Timer />
                                 <div className="flex flex-col md:flex-row justify-between md:gap-4 md:mt-4">
-                                {/* <div className="flex flex-col md:flex-row justify-between gap-0 md:gap-4 md:mt-4"> */}
+                                    {/* <div className="flex flex-col md:flex-row justify-between gap-0 md:gap-4 md:mt-4"> */}
                                     <p className="text-2xl font-bold text-white">
                                         Online
                                     </p>
                                     <p className="text-2xl font-bold text-white">
-                                    {/* <p className="text-2xl font-bold text-white -mt-2"> */}
+                                        {/* <p className="text-2xl font-bold text-white -mt-2"> */}
                                         21st March, 2025
                                     </p>
                                 </div>
@@ -209,13 +226,13 @@ export default function IndexPage() {
                                 }}
                             >
                                 <div>
-                                <a
-                                    href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
-                                    className="  boxed-btn-white md:my-2 sm:ml-3 block"
-                                    id="register-2"
-                                >
-                                    Add to your Calendar
-                                </a>
+                                    <a
+                                        href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
+                                        className="  boxed-btn-white md:my-2 sm:ml-3 block"
+                                        id="register-2"
+                                    >
+                                        Add to your Calendar
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -409,7 +426,7 @@ export default function IndexPage() {
                                 </div>
                             </div> */}
 
-                                {/* Judges */}
+                            {/* Judges */}
                             {/* <div class="flex flex-col rounded-lg items-center justify-between w-72 border-4 border-white" style={{ outline: "1px solid rgba(54, 69, 79,0.2)" }}>
                                 <div class="rounded-lg bg-gray-800 text-white p-4 w-full text-center italic">
                                     "Code hard, dream big, hackathon strong."
@@ -791,7 +808,7 @@ export default function IndexPage() {
                         </div>
                     </div>
                 </div>
-                <Sponsors />
+                {/* <Sponsors /> */}
                 {/* <div className="resister_book resister_bg_1">
                     <div className="container">
                         <div className="row">
