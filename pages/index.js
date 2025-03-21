@@ -480,6 +480,59 @@ export default function IndexPage() {
                                 </div>
 
                             </div>
+                            <div class="flex flex-col rounded-lg items-center justify-between w-72 border-4 border-white" style={{ outline: "1px solid rgba(54, 69, 79,0.2)" }}>
+                                <div class="rounded-lg bg-gray-800 text-white p-4 w-full text-center italic">
+                                    
+                                </div>
+                                <div class="rounded-full self-start  " style={{
+                                    marginTop: "-2rem", marginLeft: "1rem",
+                                    border: "4px solid white",
+
+                                }}>
+                                    <img
+                                        src="/img/speakers/judge2025_1.jpeg"
+                                        alt="Veer Pratap Singh"
+                                        class="w-20 h-20 mx-auto rounded-full dark:bg-gray-500 aspect-square border-white"
+                                    />
+
+                                </div>
+                                <div class="flex flex-col gap-2 justify-start" style={{ padding: "1rem" }}>
+                                    <div class="flex justify-between items-center">
+                                        <div class="text-xl">
+                                        Harshavardhan Bajoria
+                                        </div>
+
+                                        <a
+                                            rel="noopener noreferrer"
+                                            href="https://www.linkedin.com/in/harshavardhan-bajoria?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                                            aria-label="GitHub"
+                                            class="rounded-md dark:text-gray-100 hover:dark:text-violet-400"
+                                        >
+                                            <img src="/img/linkedin.svg"></img>
+                                        </a>
+
+
+                                    </div>
+                                    <div>
+                                        <p class="text-xs sm:text-base dark:text-gray-400">
+                                        Associate Product Manager @Unstop; GitHub Campus Expert; Azure Developer Lead
+                                        </p>
+
+                                    </div>
+                                    <div>
+                                        <h6 class="">
+                                            <span class="font-bold">500+</span>  <span class="text-gray-500">Connections</span>
+                                        </h6>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(54, 69, 79,0.4)"><path d="M12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364L12 23.7279ZM16.9497 15.9497C19.6834 13.2161 19.6834 8.78392 16.9497 6.05025C14.2161 3.31658 9.78392 3.31658 7.05025 6.05025C4.31658 8.78392 4.31658 13.2161 7.05025 15.9497L12 20.8995L16.9497 15.9497ZM12 13C10.8954 13 10 12.1046 10 11C10 9.89543 10.8954 9 12 9C13.1046 9 14 9.89543 14 11C14 12.1046 13.1046 13 12 13Z"></path></svg>
+                                        <p class="">India</p>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
 
 
 
