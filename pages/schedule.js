@@ -327,7 +327,7 @@ export default function SchedulePage() {
                                                 <p>Ready! Set! Go!</p>
                                             </div>
                                         </div>
-                                        <div className="single_speaker">
+                                        {/* <div className="single_speaker">
                                             <img
                                                 src="/podium.png"
                                                 style={{
@@ -349,7 +349,7 @@ export default function SchedulePage() {
                                                     experienced judges!
                                                 </p>
                                             </div>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>
