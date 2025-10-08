@@ -2,114 +2,142 @@ import React from "react";
 
 export default function Navbar() {
     return (
-        <header>
-            {/* <nav className="navbar navbar-expand-lg navbar-dark fixed bg-transparent">
-        <div className="container-fluid bg-transparent">
-          <div className="logo-img">
-            <a href="#" style={{ display: "flex" }}>
-              <img src="img/aarohan-logo.png" style={{
-                height: "50px",
-                width: "50px",
-                borderRadius: "50%",
-                float: "left",
-              }} />&nbsp;&nbsp;<img src="img/logo.png" style={{ float: "left", }} alt />
+        <header className="navbar">
+            <style jsx>{`
+                /* === Neon Animations === */
+                @keyframes glowPulse {
+                    0%, 100% {
+                        box-shadow: 0 0 10px rgba(0, 255, 255, 0.6),
+                                    0 0 20px rgba(0, 255, 255, 0.3);
+                    }
+                    50% {
+                        box-shadow: 0 0 25px rgba(0, 255, 255, 1),
+                                    0 0 40px rgba(0, 255, 255, 0.7);
+                    }
+                }
+
+                @keyframes textGlow {
+                    0%, 100% {
+                        text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+                    }
+                    50% {
+                        text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+                    }
+                }
+
+                /* === Navbar Container === */
+                .navbar {
+                    position: sticky;
+                    top: 0;
+                    width: 100%;
+                    z-index: 1000;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.8rem 2rem;
+                    background: rgba(2, 6, 17, 0.85);
+                    border-bottom: 1.5px solid rgba(0, 255, 255, 0.4);
+                    backdrop-filter: blur(10px);
+                    animation: glowPulse 3s ease-in-out infinite;
+                }
+
+                /* === Logo === */
+                .logo {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    cursor: pointer;
+                    text-decoration: none;
+                }
+
+                .logo img {
+                    height: 48px;
+                    width: 48px;
+                    border-radius: 50%;
+                    border: 2px solid #00ffff;
+                    animation: glowPulse 2s ease-in-out infinite;
+                    transition: transform 0.3s ease;
+                }
+
+                .logo img:hover {
+                    transform: scale(1.1) rotate(5deg);
+                }
+
+                /* === Navigation Links === */
+                .nav-links {
+                    display: flex;
+                    gap: 2rem;
+                    list-style: none;
+                }
+
+                .nav-links a {
+                    color: #b0c4de;
+                    font-weight: 600;
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                    position: relative;
+                }
+
+                .nav-links a::before {
+                    content: "";
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    width: 0;
+                    height: 2px;
+                    background: linear-gradient(90deg, #00ffff, #ff00ff);
+                    transition: width 0.3s ease;
+                    border-radius: 2px;
+                }
+
+                .nav-links a:hover {
+                    color: #00ffff;
+                    animation: textGlow 1.5s ease-in-out infinite;
+                    transform: translateY(-2px);
+                }
+
+                .nav-links a:hover::before {
+                    width: 100%;
+                }
+
+                /* === Active link === */
+                .nav-links a.active {
+                    color: #00ffff;
+                    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+                }
+
+                /* === Mobile === */
+                @media (max-width: 768px) {
+                    .nav-links {
+                        display: none;
+                    }
+                }
+            `}</style>
+
+            <a href="/" className="logo">
+                <img src="/img/IMG-20240307-WA0009.jpg" alt="HackOverflow Logo" />
+                <span style={{ color: "#00ffff", fontWeight: "700", fontSize: "1.3rem" }}>
+                    HackOverflow
+                </span>
             </a>
-          </div>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon" />
-          </button>
-          <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" style={{ textAlign: "right" }}>
-            <ul className="navbar-nav ml-auto" id="navbar-drawer">
-              <li className="nav-item" style={{ fontFamily: "Poppins" }}>
-                <a className="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item" style={{ fontFamily: "Poppins" }}>
-                <a className="nav-link" href="#">
-                  Discord
-                </a>
-              </li>
-              <li className="nav-item" style={{ fontFamily: "Poppins" }}>
-                <a
-                  className="nav-link"
-                  href="/schedule"
-                >
-                  Schedule
-                </a>
-              </li>
+
+            <ul className="nav-links">
+                <li>
+                    <a href="/" className="active">Home</a>
+                </li>
+                <li>
+                    <a href="/schedule">Schedule</a>
+                </li>
+                <li>
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://discord.com/invite/v9j8kd2Vz7"
+                    >
+                        Discord
+                    </a>
+                </li>
             </ul>
-
-          </div>
-        </div>
-      </nav> */}
-
-            <div className="header-area ">
-                <div id="sticky-header" className="main-header-area">
-                    <div className="container-fluid p-0">
-                        <div className="row align-items-center justify-content-between no-gutters">
-                            <div className="col-xl-2 col-lg-2">
-                                <div className="logo-img">
-                                    <a href="/" style={{ display: "flex" }}>
-                                        <img
-                                            src="/img/IMG-20240307-WA0009.jpg"
-                                            style={{
-                                                height: "50px",
-                                                width: "50px",
-                                                borderRadius: "50%",
-                                                float: "left",
-                                            }}
-                                        />
-                                        &nbsp;&nbsp;
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="col-xl-8 col-lg-8">
-                                <div className="main-menu d-none d-lg-block">
-                                    <nav>
-                                        <ul id="navigation">
-                                            <li>
-                                                <a href="/" className="active:active-color">
-                                                    Home
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="/schedule">Schedule</a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    target="_blank"
-                                                    href="https://discord.com/invite/v9j8kd2Vz7"
-                                                >
-                                                    Discord
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            {/* <div className="col-xl-2 col-lg-2 d-none d-lg-block">
-                <div className="buy_ticket">
-                  <a href="#" className="boxed-btn-white">
-                    Register!
-                  </a>
-                </div>
-              </div> */}
-                            <div className="col-12">
-                                <div className="mobile_menu d-block d-lg-none" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </header>
     );
 }

@@ -3,12 +3,11 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { useEffect } from "react";
 import Timer from "../components/Timer";
-import Sponsors from "../components/sponsors";
-// import './a.css'
+import BlobScene from "../components/Flow";
+
 export default function SchedulePage() {
     useEffect(() => {
         const script = document.createElement("script");
-        // script.src = "https://apply.devfolio.co/v2/sdk.js";
         script.async = true;
         script.defer = true;
         document.body.appendChild(script);
@@ -16,530 +15,871 @@ export default function SchedulePage() {
             document.body.removeChild(script);
         };
     }, []);
+    
     return (
         <>
             <Head>
+                {/* Basic Meta */}
                 <meta charSet="utf-8" />
-                <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-                <title>Hackoverflow 8.0</title>
-                <meta name="description" content />
+                <meta httpEquiv="x-ua-compatible" content="IE=edge" />
+                <title>HackOverflow 8.0</title>
+                <meta
+                    name="description"
+                    content="HackOverflow 8.0 - NIT Durgapur's official hackathon platform"
+                />
                 <meta
                     name="viewport"
-                    content="width=device-width, initial-scale=1"
+                    content="width=device-width, initial-scale=1, shrink-to-fit=no"
                 />
+
+                {/* Favicon */}
+                <link rel="icon" href="/img/IMG-20240307-WA0009.jpg" type="image/jpeg" />
+
+                {/* Bootstrap CSS */}
                 <link
-                    rel="shortcut icon"
-                    type="image/x-icon"
-                    href="img/aarohan-logo.png"
+                    rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+                    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+                    crossOrigin="anonymous"
                 />
-                <link rel="stylesheet" href="css/bootstrap.min.css" />
-                <link rel="stylesheet" href="css/owl.carousel.min.css" />
-                <link rel="stylesheet" href="css/magnific-popup.css" />
-                <link rel="stylesheet" href="css/font-awesome.min.css" />
-                <link rel="stylesheet" href="css/themify-icons.css" />
-                <link rel="stylesheet" href="css/nice-select.css" />
-                <link rel="stylesheet" href="css/flaticon.css" />
-                <link rel="stylesheet" href="css/animate.css" />
-                <link rel="stylesheet" href="css/slicknav.css" />
-                <link rel="stylesheet" href="css/style.css" />
-                <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-                <script src="js/vendor/jquery-1.12.4.min.js"></script>
-                <script src="js/popper.min.js"></script>
-                <script src="js/bootstrap.min.js"></script>
-                <script src="js/owl.carousel.min.js"></script>
-                <script src="js/isotope.pkgd.min.js"></script>
-                <script src="js/ajax-form.js"></script>
-                <script src="js/waypoints.min.js"></script>
-                <script src="js/jquery.counterup.min.js"></script>
-                <script src="js/imagesloaded.pkgd.min.js"></script>
-                <script src="js/scrollIt.js"></script>
-                <script src="js/jquery.scrollUp.min.js"></script>
-                <script src="js/wow.min.js"></script>
-                <script src="js/nice-select.min.js"></script>
-                <script src="js/jquery.slicknav.min.js"></script>
-                <script src="js/jquery.magnific-popup.min.js"></script>
-                <script src="js/jquery.countdown.js"></script>
-                <script src="js/plugins.js"></script>
-                <script src="js/contact.js"></script>
-                <script src="js/jquery.ajaxchimp.min.js"></script>
-                <script src="js/jquery.form.js"></script>
-                <script src="js/jquery.validate.min.js"></script>
-                <script src="js/mail-script.js"></script>
-                <script src="js/main.js"></script>
+
+                {/* Other CSS files */}
+                <link rel="stylesheet" href="/css/owl.carousel.min.css" />
+                <link rel="stylesheet" href="/css/magnific-popup.css" />
+                <link rel="stylesheet" href="/css/font-awesome.min.css" />
+                <link rel="stylesheet" href="/css/themify-icons.css" />
+                <link rel="stylesheet" href="/css/nice-select.css" />
+                <link rel="stylesheet" href="/css/flaticon.css" />
+                <link rel="stylesheet" href="/css/animate.css" />
+                <link rel="stylesheet" href="/css/slicknav.css" />
+                <link rel="stylesheet" href="/css/style.css" />
+
+                {/* Optional: global animation styles */}
+                <style>{`
+        @keyframes neonPulse {
+          0%, 100% { text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor; }
+          50% { text-shadow: 0 0 20px currentColor, 0 0 40px currentColor, 0 0 50px currentColor; }
+        }
+        .neon-text { animation: neonPulse 2s ease-in-out infinite; }
+      `}</style>
+
+                {/* Scripts should go outside of <Head> ideally */}
             </Head>
-            <div>
-                <div>
-                    <Navbar />
-                    <div className="slider_area slider_bg_1">
-                        <div className="slider_text">
-                            <div className="container">
-                                <div className="position_relv">
-                                    <div className="row">
-                                        <div className="col-xl-9">
-                                            <div className="title_text ml-3">
-                                                <h3>Event Schedule</h3>
-                                                <br />
-                                                <div className="flex gap-4">
-                                                    <a
-                                                        href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
-                                                        className="boxed-btn-white"
-                                                    >
-                                                        Add to your Calendar
-                                                    </a>
-                                                    <a
-                                                        href="https://unstop.com/p/hackoverflow-80-gnulinux-users-group-nit-durgapur-1437266"
-                                                        className="boxed-btn-white"
-                                                    >
-                                                        Apply
-                                                    </a>
-                                                </div>
-                                                <br />
-                                                <br />
-                                                {/* <a
-                        className="boxed-btn-white"
-                        id="register-2"
-                      >
-                        Register
-                      </a> */}
-                                                <div
-                                                    className="apply-button ml-6"
-                                                    data-hackathon-slug="hackoverflow08"
-                                                    data-button-theme="dark"
-                                                    style={{
-                                                        height: 44,
-                                                        width: 312,
-                                                        zIndex: 100,
-                                                    }}
-                                                />
-                                            </div>
+            <div style={{ background: '#020611' }}>
+                <Navbar />
+                <div className="slider_area slider_bg_1" style={{ 
+                    background: 'linear-gradient(180deg, #020611 0%, #041228 50%, #020611 100%)',
+                    position: 'relative'
+                }}>
+                    <div className="slider_text">
+                        <BlobScene />
+                        <div className="container">
+                            <div className="position_relv">
+                                <div className="row">
+                                    <div className="col-xl-9">
+                                        <div className="title_text ml-3">
+                                            <h3 className="neon-text" style={{ 
+                                                color: '#00ffff',
+                                                textShadow: '0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff'
+                                            }}>Event Schedule</h3>
+                                            <br />
+                                                    <div className="relative flex gap-4">
+                                                        <a
+                                                            href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
+                                                            style={{
+                                                                padding: '0.8rem 1.5rem',
+                                                                color: '#0ff',
+                                                                border: '2px solid #0ff',
+                                                                borderRadius: '8px',
+                                                                textTransform: 'uppercase',
+                                                                fontWeight: 'bold',
+                                                                boxShadow: '0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff',
+                                                                transition: '0.3s',
+                                                            }}
+                                                            onMouseEnter={(e) => {
+                                                                e.target.style.boxShadow =
+                                                                    '0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff';
+                                                                e.target.style.transform = 'scale(1.05)';
+                                                            }}
+                                                            onMouseLeave={(e) => {
+                                                                e.target.style.boxShadow = '0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff';
+                                                                e.target.style.transform = 'scale(1)';
+                                                            }}
+                                                        >
+                                                            Add to your Calendar
+                                                        </a>
+                                                        <a
+                                                            href="https://unstop.com/p/hackoverflow-80-gnulinux-users-group-nit-durgapur-1437266"
+                                                            style={{
+                                                                padding: '0.8rem 1.5rem',
+                                                                color: '#f0f', // neon pink
+                                                                border: '2px solid #f0f',
+                                                                borderRadius: '8px',
+                                                                textTransform: 'uppercase',
+                                                                fontWeight: 'bold',
+                                                                boxShadow: '0 0 5px #f0f, 0 0 10px #f0f, 0 0 20px #f0f',
+                                                                transition: '0.3s',
+                                                            }}
+                                                            onMouseEnter={(e) => {
+                                                                e.target.style.boxShadow =
+                                                                    '0 0 10px #f0f, 0 0 20px #f0f, 0 0 40px #f0f';
+                                                                e.target.style.transform = 'scale(1.05)';
+                                                            }}
+                                                            onMouseLeave={(e) => {
+                                                                e.target.style.boxShadow = '0 0 5px #f0f, 0 0 10px #f0f, 0 0 20px #f0f';
+                                                                e.target.style.transform = 'scale(1)';
+                                                            }}
+                                                        >
+                                                            Apply
+                                                        </a>
+                                                    </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div className="slider_text_mobile">
-                            <div className="container flex flex-wrap flex-column justify-center items-center text-center">
-                                <div className="position_relv text-center">
-                                    <h3 className="md:mt-5">Event Schedule</h3>
-                                    <h3>Aarohan 2024</h3>
-                                    <br />
-                                    <div className="relative">
-
-                                        <a
-                                            href="https://unstop.com/p/hackoverflow-80-gnulinux-users-group-nit-durgapur-1437266"
-                                            className="boxed-btn-white"
-                                        >
-                                            Apply
-                                        </a>
-                                    </div>
-                                    
-                                    {/* <div
-                                        className="apply-button"
-                                        data-hackathon-slug="hackoverflow08"
-                                        data-button-theme="dark"
-                                        style={{ height: 44, width: 312 }}
-                                    /> */}
-                                </div>
-                            </div>
-                        </div>
-                        <div className="monocolor-rectangle">
-                            <div className="mobile-timer flex flex-col items-center md:items-start md:px-6 lg:px-52 text-center md:text-left md:my-8"
-
-                            >
-                                <Timer />
-                                <div className="flex flex-col md:flex-row justify-between md:gap-4 md:mt-4">
-                                    <p className="text-2xl font-bold text-white">
-                                        Online
-                                    </p>
-                                    <p className="text-2xl font-bold text-white">
-                                        20st March, 2025
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="p-6 pt-2"
-                                style={{
-                                    width: "100%",
-                                    height: "100px",
-                                    display: "flex",
-                                    justifyContent: "center",
-                                    alignItems: "center",
-                                    flexWrap: "wrap",
-                                }}
-                            >
-                                {/* <a
-                                className="boxed-btn-white"
-                                href="https://discord.gg/dUe9m53m"
-                                id="register-2"
-                            >
-                                Join Discord
-                            </a>
-                            &nbsp; &nbsp; &nbsp; */}
-                                {/* <a
-                                className="boxed-btn-white"
-                                href="/schedule"
-                                id="register-2"
-                            >
-                                Schedule
-                            </a> */}
-                                <div>
+                    <div className="slider_text_mobile">
+                        <div className="container flex flex-wrap flex-column justify-center items-center text-center">
+                            <div className="position_relv text-center">
+                                <h3 className="md:mt-5 neon-text" style={{ 
+                                    color: '#00ffff',
+                                    textShadow: '0 0 10px #00ffff, 0 0 20px #00ffff'
+                                }}>Event Schedule</h3>
+                                <h3 className="neon-text" style={{ 
+                                    color: '#ff00ff',
+                                    textShadow: '0 0 10px #ff00ff, 0 0 20px #ff00ff'
+                                }}>Aarohan 2025</h3>
+                                <br />
+                                <div className="relative">
                                     <a
-                                        href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
-                                        className="boxed-btn-white my-2 sm:ml-3 block"
-                                        id="register-2"
+                                        href="https://unstop.com/p/hackoverflow-80-gnulinux-users-group-nit-durgapur-1437266"
+                                        className="boxed-btn-white neon-border"
+                                        style={{
+                                            border: '2px solid #ff00ff',
+                                            boxShadow: '0 0 20px rgba(255, 0, 255, 0.5)'
+                                        }}
                                     >
-                                        Add to your Calendar
+                                        Apply
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
+                    <div className="mobile-timer flex flex-col items-center md:items-start md:px-6 lg:px-52 text-center md:text-left md:my-8">
+                        <Timer />
+                        <div className="flex flex-col md:flex-row justify-between md:gap-4 md:mt-4">
+                            <p className="text-2xl font-bold neon-text" style={{ 
+                                color: '#00ffff',
+                                textShadow: '0 0 10px #00ffff'
+                            }}>
+                                Online
+                            </p>
+                            <p className="text-2xl font-bold neon-text" style={{ 
+                                color: '#ff00ff',
+                                textShadow: '0 0 10px #ff00ff'
+                            }}>
+                                20th March, 2025
+                            </p>
+                        </div>
+                    </div>
+                    <div className="p-6 pt-2"
+                        style={{
+                            width: "100%",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            flexWrap: "wrap",
+                        }}
+                    >
+                        <div>
+                            <a
+                                href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
+                                className="boxed-btn-white my-2 sm:ml-3 block neon-border"
+                                id="register-2"
+                                style={{
+                                    border: '2px solid #00ff88',
+                                    boxShadow: '0 0 20px rgba(0, 255, 136, 0.5)'
+                                }}
+                            >
+                                Add to your Calendar
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-                    {/* <div className='countDOwn_area'>
-                            <div className='container'>
-                                <div className='row align-items-center justify-center'>
-                                    <div className='col-xl-4 col-md-6 col-lg-6 flex flex-wrap justify-center'>
-                                        <div className='single_date'>
-                                            <i className='ti-location-pin' />
-                                            <span>Online</span>
+                <div className="event_area plus_padding" style={{ 
+                    background: 'linear-gradient(180deg, #020611 0%, #041228 50%, #020611 100%)',
+                    position: 'relative',
+                    padding: '80px 0'
+                }}>
+                    {/* <h1 className="vr_text d-none d-lg-block neon-text" style={{ 
+                        color: '#00ff88',
+                        textShadow: '0 0 20px #00ff88, 0 0 40px #00ff88',
+                        right: '-120px',
+                        zIndex: 0
+                    }}>
+                        Event Schedule
+                    </h1> */}
+                    <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+                        <div className="double_line" style={{ marginBottom: '40px' }}>
+                            <div className="row">
+                                <div className="col-xl-3 col-lg-3 col-md-12" style={{ marginBottom: '20px' }}>
+                                    <div className="date">
+                                        <h3 className="neon-text" style={{ 
+                                            color: '#00ffff',
+                                            textShadow: '0 0 10px #00ffff, 0 0 20px #00ffff',
+                                            fontSize: '1.5rem'
+                                        }}>
+                                            20 March, 2025
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div className="col-xl-9 col-lg-9 col-md-12">
+                                    <div className="single_speaker slide-in-up" style={{
+                                        background: 'linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(0, 255, 255, 0.02) 100%)',
+                                        border: '2px solid rgba(0, 255, 255, 0.3)',
+                                        borderRadius: '15px',
+                                        padding: '20px',
+                                        marginBottom: '20px',
+                                        boxShadow: '0 0 20px rgba(0, 255, 255, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        animationDelay: '0.6s',
+                                        display: 'flex',
+                                        gap: '20px',
+                                        alignItems: 'flex-start',
+                                        flexWrap: 'wrap'
+                                    }}>
+                                        <img
+                                            src="/finish-line.png"
+                                            style={{
+                                                width: 70,
+                                                height: 70,
+                                                minWidth: 70,
+                                                border: '3px solid #00ffff',
+                                                borderRadius: '50%',
+                                                boxShadow: '0 0 20px rgba(0, 255, 255, 0.5)',
+                                                animation: 'iconFloat 3s ease-in-out infinite 1.5s'
+                                            }}
+                                            alt
+                                        />
+                                        <div className="speaker-name" style={{ flex: 1, minWidth: '200px' }}>
+                                            <div className="heading" style={{ 
+                                                display: 'flex', 
+                                                justifyContent: 'space-between', 
+                                                alignItems: 'flex-start',
+                                                flexWrap: 'wrap',
+                                                gap: '10px',
+                                                marginBottom: '10px'
+                                            }}>
+                                                <span className="neon-text" style={{ 
+                                                    color: '#00ffff',
+                                                    fontWeight: 'bold',
+                                                    fontSize: '1.1rem',
+                                                    flex: 1,
+                                                    minWidth: '200px'
+                                                }}>
+                                                    Coding period ends
+                                                </span>
+                                                <div className="time neon-text" style={{ 
+                                                    color: '#00ff88',
+                                                    fontSize: '1rem',
+                                                    fontWeight: 'bold',
+                                                    whiteSpace: 'nowrap'
+                                                }}>
+                                                    1:00 PM
+                                                </div>
+                                            </div>
+                                            <p style={{ color: '#b0c4de', lineHeight: '1.7', margin: 0 }}>
+                                                Contestants stop the coding and submit their codes for further evaluation process.
+                                            </p>
                                         </div>
                                     </div>
-                                    <div className='col-xl-4 col-md-6 col-lg-6 flex flex-wrap justify-center'>
-                                        <div className='single_date'>
-                                            <i className='ti-alarm-clock' />
-                                            <span>9th March, 2023</span>
+
+                                    <div className="single_speaker slide-in-up" style={{
+                                        background: 'linear-gradient(135deg, rgba(255, 0, 255, 0.05) 0%, rgba(255, 0, 255, 0.02) 100%)',
+                                        border: '2px solid rgba(255, 0, 255, 0.3)',
+                                        borderRadius: '15px',
+                                        padding: '20px',
+                                        marginBottom: '20px',
+                                        boxShadow: '0 0 20px rgba(255, 0, 255, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        animationDelay: '0.8s',
+                                        display: 'flex',
+                                        gap: '20px',
+                                        alignItems: 'flex-start',
+                                        flexWrap: 'wrap'
+                                    }}>
+                                        <img
+                                            src="/podium.png"
+                                            style={{
+                                                width: 70,
+                                                height: 70,
+                                                minWidth: 70,
+                                                border: '3px solid #ff00ff',
+                                                borderRadius: '50%',
+                                                boxShadow: '0 0 20px rgba(255, 0, 255, 0.5)',
+                                                animation: 'iconFloat 3s ease-in-out infinite 2s'
+                                            }}
+                                            alt
+                                        />
+                                        <div className="speaker-name" style={{ flex: 1, minWidth: '200px' }}>
+                                            <div className="heading" style={{ 
+                                                display: 'flex', 
+                                                justifyContent: 'space-between', 
+                                                alignItems: 'flex-start',
+                                                flexWrap: 'wrap',
+                                                gap: '10px',
+                                                marginBottom: '10px'
+                                            }}>
+                                                <span className="neon-text" style={{ 
+                                                    color: '#ff00ff',
+                                                    fontWeight: 'bold',
+                                                    fontSize: '1.1rem',
+                                                    flex: 1,
+                                                    minWidth: '200px'
+                                                }}>
+                                                    Judges' Address
+                                                </span>
+                                                <div className="time neon-text" style={{ 
+                                                    color: '#00ff88',
+                                                    fontSize: '1rem',
+                                                    fontWeight: 'bold',
+                                                    whiteSpace: 'nowrap'
+                                                }}>
+                                                    4:00 PM to 5:00 PM
+                                                </div>
+                                            </div>
+                                            <p style={{ color: '#b0c4de', lineHeight: '1.7', margin: 0 }}>
+                                                Few words of motivation from our knowledgeable and experienced judges!
+                                            </p>
                                         </div>
                                     </div>
-                                    <div className='col-xl-4 col-md-12 col-lg-12 flex flex-wrap justify-center'>
-                                        <Timer />
+                                    
+                                    <div className="single_speaker slide-in-up" style={{
+                                        background: 'linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(0, 255, 255, 0.02) 100%)',
+                                        border: '2px solid rgba(0, 255, 255, 0.3)',
+                                        borderRadius: '15px',
+                                        padding: '20px',
+                                        marginBottom: '20px',
+                                        boxShadow: '0 0 20px rgba(0, 255, 255, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        display: 'flex',
+                                        gap: '20px',
+                                        alignItems: 'flex-start',
+                                        flexWrap: 'wrap'
+                                    }}>
+                                        <img
+                                            src="/idea.png"
+                                            alt
+                                            style={{
+                                                width: 70,
+                                                height: 70,
+                                                minWidth: 70,
+                                                border: '3px solid #00ffff',
+                                                borderRadius: '50%',
+                                                boxShadow: '0 0 20px rgba(0, 255, 255, 0.5)',
+                                                animation: 'iconFloat 3s ease-in-out infinite'
+                                            }}
+                                        />
+                                        <div className="speaker-name" style={{ flex: 1, minWidth: '200px' }}>
+                                            <div className="heading" style={{
+                                                display: 'flex',
+                                                justifyContent: 'space-between',
+                                                alignItems: 'flex-start',
+                                                flexWrap: 'wrap',
+                                                gap: '10px',
+                                                marginBottom: '10px'
+                                            }}>
+                                                <span className="neon-text" style={{
+                                                    color: '#00ffff',
+                                                    fontWeight: 'bold',
+                                                    fontSize: '1.1rem',
+                                                    flex: 1,
+                                                    minWidth: '200px'
+                                                }}>
+                                                    Application Submission Phase Starts
+                                                </span>
+                                                <div className="time neon-text" style={{
+                                                    color: '#00ff88',
+                                                    fontSize: '1rem',
+                                                    fontWeight: 'bold',
+                                                    whiteSpace: 'nowrap'
+                                                }}>
+                                                    8:00 PM
+                                                </div>
+                                            </div>
+                                            <p style={{ color: '#b0c4de', lineHeight: '1.7', margin: 0 }}>
+                                                Period for applications starts. Participants can submit the application on Unstop.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div> */}
-
-
-                    <div className="event_area plus_padding">
-                        <h1 className="vr_text d-none d-lg-block">
-                            Event Schedule
-                        </h1>
-                        <div className="container">
-                            <div className="double_line">
-                                <div className="row">
-                                    <div className="col-xl-3 col-lg-3">
-                                        <div className="date">
-                                            <h3 style={{ color: "rgb(30, 63, 140)" }}>
-                                                20 March, 2025
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-9 col-lg-9">
-                                        <div className="single_speaker">
-                                            <img
-                                                src="/idea.png"
-                                                alt
-                                                style={{
-                                                    width: 80,
-                                                    height: 80,
-                                                }}
-                                            />
-                                            <div className="speaker-name">
-                                                <div className="heading d-flex justify-content-between align-items-center">
-                                                    <span>
-                                                        Application Submission
-                                                        Phase Starts
-                                                    </span>
-                                                    <div className="time">
-                                                        8:00 PM
-                                                    </div>
-                                                </div>
-                                                <p>
-                                                    Period for applications
-                                                    starts. Participants can
-                                                    submit the application on
-                                                    Devfolio.{" "}
-                                                </p>
-                                            </div>
-                                        </div>
+                        </div>
+                        
+                        <div className="double_line" style={{ marginBottom: '40px' }}>
+                            <div className="row">
+                                <div className="col-xl-3 col-lg-3 col-md-12" style={{ marginBottom: '20px' }}>
+                                    <div className="date">
+                                        <h3 className="neon-text" style={{ 
+                                            color: '#ff00ff',
+                                            textShadow: '0 0 10px #ff00ff, 0 0 20px #ff00ff',
+                                            fontSize: '1.5rem'
+                                        }}>
+                                            21 March, 2025
+                                        </h3>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="double_line">
-                                <div className="row">
-                                    <div className="col-xl-3 col-lg-3">
-                                        <div className="date">
-                                            <h3 style={{ color: "rgb(30, 63, 140)" }}>
-                                                21 March, 2025
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-9 col-lg-9">
-                                        <div className="single_speaker">
-                                            <img
-                                                src="/lightbulb.png"
-                                                style={{
-                                                    width: 80,
-                                                    height: 80,
-                                                }}
-                                            />
-                                            <div className="speaker-name">
-                                                <div className="heading d-flex justify-content-between align-items-center">
-                                                    <span>
-                                                        Application Submission
-                                                        Phase Ends
-                                                    </span>
-                                                    <div className="time">
-                                                        6:00 PM
-                                                    </div>
+                                <div className="col-xl-9 col-lg-9 col-md-12">
+                                    <div className="single_speaker slide-in-up" style={{
+                                        background: 'linear-gradient(135deg, rgba(255, 0, 255, 0.05) 0%, rgba(255, 0, 255, 0.02) 100%)',
+                                        border: '2px solid rgba(255, 0, 255, 0.3)',
+                                        borderRadius: '15px',
+                                        padding: '20px',
+                                        marginBottom: '20px',
+                                        boxShadow: '0 0 20px rgba(255, 0, 255, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        animationDelay: '0.2s',
+                                        display: 'flex',
+                                        gap: '20px',
+                                        alignItems: 'flex-start',
+                                        flexWrap: 'wrap'
+                                    }}>
+                                        <img
+                                            src="/lightbulb.png"
+                                            style={{
+                                                width: 70,
+                                                height: 70,
+                                                minWidth: 70,
+                                                border: '3px solid #ff00ff',
+                                                borderRadius: '50%',
+                                                boxShadow: '0 0 20px rgba(255, 0, 255, 0.5)',
+                                                animation: 'iconFloat 3s ease-in-out infinite 0.5s',
+                                                backgroundColor: 'white'
+                                            }}
+                                        />
+                                        <div className="speaker-name" style={{ flex: 1, minWidth: '200px' }}>
+                                            <div className="heading" style={{ 
+                                                display: 'flex', 
+                                                justifyContent: 'space-between', 
+                                                alignItems: 'flex-start',
+                                                flexWrap: 'wrap',
+                                                gap: '10px',
+                                                marginBottom: '10px'
+                                            }}>
+                                                <span className="neon-text" style={{ 
+                                                    color: '#ff00ff',
+                                                    fontWeight: 'bold',
+                                                    fontSize: '1.1rem',
+                                                    flex: 1,
+                                                    minWidth: '200px'
+                                                }}>
+                                                    Application Submission Phase Ends
+                                                </span>
+                                                <div className="time neon-text" style={{ 
+                                                    color: '#00ff88',
+                                                    fontSize: '1rem',
+                                                    fontWeight: 'bold',
+                                                    whiteSpace: 'nowrap'
+                                                }}>
+                                                    6:00 PM
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="double_line">
-                                <div className="row">
-                                    <div className="col-xl-3 col-lg-3">
-                                        <div className="date">
-                                            <h3 style={{ color: "rgb(30, 63, 140)" }}>
-                                                22 March, 2025
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-9 col-lg-9">
-                                        <div className="single_speaker">
-                                            <img
-                                                src="/shuttle.png"
-                                                style={{
-                                                    width: 80,
-                                                    height: 80,
-                                                }}
-                                                alt
-                                            />
-                                            <div className="speaker-name">
-                                                <div className="heading d-flex justify-content-between align-items-center">
-                                                    <span>
-                                                        Hackoverflow flags off!
-                                                    </span>
-                                                    <div className="time">
-                                                        00:00 AM
-                                                    </div>
-                                                </div>
-                                                <p>Ready! Set! Go!</p>
-                                            </div>
-                                        </div>
-                                        {/* <div className="single_speaker">
-                                            <img
-                                                src="/podium.png"
-                                                style={{
-                                                    width: 80,
-                                                    height: 80,
-                                                }}
-                                                alt
-                                            />
-                                            <div className="speaker-name">
-                                                <div className="heading d-flex justify-content-between align-items-center">
-                                                    <span>Judges' Address</span>
-                                                    <div className="time">
-                                                        10:00 AM to 12:00 AM
-                                                    </div>
-                                                </div>
-                                                <p>
-                                                    Few words of motivation from
-                                                    our knowledgeable and
-                                                    experienced judges!
-                                                </p>
-                                            </div>
-                                        </div> */}
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="double_line">
-                                <div className="row">
-                                    <div className="col-xl-3 col-lg-3">
-                                        <div className="date">
-                                            <h3 style={{ color: "rgb(30, 63, 140)" }}>
-                                                23 March, 2025
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-9 col-lg-9">
-                                        <div className="single_speaker">
-                                            <img
-                                                src="/finish-line.png"
-                                                style={{
-                                                    width: 80,
-                                                    height: 80,
-                                                }}
-                                                alt
-                                            />
-                                            <div className="speaker-name">
-                                                <div className="heading d-flex justify-content-between align-items-center">
-                                                    <span>
-                                                        Coding period ends
-                                                    </span>
-                                                    <div className="time">
-                                                        1:00 PM
-                                                    </div>
-                                                </div>
-                                                <p>
-                                                    Contestants stop the coding
-                                                    and submit their codes for
-                                                    further evaluation process.
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        {/* <div className="single_speaker">
-                                            <img src="/keyboard.png" style={{ width: 80, height: 80 }} alt />
-                                            <div className="speaker-name">
-                                                <div className="heading d-flex justify-content-between align-items-center">
-                                                    <span>Typing Race</span>
-                                                    <div className="time">
-                                                        04:00 PM
-                                                    </div>
-                                                </div>
-                                                <p>Whose fingers are the fastest in the west?</p>
-                                            </div>
-                                        </div> */}
-                                        <div className="single_speaker">
-                                            <img
-                                                src="/podium.png"
-                                                style={{
-                                                    width: 80,
-                                                    height: 80,
-                                                }}
-                                                alt
-                                            />
-                                            <div className="speaker-name">
-                                                <div className="heading d-flex justify-content-between align-items-center">
-                                                    <span>Judges' Address</span>
-                                                    <div className="time">
-                                                        4:00 PM to 5:00 PM
-                                                    </div>
-                                                </div>
-                                                <p>
-                                                    Few words of motivation from
-                                                    our knowledgeable and
-                                                    experienced judges!
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="double_line">
-                                <div className="row">
-                                    <div className="col-xl-3 col-lg-3">
-                                        <div className="date">
-                                            <h3 style={{ color: "rgb(30, 63, 140)" }}>
-                                                23 March, 2025
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-9 col-lg-9">
-                                        <div className="single_speaker">
-                                            <img
-                                                src="/lightbulb.png"
-                                                style={{
-                                                    width: 80,
-                                                    height: 80,
-                                                }}
-                                                alt
-                                            />
-                                            <div className="speaker-name">
-                                                <div className="heading d-flex justify-content-between align-items-center">
-                                                    <span>
-                                                        Evaluation Starts
-                                                    </span>
-                                                    <div className="time">
-                                                        2:00 pm
-                                                    </div>
-                                                </div>
-                                                <p>
-                                                    Each of the top 15 teams
-                                                    will present their projects.
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div className="single_speaker">
-                                            <img
-                                                src="/podium.png"
-                                                style={{
-                                                    width: 80,
-                                                    height: 80,
-                                                }}
-                                                alt
-                                            />
-                                            <div className="speaker-name">
-                                                <div className="heading d-flex justify-content-between align-items-center">
-                                                    <span>
-                                                        Evaluation Completes
-                                                    </span>
-                                                    <div className="time">
-                                                        4:00 pm
-                                                    </div>
-                                                </div>
-                                                <p>
-                                                    Teams will be evaluated by
-                                                    the judges.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div className="single_speaker">
-                                            <img
-                                                src="/finish-line.png"
-                                                style={{
-                                                    width: 80,
-                                                    height: 80,
-                                                }}
-                                                alt
-                                            />
-                                            <div className="speaker-name">
-                                                <div className="heading d-flex justify-content-between align-items-center">
-                                                    <span>
-                                                        Results are Published
-                                                    </span>
-                                                    <div className="time">
-                                                        5:00 pm
-                                                    </div>
-                                                </div>
-                                                <p>
-                                                    Results are published based
-                                                    on the evaluations.
-                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    {/* <div class="brand_area">
-    <div class="container">
-<div class="row">
-  <div class="w-full pt-4 md:pt-16 md:pb-8 flex md:flex-row flex-col items-center md:justify-around"
-    style="display: flex; justify-content: center; align-items: center;">
-    <div class="p-3">
-      <img src="/devfolio.png" style="margin: 25px;" />
-    </div>
-    <div class="p-3">
-      <img src="/tezos.png" style="margin: 25px;" />
-    </div>
-    <div class="p-3">
-      <img src="/portis.png" style="margin: 25px;" />
-    </div>
-    <div class="p-3">
-      <img src="/Portis_Logo-Colored.png" />
-    </div>
-  </div>
-</div>
-    </div>
-  </div> */}
-                    {/* <Sponsors /> */}
+                        
+                        <div className="double_line" style={{ marginBottom: '40px' }}>
+                            <div className="row">
+                                <div className="col-xl-3 col-lg-3 col-md-12" style={{ marginBottom: '20px' }}>
+                                    <div className="date">
+                                        <h3 className="neon-text" style={{ 
+                                            color: '#00ff88',
+                                            textShadow: '0 0 10px #00ff88, 0 0 20px #00ff88',
+                                            fontSize: '1.5rem'
+                                        }}>
+                                            22 March, 2025
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div className="col-xl-9 col-lg-9 col-md-12">
+                                    <div className="single_speaker slide-in-up" style={{
+                                        background: 'linear-gradient(135deg, rgba(0, 255, 136, 0.05) 0%, rgba(0, 255, 136, 0.02) 100%)',
+                                        border: '2px solid rgba(0, 255, 136, 0.3)',
+                                        borderRadius: '15px',
+                                        padding: '20px',
+                                        marginBottom: '20px',
+                                        boxShadow: '0 0 20px rgba(0, 255, 136, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        animationDelay: '0.4s',
+                                        display: 'flex',
+                                        gap: '20px',
+                                        alignItems: 'flex-start',
+                                        flexWrap: 'wrap'
+                                    }}>
+                                        <img
+                                            src="/shuttle.png"
+                                            style={{
+                                                width: 70,
+                                                height: 70,
+                                                minWidth: 70,
+                                                border: '3px solid #00ff88',
+                                                borderRadius: '50%',
+                                                boxShadow: '0 0 20px rgba(0, 255, 136, 0.5)',
+                                                animation: 'iconFloat 3s ease-in-out infinite 1s',
+                                                backgroundColor: 'white'
+                                            }}
+                                            alt
+                                        />
+                                        <div className="speaker-name" style={{ flex: 1, minWidth: '200px' }}>
+                                            <div className="heading" style={{ 
+                                                display: 'flex', 
+                                                justifyContent: 'space-between', 
+                                                alignItems: 'flex-start',
+                                                flexWrap: 'wrap',
+                                                gap: '10px',
+                                                marginBottom: '10px'
+                                            }}>
+                                                <span className="neon-text" style={{ 
+                                                    color: '#00ff88',
+                                                    fontWeight: 'bold',
+                                                    fontSize: '1.1rem',
+                                                    flex: 1,
+                                                    minWidth: '200px'
+                                                }}>
+                                                    Hackoverflow flags off!
+                                                </span>
+                                                <div className="time neon-text" style={{ 
+                                                    color: '#00ffff',
+                                                    fontSize: '1rem',
+                                                    fontWeight: 'bold',
+                                                    whiteSpace: 'nowrap'
+                                                }}>
+                                                    00:00 AM
+                                                </div>
+                                            </div>
+                                            <p style={{ color: '#b0c4de', lineHeight: '1.7', margin: 0 }}>
+                                                Ready! Set! Go!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div className="double_line" style={{ marginBottom: '40px' }}>
+                            <div className="row">
+                                <div className="col-xl-3 col-lg-3 col-md-12" style={{ marginBottom: '20px' }}>
+                                    <div className="date">
+                                        <h3 className="neon-text" style={{ 
+                                            color: '#00ffff',
+                                            textShadow: '0 0 10px #00ffff, 0 0 20px #00ffff',
+                                            fontSize: '1.5rem'
+                                        }}>
+                                            23 March, 2025
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div className="col-xl-9 col-lg-9 col-md-12">
+                                    <div className="single_speaker slide-in-up" style={{
+                                        background: 'linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(0, 255, 255, 0.02) 100%)',
+                                        border: '2px solid rgba(0, 255, 255, 0.3)',
+                                        borderRadius: '15px',
+                                        padding: '25px',
+                                        marginBottom: '25px',
+                                        boxShadow: '0 0 20px rgba(0, 255, 255, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        animationDelay: '0.6s'
+                                    }}>
+                                        <img
+                                            src="/finish-line.png"
+                                            style={{
+                                                width: 80,
+                                                height: 80,
+                                                border: '3px solid #00ffff',
+                                                borderRadius: '50%',
+                                                boxShadow: '0 0 20px rgba(0, 255, 255, 0.5)',
+                                                animation: 'iconFloat 3s ease-in-out infinite 1.5s'
+                                            }}
+                                            alt
+                                        />
+                                        <div className="speaker-name">
+                                            <div className="heading d-flex justify-content-between align-items-center">
+                                                <span className="neon-text" style={{ 
+                                                    color: '#00ffff',
+                                                    fontWeight: 'bold',
+                                                    fontSize: '1.3rem'
+                                                }}>
+                                                    Coding period ends
+                                                </span>
+                                                <div className="time neon-text" style={{ 
+                                                    color: '#00ff88',
+                                                    fontSize: '1.1rem',
+                                                    fontWeight: 'bold'
+                                                }}>
+                                                    1:00 PM
+                                                </div>
+                                            </div>
+                                            <p style={{ color: '#b0c4de', lineHeight: '1.7', marginTop: '10px' }}>
+                                                Contestants stop the coding and submit their codes for further evaluation process.
+                                            </p>
+                                        </div>
+                                    </div>
 
-                    <Footer />
+                                    <div className="single_speaker slide-in-up" style={{
+                                        background: 'linear-gradient(135deg, rgba(255, 0, 255, 0.05) 0%, rgba(255, 0, 255, 0.02) 100%)',
+                                        border: '2px solid rgba(255, 0, 255, 0.3)',
+                                        borderRadius: '15px',
+                                        padding: '25px',
+                                        marginBottom: '25px',
+                                        boxShadow: '0 0 20px rgba(255, 0, 255, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        animationDelay: '0.8s'
+                                    }}>
+                                        <img
+                                            src="/podium.png"
+                                            style={{
+                                                width: 80,
+                                                height: 80,
+                                                border: '3px solid #ff00ff',
+                                                borderRadius: '50%',
+                                                boxShadow: '0 0 20px rgba(255, 0, 255, 0.5)',
+                                                animation: 'iconFloat 3s ease-in-out infinite 2s'
+                                            }}
+                                            alt
+                                        />
+                                        <div className="speaker-name">
+                                            <div className="heading d-flex justify-content-between align-items-center">
+                                                <span className="neon-text" style={{ 
+                                                    color: '#ff00ff',
+                                                    fontWeight: 'bold',
+                                                    fontSize: '1.3rem'
+                                                }}>
+                                                    Judges' Address
+                                                </span>
+                                                <div className="time neon-text" style={{ 
+                                                    color: '#00ff88',
+                                                    fontSize: '1.1rem',
+                                                    fontWeight: 'bold'
+                                                }}>
+                                                    4:00 PM to 5:00 PM
+                                                </div>
+                                            </div>
+                                            <p style={{ color: '#b0c4de', lineHeight: '1.7', marginTop: '10px' }}>
+                                                Few words of motivation from our knowledgeable and experienced judges!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div className="double_line" style={{ marginBottom: '40px' }}>
+                            <div className="row">
+                                <div className="col-xl-3 col-lg-3 col-md-12" style={{ marginBottom: '20px' }}>
+                                    <div className="date">
+                                        <h3 className="neon-text" style={{ 
+                                            color: '#ff00ff',
+                                            textShadow: '0 0 10px #ff00ff, 0 0 20px #ff00ff',
+                                            fontSize: '1.5rem'
+                                        }}>
+                                            23 March, 2025
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div className="col-xl-9 col-lg-9 col-md-12">
+                                    <div className="single_speaker slide-in-up" style={{
+                                        background: 'linear-gradient(135deg, rgba(0, 255, 136, 0.05) 0%, rgba(0, 255, 136, 0.02) 100%)',
+                                        border: '2px solid rgba(0, 255, 136, 0.3)',
+                                        borderRadius: '15px',
+                                        padding: '20px',
+                                        marginBottom: '20px',
+                                        boxShadow: '0 0 20px rgba(0, 255, 136, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        animationDelay: '1s',
+                                        display: 'flex',
+                                        gap: '20px',
+                                        alignItems: 'flex-start',
+                                        flexWrap: 'wrap'
+                                    }}>
+                                        <img
+                                            src="/lightbulb.png"
+                                            style={{
+                                                width: 70,
+                                                height: 70,
+                                                minWidth: 70,
+                                                border: '3px solid #00ff88',
+                                                borderRadius: '50%',
+                                                boxShadow: '0 0 20px rgba(0, 255, 136, 0.5)',
+                                                animation: 'iconFloat 3s ease-in-out infinite 2.5s',
+                                                backgroundColor: 'white'
+                                            }}
+                                            alt
+                                        />
+                                        <div className="speaker-name" style={{ flex: 1, minWidth: '200px' }}>
+                                            <div className="heading" style={{ 
+                                                display: 'flex', 
+                                                justifyContent: 'space-between', 
+                                                alignItems: 'flex-start',
+                                                flexWrap: 'wrap',
+                                                gap: '10px',
+                                                marginBottom: '10px'
+                                            }}>
+                                                <span className="neon-text" style={{ 
+                                                    color: '#00ff88',
+                                                    fontWeight: 'bold',
+                                                    fontSize: '1.1rem',
+                                                    flex: 1,
+                                                    minWidth: '200px'
+                                                }}>
+                                                    Evaluation Starts
+                                                </span>
+                                                <div className="time neon-text" style={{ 
+                                                    color: '#00ffff',
+                                                    fontSize: '1rem',
+                                                    fontWeight: 'bold',
+                                                    whiteSpace: 'nowrap'
+                                                }}>
+                                                    2:00 pm
+                                                </div>
+                                            </div>
+                                            <p style={{ color: '#b0c4de', lineHeight: '1.7', margin: 0 }}>
+                                                Each of the top 15 teams will present their projects.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div className="single_speaker slide-in-up" style={{
+                                        background: 'linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(0, 255, 255, 0.02) 100%)',
+                                        border: '2px solid rgba(0, 255, 255, 0.3)',
+                                        borderRadius: '15px',
+                                        padding: '20px',
+                                        marginBottom: '20px',
+                                        boxShadow: '0 0 20px rgba(0, 255, 255, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        animationDelay: '1.2s',
+                                        display: 'flex',
+                                        gap: '20px',
+                                        alignItems: 'flex-start',
+                                        flexWrap: 'wrap'
+                                    }}>
+                                        <img
+                                            src="/podium.png"
+                                            style={{
+                                                width: 70,
+                                                height: 70,
+                                                minWidth: 70,
+                                                border: '3px solid #00ffff',
+                                                borderRadius: '50%',
+                                                boxShadow: '0 0 20px rgba(0, 255, 255, 0.5)',
+                                                animation: 'iconFloat 3s ease-in-out infinite 3s'
+                                            }}
+                                            alt
+                                        />
+                                        <div className="speaker-name" style={{ flex: 1, minWidth: '200px' }}>
+                                            <div className="heading" style={{ 
+                                                display: 'flex', 
+                                                justifyContent: 'space-between', 
+                                                alignItems: 'flex-start',
+                                                flexWrap: 'wrap',
+                                                gap: '10px',
+                                                marginBottom: '10px'
+                                            }}>
+                                                <span className="neon-text" style={{ 
+                                                    color: '#00ffff',
+                                                    fontWeight: 'bold',
+                                                    fontSize: '1.1rem',
+                                                    flex: 1,
+                                                    minWidth: '200px'
+                                                }}>
+                                                    Evaluation Completes
+                                                </span>
+                                                <div className="time neon-text" style={{ 
+                                                    color: '#00ff88',
+                                                    fontSize: '1rem',
+                                                    fontWeight: 'bold',
+                                                    whiteSpace: 'nowrap'
+                                                }}>
+                                                    4:00 pm
+                                                </div>
+                                            </div>
+                                            <p style={{ color: '#b0c4de', lineHeight: '1.7', margin: 0 }}>
+                                                Teams will be evaluated by the judges.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div className="single_speaker slide-in-up" style={{
+                                        background: 'linear-gradient(135deg, rgba(255, 0, 255, 0.05) 0%, rgba(255, 0, 255, 0.02) 100%)',
+                                        border: '2px solid rgba(255, 0, 255, 0.3)',
+                                        borderRadius: '15px',
+                                        padding: '20px',
+                                        marginBottom: '20px',
+                                        boxShadow: '0 0 20px rgba(255, 0, 255, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        animationDelay: '1.4s',
+                                        display: 'flex',
+                                        gap: '20px',
+                                        alignItems: 'flex-start',
+                                        flexWrap: 'wrap'
+                                    }}>
+                                        <img
+                                            src="/finish-line.png"
+                                            style={{
+                                                width: 70,
+                                                height: 70,
+                                                minWidth: 70,
+                                                border: '3px solid #ff00ff',
+                                                borderRadius: '50%',
+                                                boxShadow: '0 0 20px rgba(255, 0, 255, 0.5)',
+                                                animation: 'iconFloat 3s ease-in-out infinite 3.5s'
+                                            }}
+                                            alt
+                                        />
+                                        <div className="speaker-name" style={{ flex: 1, minWidth: '200px' }}>
+                                            <div className="heading" style={{ 
+                                                display: 'flex', 
+                                                justifyContent: 'space-between', 
+                                                alignItems: 'flex-start',
+                                                flexWrap: 'wrap',
+                                                gap: '10px',
+                                                marginBottom: '10px'
+                                            }}>
+                                                <span className="neon-text" style={{ 
+                                                    color: '#ff00ff',
+                                                    fontWeight: 'bold',
+                                                    fontSize: '1.1rem',
+                                                    flex: 1,
+                                                    minWidth: '200px'
+                                                }}>
+                                                    Results are Published
+                                                </span>
+                                                <div className="time neon-text" style={{ 
+                                                    color: '#00ff88',
+                                                    fontSize: '1rem',
+                                                    fontWeight: 'bold',
+                                                    whiteSpace: 'nowrap'
+                                                }}>
+                                                    5:00 pm
+                                                </div>
+                                            </div>
+                                            <p style={{ color: '#b0c4de', lineHeight: '1.7', margin: 0 }}>
+                                                Results are published based on the evaluations.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <Footer />
             </div>
         </>
     );
