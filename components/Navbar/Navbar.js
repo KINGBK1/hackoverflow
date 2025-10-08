@@ -6,16 +6,16 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <style jsx>{`
-        @keyframes glowPulse {
-          0%, 100% {
-            box-shadow: 0 0 10px rgba(0, 255, 255, 0.6),
-                        0 0 20px rgba(0, 255, 255, 0.3);
-          }
-          50% {
-            box-shadow: 0 0 25px rgba(0, 255, 255, 1),
-                        0 0 40px rgba(0, 255, 255, 0.7);
-          }
-        }
+        // @keyframes glowPulse {
+        //   0%, 100% {
+        //     box-shadow: 0 0 10px rgba(0, 255, 255, 0.6),
+        //                 0 0 20px rgba(0, 255, 255, 0.3);
+        //   }
+        //   50% {
+        //     box-shadow: 0 0 25px rgba(0, 255, 255, 1),
+        //                 0 0 40px rgba(0, 255, 255, 0.7);
+        //   }
+        // }
 
         @keyframes textGlow {
           0%, 100% { text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff; }

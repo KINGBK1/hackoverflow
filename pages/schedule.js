@@ -1,11 +1,20 @@
 import Head from "next/head";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Timer from "../components/Timer";
 import BlobScene from "../components/Flow";
 
 export default function SchedulePage() {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth <= 768);
+        handleResize(); // run once
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     useEffect(() => {
         const script = document.createElement("script");
         script.async = true;
@@ -15,10 +24,10 @@ export default function SchedulePage() {
             document.body.removeChild(script);
         };
     }, []);
-    
+
     return (
         <>
-          <Head>
+            <Head>
                 {/* Basic Meta */}
                 <meta charSet="utf-8" />
                 <meta httpEquiv="x-ua-compatible" content="IE=edge" />
@@ -91,8 +100,10 @@ export default function SchedulePage() {
                 <div>
                     <div style={{ position: 'relative', minHeight: '100vh' }}>
                         {/* 3D Background */}
-                        <BlobScene />
-
+                        {/* <BlobScene /> */}
+                        <div className="hero-bg">
+                            <img src={isMobile ? "/hero/mobile123.jpg" : "/hero/new_image123 (1).jpg"} alt="Background" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 0, opacity: 1 }} />
+                        </div>
                         {/* Original Content with positioning */}
                         <div className="slider_area" style={{ position: 'relative', zIndex: 1, background: 'transparent' }}>
                             <div className="slider_text">
@@ -104,17 +115,17 @@ export default function SchedulePage() {
                                                     <h3
                                                         style={{
                                                             color: '#aaffff !important',
-                                                            textShadow: `
-        0 0 5px #0ff,
-        0 0 10px #0ff,
-        0 0 20px #0ff,
-        0 0 40px #0ff,
-        0 0 80px #0ff
-      `,
+                                                            //                                                         textShadow: `
+                                                            //     0 0 5px #0ff,
+                                                            //     0 0 10px #0ff,
+                                                            //     0 0 20px #0ff,
+                                                            //     0 0 40px #0ff,
+                                                            //     0 0 80px #0ff
+                                                            //   `,
                                                             fontWeight: 'bold',
                                                             fontSize: '4rem',
                                                             WebkitTextFillColor: '#aaffff',
-                                                            filter: 'drop-shadow(0 0 10px #0ff)',
+                                                            // filter: 'drop-shadow(0 0 10px #0ff)',
                                                         }}
                                                     >
                                                         Event Schedule
@@ -132,6 +143,7 @@ export default function SchedulePage() {
                                                                 fontWeight: 'bold',
                                                                 boxShadow: '0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff',
                                                                 transition: '0.3s',
+                                                                backgroundColor: 'black',
                                                             }}
                                                             onMouseEnter={(e) => {
                                                                 e.target.style.boxShadow =
@@ -149,13 +161,15 @@ export default function SchedulePage() {
                                                             href="https://unstop.com/p/hackoverflow-80-gnulinux-users-group-nit-durgapur-1437266"
                                                             style={{
                                                                 padding: '0.8rem 1.5rem',
-                                                                color: '#f0f',
-                                                                border: '2px solid #f0f',
+                                                                color: 'rgba(255, 255, 255, 1)',
+                                                                textShadow: '0 0 5px rgba(152, 185, 216, 1)',
+                                                                border: '2px solid rgba(152, 185, 216, 1)',
                                                                 borderRadius: '8px',
                                                                 textTransform: 'uppercase',
                                                                 fontWeight: 'bold',
                                                                 boxShadow: '0 0 5px #f0f, 0 0 10px #f0f, 0 0 20px #f0f',
                                                                 transition: '0.3s',
+                                                                backgroundColor: 'black',
                                                             }}
                                                             onMouseEnter={(e) => {
                                                                 e.target.style.boxShadow =
@@ -184,12 +198,12 @@ export default function SchedulePage() {
                                             className="md:mt-5"
                                             style={{
                                                 color: '#aaffff',
-                                                textShadow: `
-                                                    0 0 5px #0ff,
-                                                    0 0 10px #0ff,
-                                                    0 0 20px #0ff,
-                                                    0 0 30px #0ff
-                                                `,
+                                                // textShadow: `
+                                                //     0 0 5px #0ff,
+                                                //     0 0 10px #0ff,
+                                                //     0 0 20px #0ff,
+                                                //     0 0 30px #0ff
+                                                // `,
                                                 fontWeight: 'bold',
                                                 fontSize: 'clamp(2rem, 8vw, 3.5rem)',
                                                 WebkitTextFillColor: '#aaffff',
@@ -205,7 +219,7 @@ export default function SchedulePage() {
                                                 style={{
                                                     display: 'inline-block',
                                                     padding: '0.8rem 1.5rem',
-                                                    color: '#f0f',
+                                                    color: 'rgba(255, 255, 255, 1)',
                                                     border: '2px solid #f0f',
                                                     borderRadius: '8px',
                                                     textTransform: 'uppercase',
@@ -213,7 +227,9 @@ export default function SchedulePage() {
                                                     boxShadow: '0 0 5px #f0f, 0 0 10px #f0f, 0 0 20px #f0f',
                                                     transition: '0.3s',
                                                     textDecoration: 'none',
-                                                    fontSize: 'clamp(0.9rem, 3vw, 1.1rem)'
+                                                    fontSize: 'clamp(0.9rem, 3vw, 1.1rem)',
+                                                    textShadow: '0 0 5px rgba(152, 185, 216, 1)',
+                                                    backgroundColor: 'black',
                                                 }}
                                                 onMouseEnter={(e) => {
                                                     e.target.style.boxShadow = '0 0 10px #f0f, 0 0 20px #f0f, 0 0 40px #f0f';
@@ -226,6 +242,7 @@ export default function SchedulePage() {
                                             >
                                                 Apply
                                             </a>
+
                                             <a
                                                 href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
                                                 style={{
@@ -239,7 +256,8 @@ export default function SchedulePage() {
                                                     boxShadow: '0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff',
                                                     transition: '0.3s',
                                                     textDecoration: 'none',
-                                                    fontSize: 'clamp(0.9rem, 3vw, 1.1rem)'
+                                                    fontSize: 'clamp(0.9rem, 3vw, 1.1rem)',
+                                                    backgroundColor: 'black',
                                                 }}
                                                 onMouseEnter={(e) => {
                                                     e.target.style.boxShadow = '0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff';
@@ -265,8 +283,19 @@ export default function SchedulePage() {
                                         paddingLeft: 'clamp(1rem, 3vw, 3rem)',
                                         paddingRight: 'clamp(1rem, 3vw, 3rem)'
                                     }}>
-                                    <div style={{ width: '100%', maxWidth: '600px' }}>
-                                        <Timer />
+                                    <div
+                                        style={{
+                                            display: 'flex',
+                                            justifyContent: 'center',
+                                            alignItems: 'center',
+                                            width: '100%',
+                                            padding: '0 1rem',
+                                            margin: '0 auto',
+                                        }}
+                                    >
+                                        <div style={{ width: '100%', maxWidth: '700px' }}>
+                                            <Timer />
+                                        </div>
                                     </div>
                                     <div className="flex flex-col items-center w-full"
                                         style={{
@@ -296,6 +325,7 @@ export default function SchedulePage() {
                                         >
                                             20th March, 2025
                                         </p>
+
                                     </div>
                                 </div>
                             </div>
@@ -303,7 +333,7 @@ export default function SchedulePage() {
                     </div>
                 </div>
 
-                <div className="event_area plus_padding" style={{ 
+                <div className="event_area plus_padding" style={{
                     background: 'linear-gradient(180deg, #020611 0%, #041228 50%, #020611 100%)',
                     position: 'relative',
                     padding: '80px 0'
@@ -321,7 +351,7 @@ export default function SchedulePage() {
                             <div className="row">
                                 <div className="col-xl-3 col-lg-3 col-md-12" style={{ marginBottom: '20px' }}>
                                     <div className="date">
-                                        <h3 className="neon-text" style={{ 
+                                        <h3 className="neon-text" style={{
                                             color: '#00ffff',
                                             textShadow: '0 0 10px #00ffff, 0 0 20px #00ffff',
                                             fontSize: '1.5rem'
@@ -359,15 +389,15 @@ export default function SchedulePage() {
                                             alt
                                         />
                                         <div className="speaker-name" style={{ flex: 1, minWidth: '200px' }}>
-                                            <div className="heading" style={{ 
-                                                display: 'flex', 
-                                                justifyContent: 'space-between', 
+                                            <div className="heading" style={{
+                                                display: 'flex',
+                                                justifyContent: 'space-between',
                                                 alignItems: 'flex-start',
                                                 flexWrap: 'wrap',
                                                 gap: '10px',
                                                 marginBottom: '10px'
                                             }}>
-                                                <span className="neon-text" style={{ 
+                                                <span className="neon-text" style={{
                                                     color: '#00ffff',
                                                     fontWeight: 'bold',
                                                     fontSize: '1.1rem',
@@ -376,7 +406,7 @@ export default function SchedulePage() {
                                                 }}>
                                                     Coding period ends
                                                 </span>
-                                                <div className="time neon-text" style={{ 
+                                                <div className="time neon-text" style={{
                                                     color: '#00ff88',
                                                     fontSize: '1rem',
                                                     fontWeight: 'bold',
@@ -419,15 +449,15 @@ export default function SchedulePage() {
                                             alt
                                         />
                                         <div className="speaker-name" style={{ flex: 1, minWidth: '200px' }}>
-                                            <div className="heading" style={{ 
-                                                display: 'flex', 
-                                                justifyContent: 'space-between', 
+                                            <div className="heading" style={{
+                                                display: 'flex',
+                                                justifyContent: 'space-between',
                                                 alignItems: 'flex-start',
                                                 flexWrap: 'wrap',
                                                 gap: '10px',
                                                 marginBottom: '10px'
                                             }}>
-                                                <span className="neon-text" style={{ 
+                                                <span className="neon-text" style={{
                                                     color: '#ff00ff',
                                                     fontWeight: 'bold',
                                                     fontSize: '1.1rem',
@@ -436,7 +466,7 @@ export default function SchedulePage() {
                                                 }}>
                                                     Judges' Address
                                                 </span>
-                                                <div className="time neon-text" style={{ 
+                                                <div className="time neon-text" style={{
                                                     color: '#00ff88',
                                                     fontSize: '1rem',
                                                     fontWeight: 'bold',
@@ -450,7 +480,7 @@ export default function SchedulePage() {
                                             </p>
                                         </div>
                                     </div>
-                                    
+
                                     <div className="single_speaker slide-in-up" style={{
                                         background: 'linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(0, 255, 255, 0.02) 100%)',
                                         border: '2px solid rgba(0, 255, 255, 0.3)',
@@ -512,12 +542,12 @@ export default function SchedulePage() {
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div className="double_line" style={{ marginBottom: '40px' }}>
                             <div className="row">
                                 <div className="col-xl-3 col-lg-3 col-md-12" style={{ marginBottom: '20px' }}>
                                     <div className="date">
-                                        <h3 className="neon-text" style={{ 
+                                        <h3 className="neon-text" style={{
                                             color: '#ff00ff',
                                             textShadow: '0 0 10px #ff00ff, 0 0 20px #ff00ff',
                                             fontSize: '1.5rem'
@@ -555,15 +585,15 @@ export default function SchedulePage() {
                                             }}
                                         />
                                         <div className="speaker-name" style={{ flex: 1, minWidth: '200px' }}>
-                                            <div className="heading" style={{ 
-                                                display: 'flex', 
-                                                justifyContent: 'space-between', 
+                                            <div className="heading" style={{
+                                                display: 'flex',
+                                                justifyContent: 'space-between',
                                                 alignItems: 'flex-start',
                                                 flexWrap: 'wrap',
                                                 gap: '10px',
                                                 marginBottom: '10px'
                                             }}>
-                                                <span className="neon-text" style={{ 
+                                                <span className="neon-text" style={{
                                                     color: '#ff00ff',
                                                     fontWeight: 'bold',
                                                     fontSize: '1.1rem',
@@ -572,7 +602,7 @@ export default function SchedulePage() {
                                                 }}>
                                                     Application Submission Phase Ends
                                                 </span>
-                                                <div className="time neon-text" style={{ 
+                                                <div className="time neon-text" style={{
                                                     color: '#00ff88',
                                                     fontSize: '1rem',
                                                     fontWeight: 'bold',
@@ -586,12 +616,12 @@ export default function SchedulePage() {
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div className="double_line" style={{ marginBottom: '40px' }}>
                             <div className="row">
                                 <div className="col-xl-3 col-lg-3 col-md-12" style={{ marginBottom: '20px' }}>
                                     <div className="date">
-                                        <h3 className="neon-text" style={{ 
+                                        <h3 className="neon-text" style={{
                                             color: '#00ff88',
                                             textShadow: '0 0 10px #00ff88, 0 0 20px #00ff88',
                                             fontSize: '1.5rem'
@@ -630,15 +660,15 @@ export default function SchedulePage() {
                                             alt
                                         />
                                         <div className="speaker-name" style={{ flex: 1, minWidth: '200px' }}>
-                                            <div className="heading" style={{ 
-                                                display: 'flex', 
-                                                justifyContent: 'space-between', 
+                                            <div className="heading" style={{
+                                                display: 'flex',
+                                                justifyContent: 'space-between',
                                                 alignItems: 'flex-start',
                                                 flexWrap: 'wrap',
                                                 gap: '10px',
                                                 marginBottom: '10px'
                                             }}>
-                                                <span className="neon-text" style={{ 
+                                                <span className="neon-text" style={{
                                                     color: '#00ff88',
                                                     fontWeight: 'bold',
                                                     fontSize: '1.1rem',
@@ -647,7 +677,7 @@ export default function SchedulePage() {
                                                 }}>
                                                     Hackoverflow flags off!
                                                 </span>
-                                                <div className="time neon-text" style={{ 
+                                                <div className="time neon-text" style={{
                                                     color: '#00ffff',
                                                     fontSize: '1rem',
                                                     fontWeight: 'bold',
@@ -664,12 +694,12 @@ export default function SchedulePage() {
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div className="double_line" style={{ marginBottom: '40px' }}>
                             <div className="row">
                                 <div className="col-xl-3 col-lg-3 col-md-12" style={{ marginBottom: '20px' }}>
                                     <div className="date">
-                                        <h3 className="neon-text" style={{ 
+                                        <h3 className="neon-text" style={{
                                             color: '#00ffff',
                                             textShadow: '0 0 10px #00ffff, 0 0 20px #00ffff',
                                             fontSize: '1.5rem'
@@ -703,14 +733,14 @@ export default function SchedulePage() {
                                         />
                                         <div className="speaker-name">
                                             <div className="heading d-flex justify-content-between align-items-center">
-                                                <span className="neon-text" style={{ 
+                                                <span className="neon-text" style={{
                                                     color: '#00ffff',
                                                     fontWeight: 'bold',
                                                     fontSize: '1.3rem'
                                                 }}>
                                                     Coding period ends
                                                 </span>
-                                                <div className="time neon-text" style={{ 
+                                                <div className="time neon-text" style={{
                                                     color: '#00ff88',
                                                     fontSize: '1.1rem',
                                                     fontWeight: 'bold'
@@ -748,14 +778,14 @@ export default function SchedulePage() {
                                         />
                                         <div className="speaker-name">
                                             <div className="heading d-flex justify-content-between align-items-center">
-                                                <span className="neon-text" style={{ 
+                                                <span className="neon-text" style={{
                                                     color: '#ff00ff',
                                                     fontWeight: 'bold',
                                                     fontSize: '1.3rem'
                                                 }}>
                                                     Judges' Address
                                                 </span>
-                                                <div className="time neon-text" style={{ 
+                                                <div className="time neon-text" style={{
                                                     color: '#00ff88',
                                                     fontSize: '1.1rem',
                                                     fontWeight: 'bold'
@@ -771,12 +801,12 @@ export default function SchedulePage() {
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div className="double_line" style={{ marginBottom: '40px' }}>
                             <div className="row">
                                 <div className="col-xl-3 col-lg-3 col-md-12" style={{ marginBottom: '20px' }}>
                                     <div className="date">
-                                        <h3 className="neon-text" style={{ 
+                                        <h3 className="neon-text" style={{
                                             color: '#ff00ff',
                                             textShadow: '0 0 10px #ff00ff, 0 0 20px #ff00ff',
                                             fontSize: '1.5rem'
@@ -815,15 +845,15 @@ export default function SchedulePage() {
                                             alt
                                         />
                                         <div className="speaker-name" style={{ flex: 1, minWidth: '200px' }}>
-                                            <div className="heading" style={{ 
-                                                display: 'flex', 
-                                                justifyContent: 'space-between', 
+                                            <div className="heading" style={{
+                                                display: 'flex',
+                                                justifyContent: 'space-between',
                                                 alignItems: 'flex-start',
                                                 flexWrap: 'wrap',
                                                 gap: '10px',
                                                 marginBottom: '10px'
                                             }}>
-                                                <span className="neon-text" style={{ 
+                                                <span className="neon-text" style={{
                                                     color: '#00ff88',
                                                     fontWeight: 'bold',
                                                     fontSize: '1.1rem',
@@ -832,7 +862,7 @@ export default function SchedulePage() {
                                                 }}>
                                                     Evaluation Starts
                                                 </span>
-                                                <div className="time neon-text" style={{ 
+                                                <div className="time neon-text" style={{
                                                     color: '#00ffff',
                                                     fontSize: '1rem',
                                                     fontWeight: 'bold',
@@ -875,15 +905,15 @@ export default function SchedulePage() {
                                             alt
                                         />
                                         <div className="speaker-name" style={{ flex: 1, minWidth: '200px' }}>
-                                            <div className="heading" style={{ 
-                                                display: 'flex', 
-                                                justifyContent: 'space-between', 
+                                            <div className="heading" style={{
+                                                display: 'flex',
+                                                justifyContent: 'space-between',
                                                 alignItems: 'flex-start',
                                                 flexWrap: 'wrap',
                                                 gap: '10px',
                                                 marginBottom: '10px'
                                             }}>
-                                                <span className="neon-text" style={{ 
+                                                <span className="neon-text" style={{
                                                     color: '#00ffff',
                                                     fontWeight: 'bold',
                                                     fontSize: '1.1rem',
@@ -892,7 +922,7 @@ export default function SchedulePage() {
                                                 }}>
                                                     Evaluation Completes
                                                 </span>
-                                                <div className="time neon-text" style={{ 
+                                                <div className="time neon-text" style={{
                                                     color: '#00ff88',
                                                     fontSize: '1rem',
                                                     fontWeight: 'bold',
@@ -906,7 +936,7 @@ export default function SchedulePage() {
                                             </p>
                                         </div>
                                     </div>
-                                    
+
                                     <div className="single_speaker slide-in-up" style={{
                                         background: 'linear-gradient(135deg, rgba(255, 0, 255, 0.05) 0%, rgba(255, 0, 255, 0.02) 100%)',
                                         border: '2px solid rgba(255, 0, 255, 0.3)',
@@ -935,15 +965,15 @@ export default function SchedulePage() {
                                             alt
                                         />
                                         <div className="speaker-name" style={{ flex: 1, minWidth: '200px' }}>
-                                            <div className="heading" style={{ 
-                                                display: 'flex', 
-                                                justifyContent: 'space-between', 
+                                            <div className="heading" style={{
+                                                display: 'flex',
+                                                justifyContent: 'space-between',
                                                 alignItems: 'flex-start',
                                                 flexWrap: 'wrap',
                                                 gap: '10px',
                                                 marginBottom: '10px'
                                             }}>
-                                                <span className="neon-text" style={{ 
+                                                <span className="neon-text" style={{
                                                     color: '#ff00ff',
                                                     fontWeight: 'bold',
                                                     fontSize: '1.1rem',
@@ -952,7 +982,7 @@ export default function SchedulePage() {
                                                 }}>
                                                     Results are Published
                                                 </span>
-                                                <div className="time neon-text" style={{ 
+                                                <div className="time neon-text" style={{
                                                     color: '#00ff88',
                                                     fontSize: '1rem',
                                                     fontWeight: 'bold',

@@ -4,10 +4,14 @@ import Navbar from "../components/Navbar";
 import Timer from "../components/Timer";
 import Sponsors from "../components/sponsors";
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import BlobScene from "../components/Flow";
 
+
+
 export default function IndexPage() {
+
+    const [isMobile, setIsMobile] = useState(false);
     useEffect(() => {
         const script = document.createElement("script");
         script.async = true;
@@ -16,6 +20,13 @@ export default function IndexPage() {
         return () => {
             document.body.removeChild(script);
         };
+    }, []);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth <= 768);
+        handleResize(); // run once
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
     }, []);
 
     return (
@@ -95,7 +106,11 @@ export default function IndexPage() {
                 <div>
                     <div style={{ position: 'relative', minHeight: '100vh' }}>
                         {/* 3D Background */}
-                        <BlobScene />
+                        {/* <BlobScene /> */}
+                        <div className="hero-bg">
+                            <img src={isMobile ? "/hero/mobile123.jpg" : "/hero/new_image123 (1).jpg"} alt="Background" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 0, opacity: 1 }} />
+                        </div>
+
 
                         {/* Original Content with positioning */}
                         <div className="slider_area" style={{ position: 'relative', zIndex: 1, background: 'transparent' }}>
@@ -108,13 +123,6 @@ export default function IndexPage() {
                                                     <h3
                                                         style={{
                                                             color: '#aaffff !important',
-                                                            textShadow: `
-        0 0 5px #0ff,
-        0 0 10px #0ff,
-        0 0 20px #0ff,
-        0 0 40px #0ff,
-        0 0 80px #0ff
-      `,
                                                             fontWeight: 'bold',
                                                             fontSize: '4rem',
                                                             WebkitTextFillColor: '#aaffff',
@@ -138,6 +146,7 @@ export default function IndexPage() {
                                                                 fontWeight: 'bold',
                                                                 boxShadow: '0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff',
                                                                 transition: '0.3s',
+                                                                backgroundColor: 'black',
                                                             }}
                                                             onMouseEnter={(e) => {
                                                                 e.target.style.boxShadow =
@@ -155,13 +164,15 @@ export default function IndexPage() {
                                                             href="https://unstop.com/p/hackoverflow-80-gnulinux-users-group-nit-durgapur-1437266"
                                                             style={{
                                                                 padding: '0.8rem 1.5rem',
-                                                                color: '#f0f', // neon pink
-                                                                border: '2px solid #f0f',
+                                                                color: 'rgba(255, 255, 255, 1)',
+                                                                textShadow: '0 0 5px rgba(152, 185, 216, 1)',
+                                                                border: '2px solid rgba(152, 185, 216, 1)',
                                                                 borderRadius: '8px',
                                                                 textTransform: 'uppercase',
                                                                 fontWeight: 'bold',
                                                                 boxShadow: '0 0 5px #f0f, 0 0 10px #f0f, 0 0 20px #f0f',
                                                                 transition: '0.3s',
+                                                                backgroundColor: 'black',
                                                             }}
                                                             onMouseEnter={(e) => {
                                                                 e.target.style.boxShadow =
@@ -191,12 +202,12 @@ export default function IndexPage() {
                                             className="md:mt-5"
                                             style={{
                                                 color: '#aaffff',
-                                                textShadow: `
-                                                    0 0 5px #0ff,
-                                                    0 0 10px #0ff,
-                                                    0 0 20px #0ff,
-                                                    0 0 30px #0ff
-                                                `,
+                                                // textShadow: `
+                                                //     0 0 5px #0ff,
+                                                //     0 0 10px #0ff,
+                                                //     0 0 20px #0ff,
+                                                //     0 0 30px #0ff
+                                                // `,
                                                 fontWeight: 'bold',
                                                 fontSize: 'clamp(2rem, 8vw, 3.5rem)',
                                                 WebkitTextFillColor: '#aaffff',
@@ -209,12 +220,12 @@ export default function IndexPage() {
                                         <h3
                                             style={{
                                                 color: '#aaffff',
-                                                textShadow: `
-                                                    0 0 5px #0ff,
-                                                    0 0 10px #0ff,
-                                                    0 0 20px #0ff,
-                                                    0 0 30px #0ff
-                                                `,
+                                                // textShadow: `
+                                                //     0 0 5px #0ff,
+                                                //     0 0 10px #0ff,
+                                                //     0 0 20px #0ff,
+                                                //     0 0 30px #0ff
+                                                // `,
                                                 fontWeight: 'bold',
                                                 fontSize: 'clamp(1.5rem, 6vw, 2.5rem)',
                                                 WebkitTextFillColor: '#aaffff',
@@ -230,15 +241,17 @@ export default function IndexPage() {
                                                 style={{
                                                     display: 'inline-block',
                                                     padding: '0.8rem 1.5rem',
-                                                    color: '#f0f',
+                                                    color: 'rgba(255, 255, 255, 1)',
+                                                    textShadow: '0 0 5px rgba(152, 185, 216, 1)',
                                                     border: '2px solid #f0f',
                                                     borderRadius: '8px',
                                                     textTransform: 'uppercase',
                                                     fontWeight: 'bold',
                                                     boxShadow: '0 0 5px #f0f, 0 0 10px #f0f, 0 0 20px #f0f',
                                                     transition: '0.3s',
-                                                    textDecoration: 'none',
-                                                    fontSize: 'clamp(0.9rem, 3vw, 1.1rem)'
+                                                    textDecoration: 'bold',
+                                                    fontSize: 'clamp(0.9rem, 3vw, 1.1rem)',
+                                                    backgroundColor: 'black',
                                                 }}
                                                 onMouseEnter={(e) => {
                                                     e.target.style.boxShadow = '0 0 10px #f0f, 0 0 20px #f0f, 0 0 40px #f0f';
@@ -251,7 +264,7 @@ export default function IndexPage() {
                                             >
                                                 Apply
                                             </a>
-                                            {/* <a
+                                            <a
                                                 href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
                                                 style={{
                                                     padding: '0.8rem 1.5rem',
@@ -262,6 +275,7 @@ export default function IndexPage() {
                                                     fontWeight: 'bold',
                                                     boxShadow: '0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff',
                                                     transition: '0.3s',
+                                                    backgroundColor: 'black',
                                                 }}
                                                 onMouseEnter={(e) => {
                                                     e.target.style.boxShadow =
@@ -274,7 +288,7 @@ export default function IndexPage() {
                                                 }}
                                             >
                                                 Add to your Calendar
-                                            </a> */}
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -288,8 +302,19 @@ export default function IndexPage() {
                                         paddingLeft: 'clamp(1rem, 3vw, 3rem)',
                                         paddingRight: 'clamp(1rem, 3vw, 3rem)'
                                     }}>
-                                    <div style={{ width: '100%', maxWidth: '600px' }}>
-                                        <Timer />
+                                    <div
+                                        style={{
+                                            display: 'flex',
+                                            justifyContent: 'center',
+                                            alignItems: 'center',
+                                            width: '100%',
+                                            padding: '0 1rem',
+                                            margin: '0 auto',
+                                        }}
+                                    >
+                                        <div style={{ width: '100%', maxWidth: '700px' }}>
+                                            <Timer />
+                                        </div>
                                     </div>
                                     <div className="flex flex-col items-center w-full"
                                         style={{
@@ -330,7 +355,7 @@ export default function IndexPage() {
                                     }}
                                 >
                                     <div style={{ width: '100%', maxWidth: '350px', padding: '0 1.5rem' }}>
-                                        <a
+                                        {/* <a
                                             href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
                                             className="md:my-2 block"
                                             id="register-2"
@@ -362,7 +387,7 @@ export default function IndexPage() {
                                             }}
                                         >
                                             Add to Calendar
-                                        </a>
+                                        </a> */}
                                     </div>
                                 </div>
                             </div>
@@ -398,7 +423,7 @@ export default function IndexPage() {
                                         </span>
                                         <h3 className="neon-text" style={{
                                             color: '#00ffff',
-                                            textShadow: '0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff',
+                                            textShadow: '0 0 4px #00ffff, 0 0 8px #00ffff',
                                             marginTop: '20px'
                                         }}>
                                             The Biggest Technical <br />
@@ -443,7 +468,8 @@ export default function IndexPage() {
                 <div className="speakers_area" style={{ background: 'linear-gradient(180deg, #041228 0%, #020611 100%)', position: 'relative' }}>
                     <h1 className="horizontal_text d-none d-lg-block neon-text" style={{
                         color: '#00ffff',
-                        textShadow: '0 0 20px #00ffff, 0 0 40px #00ffff'
+                        textShadow: '0 0 5px #00ffff, 0 0 10px #00ffff'
+
                     }}>
                         Judges
                     </h1>
@@ -453,7 +479,7 @@ export default function IndexPage() {
                                 <div className="serction_title_large mb-95">
                                     <h3 className="neon-text" style={{
                                         color: '#ff00ff',
-                                        textShadow: '0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff'
+                                        textShadow: '0 0 4px #ff00ff, 0 0 8px #ff00ff'
                                     }}>Judges</h3>
                                 </div>
                             </div>
@@ -586,7 +612,7 @@ export default function IndexPage() {
                 <div className="event_area" style={{ background: 'linear-gradient(180deg, #020611 0%, #041228 100%)', position: 'relative' }}>
                     <h1 className="vr_text d-none d-lg-block neon-text" style={{
                         color: '#00ff88',
-                        textShadow: '0 0 20px #00ff88, 0 0 40px #00ff88'
+                        textShadow: '0 0 5px #00ff88, 0 0 10px #00ff88'
                     }}>Themes List</h1>
                     <div className="container">
                         <div className="double_line">
@@ -595,7 +621,8 @@ export default function IndexPage() {
                                     <div className="date">
                                         <h3 className="neon-text" style={{
                                             color: '#00ffff',
-                                            textShadow: '0 0 10px #00ffff, 0 0 20px #00ffff'
+                                            textShadow: '0 0 3px #00ffff, 0 0 6px #00ffff',
+                                            marginTop: '-1.5rem'
                                         }}>
                                             Hackathon Themes
                                         </h3>
@@ -618,7 +645,7 @@ export default function IndexPage() {
                                                 width: "90px",
                                                 borderRadius: "50%",
                                                 border: '3px solid #00ffff',
-                                                boxShadow: '0 0 20px rgba(0, 255, 255, 0.5)'
+                                                // boxShadow: '0 0 20px rgba(0, 255, 255, 0.5)'
                                             }}
                                         />
                                         <div className="speaker-name">
@@ -646,7 +673,7 @@ export default function IndexPage() {
                                         borderRadius: '15px',
                                         padding: '20px',
                                         marginBottom: '25px',
-                                        boxShadow: '0 0 20px rgba(255, 0, 255, 0.2)',
+                                        // boxShadow: '0 0 20px rgba(255, 0, 255, 0.2)',
                                         transition: 'all 0.3s ease'
                                     }}>
                                         <img
@@ -656,7 +683,7 @@ export default function IndexPage() {
                                                 width: "90px",
                                                 borderRadius: "50%",
                                                 border: '3px solid #ff00ff',
-                                                boxShadow: '0 0 20px rgba(255, 0, 255, 0.5)'
+                                                // boxShadow: '0 0 20px rgba(255, 0, 255, 0.5)'
                                             }}
                                         />
                                         <div className="speaker-name">
@@ -685,7 +712,7 @@ export default function IndexPage() {
                                         borderRadius: '15px',
                                         padding: '20px',
                                         marginBottom: '25px',
-                                        boxShadow: '0 0 20px rgba(0, 255, 136, 0.2)',
+                                        // boxShadow: '0 0 20px rgba(0, 255, 136, 0.2)',
                                         transition: 'all 0.3s ease'
                                     }}>
                                         <img
@@ -695,7 +722,7 @@ export default function IndexPage() {
                                                 width: "90px",
                                                 borderRadius: "50%",
                                                 border: '3px solid #00ff88',
-                                                boxShadow: '0 0 20px rgba(0, 255, 136, 0.5)'
+                                                // boxShadow: '0 0 20px rgba(0, 255, 136, 0.5)'
                                             }}
                                         />
                                         <div className="speaker-name">
@@ -726,7 +753,7 @@ export default function IndexPage() {
                                         borderRadius: '15px',
                                         padding: '20px',
                                         marginBottom: '25px',
-                                        boxShadow: '0 0 20px rgba(0, 255, 255, 0.2)',
+                                        // boxShadow: '0 0 20px rgba(0, 255, 255, 0.2)',
                                         transition: 'all 0.3s ease'
                                     }}>
                                         <img
@@ -736,7 +763,7 @@ export default function IndexPage() {
                                                 width: "90px",
                                                 borderRadius: "50%",
                                                 border: '3px solid #00ffff',
-                                                boxShadow: '0 0 20px rgba(0, 255, 255, 0.5)'
+                                                // boxShadow: '0 0 20px rgba(0, 255, 255, 0.5)'
                                             }}
                                         />
                                         <div className="speaker-name">
@@ -764,7 +791,7 @@ export default function IndexPage() {
                                         borderRadius: '15px',
                                         padding: '20px',
                                         marginBottom: '25px',
-                                        boxShadow: '0 0 20px rgba(255, 0, 255, 0.2)',
+                                        // boxShadow: '0 0 20px rgba(255, 0, 255, 0.2)',
                                         transition: 'all 0.3s ease'
                                     }}>
                                         <img
@@ -774,7 +801,7 @@ export default function IndexPage() {
                                                 width: "90px",
                                                 borderRadius: "50%",
                                                 border: '3px solid #ff00ff',
-                                                boxShadow: '0 0 20px rgba(255, 0, 255, 0.5)'
+                                                // boxShadow: '0 0 20px rgba(255, 0, 255, 0.5)'
                                             }}
                                         />
                                         <div className="speaker-name">
@@ -802,7 +829,7 @@ export default function IndexPage() {
                                         borderRadius: '15px',
                                         padding: '20px',
                                         marginBottom: '25px',
-                                        boxShadow: '0 0 20px rgba(0, 255, 136, 0.2)',
+                                        // boxShadow: '0 0 20px rgba(0, 255, 136, 0.2)',
                                         transition: 'all 0.3s ease'
                                     }}>
                                         <img
@@ -812,7 +839,7 @@ export default function IndexPage() {
                                                 width: "90px",
                                                 borderRadius: "50%",
                                                 border: '3px solid #00ff88',
-                                                boxShadow: '0 0 20px rgba(0, 255, 136, 0.5)'
+                                                // boxShadow: '0 0 20px rgba(0, 255, 136, 0.5)'
                                             }}
                                         />
                                         <div className="speaker-name">

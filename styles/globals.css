@@ -5,3 +5,28 @@
 /* *{
     overflow-x: hidden;
 } */
+
+/* Prevent unwanted horizontal scroll */
+html, body {
+  overflow-x: hidden !important;
+  width: 100%;
+}
+
+/* Prevent elements from forcing overflow */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* Fix 100vw issues inside containers */
+.bg-img img,
+.slider_area,
+.slider_text_mobile,
+.monocolor-rectangle,
+.container,
+.row {
+  overflow-x: hidden;
+}
+
+
+

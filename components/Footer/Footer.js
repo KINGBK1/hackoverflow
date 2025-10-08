@@ -43,7 +43,7 @@ export default function Footer() {
         }
         .footer {
           border-top: 2px solid rgba(0, 255, 255, 0.3);
-          animation: footerGlow 3s ease-in-out infinite;
+          // animation: footerGlow 3s ease-in-out infinite;
           padding-top: 50px;
         }
         .footer::before {
@@ -80,7 +80,7 @@ export default function Footer() {
         }
         .footer_title {
           color: #00ffff !important;
-          text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+          // text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
           font-weight: bold;
           font-size: 1.4rem;
           margin-bottom: 20px;
@@ -152,16 +152,16 @@ export default function Footer() {
             <div className="footer_links">
               <ul>
                 <li>
-                  <a href="#">Facebook</a>
+                  <a href="https://www.facebook.com/arhn.nitd/">Facebook</a>
                 </li>
                 <li>
-                  <a href="#">Twitter</a>
+                  <a href="https://twitter.com/arhn_nitd">Twitter</a>
                 </li>
                 <li>
-                  <a href="#">Instagram</a>
+                  <a href="https://www.instagram.com/arhn.nitd/?hl=en">Instagram</a>
                 </li>
                 <li>
-                  <a href="#">YouTube</a>
+                  <a href="https://www.youtube.com/channel/UCDRVna-w5uai2Vrcp5WgvSg">YouTube</a>
                 </li>
               </ul>
             </div>
