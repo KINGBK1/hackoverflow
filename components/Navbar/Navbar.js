@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Navbar() {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
         <header className="navbar">
             <style jsx>{`
-                /* === Neon Animations === */
                 @keyframes glowPulse {
                     0%, 100% {
                         box-shadow: 0 0 10px rgba(0, 255, 255, 0.6),
@@ -25,7 +26,6 @@ export default function Navbar() {
                     }
                 }
 
-                /* === Navbar Container === */
                 .navbar {
                     position: sticky;
                     top: 0;
@@ -41,7 +41,6 @@ export default function Navbar() {
                     animation: glowPulse 3s ease-in-out infinite;
                 }
 
-                /* === Logo === */
                 .logo {
                     display: flex;
                     align-items: center;
@@ -63,7 +62,6 @@ export default function Navbar() {
                     transform: scale(1.1) rotate(5deg);
                 }
 
-                /* === Navigation Links === */
                 .nav-links {
                     display: flex;
                     gap: 2rem;
@@ -100,16 +98,57 @@ export default function Navbar() {
                     width: 100%;
                 }
 
-                /* === Active link === */
                 .nav-links a.active {
                     color: #00ffff;
                     text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
                 }
 
-                /* === Mobile === */
+                /* Hamburger */
+                .hamburger {
+                    display: none;
+                    flex-direction: column;
+                    gap: 5px;
+                    cursor: pointer;
+                }
+
+                .hamburger div {
+                    width: 25px;
+                    height: 3px;
+                    background: #00ffff;
+                    border-radius: 2px;
+                    transition: all 0.3s ease;
+                }
+
+                /* Mobile menu */
+                .mobile-menu {
+                    display: none;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 70px;
+                    right: 2rem;
+                    background: rgba(2, 6, 17, 0.95);
+                    border: 1px solid rgba(0, 255, 255, 0.4);
+                    padding: 1rem;
+                    border-radius: 8px;
+                    backdrop-filter: blur(10px);
+                    animation: glowPulse 3s ease-in-out infinite;
+                }
+
+                .mobile-menu a {
+                    margin: 0.5rem 0;
+                }
+
                 @media (max-width: 768px) {
                     .nav-links {
                         display: none;
+                    }
+
+                    .hamburger {
+                        display: flex;
+                    }
+
+                    .mobile-menu {
+                        display: ${isOpen ? "flex" : "none"};
                     }
                 }
             `}</style>
@@ -121,6 +160,7 @@ export default function Navbar() {
                 </span>
             </a>
 
+            {/* Desktop Links */}
             <ul className="nav-links">
                 <li>
                     <a href="/" className="active">Home</a>
@@ -138,6 +178,27 @@ export default function Navbar() {
                     </a>
                 </li>
             </ul>
+
+            {/* Hamburger */}
+            <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            {/* Mobile Menu */}
+            <div className="mobile-menu">
+                <a href="/" className="active" onClick={() => setIsOpen(false)}>Home</a>
+                <a href="/schedule" onClick={() => setIsOpen(false)}>Schedule</a>
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://discord.com/invite/v9j8kd2Vz7"
+                    onClick={() => setIsOpen(false)}
+                >
+                    Discord
+                </a>
+            </div>
         </header>
     );
 }
