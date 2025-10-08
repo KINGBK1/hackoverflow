@@ -2,12 +2,12 @@
   "name": "hackoverflow",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev -p 3001",
-    "build": "next build && next export",
-    "start": "next start",
-    "vercel-build": "next build"
-  },
+"scripts": {
+  "dev": "next dev -p 3001",
+  "build": "next build",
+  "start": "next start",
+  "vercel-build": "next build"
+},
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
