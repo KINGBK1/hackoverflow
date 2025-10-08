@@ -118,7 +118,7 @@ export default function Navbar() {
 
         @media (max-width: 768px) {
           .navbar {
-            flex-direction: column;
+            flex-direction: row;
             align-items: flex-start;
             padding: 0.8rem 1.5rem;
           }

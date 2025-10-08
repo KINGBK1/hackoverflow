@@ -18,7 +18,7 @@ export default function SchedulePage() {
     
     return (
         <>
-            <Head>
+          <Head>
                 {/* Basic Meta */}
                 <meta charSet="utf-8" />
                 <meta httpEquiv="x-ua-compatible" content="IE=edge" />
@@ -56,33 +56,70 @@ export default function SchedulePage() {
 
                 {/* Optional: global animation styles */}
                 <style>{`
-        @keyframes neonPulse {
-          0%, 100% { text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor; }
-          50% { text-shadow: 0 0 20px currentColor, 0 0 40px currentColor, 0 0 50px currentColor; }
-        }
-        .neon-text { animation: neonPulse 2s ease-in-out infinite; }
-      `}</style>
-
-                {/* Scripts should go outside of <Head> ideally */}
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .slider_area, .about_area, .speakers_area, .event_area {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+  }
+  
+  a, button {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  canvas {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+`}</style>
             </Head>
             <div style={{ background: '#020611' }}>
                 <Navbar />
-                <div className="slider_area slider_bg_1" style={{ 
-                    background: 'linear-gradient(180deg, #020611 0%, #041228 50%, #020611 100%)',
-                    position: 'relative'
-                }}>
-                    <div className="slider_text">
+                <div>
+                    <div style={{ position: 'relative', minHeight: '100vh' }}>
+                        {/* 3D Background */}
                         <BlobScene />
-                        <div className="container">
-                            <div className="position_relv">
-                                <div className="row">
-                                    <div className="col-xl-9">
-                                        <div className="title_text ml-3">
-                                            <h3 className="neon-text" style={{ 
-                                                color: '#00ffff',
-                                                textShadow: '0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff'
-                                            }}>Event Schedule</h3>
-                                            <br />
+
+                        {/* Original Content with positioning */}
+                        <div className="slider_area" style={{ position: 'relative', zIndex: 1, background: 'transparent' }}>
+                            <div className="slider_text">
+                                <div className="container">
+                                    <div className="position_relv">
+                                        <div className="row">
+                                            <div className="col-xl-9">
+                                                <div className="title_text ml-3">
+                                                    <h3
+                                                        style={{
+                                                            color: '#aaffff !important',
+                                                            textShadow: `
+        0 0 5px #0ff,
+        0 0 10px #0ff,
+        0 0 20px #0ff,
+        0 0 40px #0ff,
+        0 0 80px #0ff
+      `,
+                                                            fontWeight: 'bold',
+                                                            fontSize: '4rem',
+                                                            WebkitTextFillColor: '#aaffff',
+                                                            filter: 'drop-shadow(0 0 10px #0ff)',
+                                                        }}
+                                                    >
+                                                        Event Schedule
+                                                    </h3>
+                                                    <br />
                                                     <div className="relative flex gap-4">
                                                         <a
                                                             href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
@@ -112,7 +149,7 @@ export default function SchedulePage() {
                                                             href="https://unstop.com/p/hackoverflow-80-gnulinux-users-group-nit-durgapur-1437266"
                                                             style={{
                                                                 padding: '0.8rem 1.5rem',
-                                                                color: '#f0f', // neon pink
+                                                                color: '#f0f',
                                                                 border: '2px solid #f0f',
                                                                 borderRadius: '8px',
                                                                 textTransform: 'uppercase',
@@ -133,79 +170,135 @@ export default function SchedulePage() {
                                                             Apply
                                                         </a>
                                                     </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div className="slider_text_mobile">
-                        <div className="container flex flex-wrap flex-column justify-center items-center text-center">
-                            <div className="position_relv text-center">
-                                <h3 className="md:mt-5 neon-text" style={{ 
-                                    color: '#00ffff',
-                                    textShadow: '0 0 10px #00ffff, 0 0 20px #00ffff'
-                                }}>Event Schedule</h3>
-                                <h3 className="neon-text" style={{ 
-                                    color: '#ff00ff',
-                                    textShadow: '0 0 10px #ff00ff, 0 0 20px #ff00ff'
-                                }}>Aarohan 2025</h3>
-                                <br />
-                                <div className="relative">
-                                    <a
-                                        href="https://unstop.com/p/hackoverflow-80-gnulinux-users-group-nit-durgapur-1437266"
-                                        className="boxed-btn-white neon-border"
-                                        style={{
-                                            border: '2px solid #ff00ff',
-                                            boxShadow: '0 0 20px rgba(255, 0, 255, 0.5)'
-                                        }}
-                                    >
-                                        Apply
-                                    </a>
+                            <div className="slider_text_mobile">
+                                <div className="container flex flex-wrap flex-column justify-center">
+                                    <div className="position_relv flex flex-col gap-2 items-center text-center">
+                                        <h3
+                                            className="md:mt-5"
+                                            style={{
+                                                color: '#aaffff',
+                                                textShadow: `
+                                                    0 0 5px #0ff,
+                                                    0 0 10px #0ff,
+                                                    0 0 20px #0ff,
+                                                    0 0 30px #0ff
+                                                `,
+                                                fontWeight: 'bold',
+                                                fontSize: 'clamp(2rem, 8vw, 3.5rem)',
+                                                WebkitTextFillColor: '#aaffff',
+                                                filter: 'drop-shadow(0 0 10px #0ff)',
+                                                marginBottom: '0.5rem'
+                                            }}
+                                        >
+                                            Event Schedule
+                                        </h3>
+                                        <div className="relative flex flex-col flex-wrap gap-4 justify-center mb-5" style={{ width: '100%', maxWidth: '400px' }}>
+                                            <a
+                                                href="https://unstop.com/p/hackoverflow-80-gnulinux-users-group-nit-durgapur-1437266"
+                                                style={{
+                                                    display: 'inline-block',
+                                                    padding: '0.8rem 1.5rem',
+                                                    color: '#f0f',
+                                                    border: '2px solid #f0f',
+                                                    borderRadius: '8px',
+                                                    textTransform: 'uppercase',
+                                                    fontWeight: 'bold',
+                                                    boxShadow: '0 0 5px #f0f, 0 0 10px #f0f, 0 0 20px #f0f',
+                                                    transition: '0.3s',
+                                                    textDecoration: 'none',
+                                                    fontSize: 'clamp(0.9rem, 3vw, 1.1rem)'
+                                                }}
+                                                onMouseEnter={(e) => {
+                                                    e.target.style.boxShadow = '0 0 10px #f0f, 0 0 20px #f0f, 0 0 40px #f0f';
+                                                    e.target.style.transform = 'scale(1.05)';
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.target.style.boxShadow = '0 0 5px #f0f, 0 0 10px #f0f, 0 0 20px #f0f';
+                                                    e.target.style.transform = 'scale(1)';
+                                                }}
+                                            >
+                                                Apply
+                                            </a>
+                                            <a
+                                                href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
+                                                style={{
+                                                    display: 'inline-block',
+                                                    padding: '0.8rem 1.5rem',
+                                                    color: '#0ff',
+                                                    border: '2px solid #0ff',
+                                                    borderRadius: '8px',
+                                                    textTransform: 'uppercase',
+                                                    fontWeight: 'bold',
+                                                    boxShadow: '0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff',
+                                                    transition: '0.3s',
+                                                    textDecoration: 'none',
+                                                    fontSize: 'clamp(0.9rem, 3vw, 1.1rem)'
+                                                }}
+                                                onMouseEnter={(e) => {
+                                                    e.target.style.boxShadow = '0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff';
+                                                    e.target.style.transform = 'scale(1.05)';
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.target.style.boxShadow = '0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff';
+                                                    e.target.style.transform = 'scale(1)';
+                                                }}
+                                            >
+                                                Add to Calendar
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <div className="mobile-timer flex flex-col items-center md:items-start md:px-6 lg:px-52 text-center md:text-left md:my-8">
-                        <Timer />
-                        <div className="flex flex-col md:flex-row justify-between md:gap-4 md:mt-4">
-                            <p className="text-2xl font-bold neon-text" style={{ 
-                                color: '#00ffff',
-                                textShadow: '0 0 10px #00ffff'
-                            }}>
-                                Online
-                            </p>
-                            <p className="text-2xl font-bold neon-text" style={{ 
-                                color: '#ff00ff',
-                                textShadow: '0 0 10px #ff00ff'
-                            }}>
-                                20th March, 2025
-                            </p>
-                        </div>
-                    </div>
-                    <div className="p-6 pt-2"
-                        style={{
-                            width: "100%",
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            flexWrap: "wrap",
-                        }}
-                    >
-                        <div>
-                            <a
-                                href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
-                                className="boxed-btn-white my-2 sm:ml-3 block neon-border"
-                                id="register-2"
-                                style={{
-                                    border: '2px solid #00ff88',
-                                    boxShadow: '0 0 20px rgba(0, 255, 136, 0.5)'
-                                }}
-                            >
-                                Add to your Calendar
-                            </a>
+
+                            <div className="monocolor-rectangle" style={{ padding: '2rem 0' }}>
+                                <div className="mobile-timer flex flex-col items-center text-center"
+                                    style={{
+                                        marginTop: 'clamp(1.5rem, 4vw, 3rem)',
+                                        marginBottom: 'clamp(2rem, 5vw, 3rem)',
+                                        paddingLeft: 'clamp(1rem, 3vw, 3rem)',
+                                        paddingRight: 'clamp(1rem, 3vw, 3rem)'
+                                    }}>
+                                    <div style={{ width: '100%', maxWidth: '600px' }}>
+                                        <Timer />
+                                    </div>
+                                    <div className="flex flex-col items-center w-full"
+                                        style={{
+                                            gap: 'clamp(0.75rem, 2vw, 1.5rem)',
+                                            marginTop: 'clamp(1.5rem, 4vw, 2.5rem)',
+                                            maxWidth: '600px'
+                                        }}>
+                                        <p
+                                            className="font-bold neon-text"
+                                            style={{
+                                                fontSize: 'clamp(1.1rem, 3vw, 1.5rem)',
+                                                marginBottom: '0',
+                                                color: '#00ffff',
+                                                textShadow: '0 0 10px #00ffff'
+                                            }}
+                                        >
+                                            Online
+                                        </p>
+                                        <p
+                                            className="font-bold neon-text"
+                                            style={{
+                                                fontSize: 'clamp(1.1rem, 3vw, 1.5rem)',
+                                                marginBottom: '0',
+                                                color: '#ff00ff',
+                                                textShadow: '0 0 10px #ff00ff'
+                                            }}
+                                        >
+                                            20th March, 2025
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
