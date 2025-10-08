@@ -612,7 +612,8 @@ export default function IndexPage() {
                 <div className="event_area" style={{ background: 'linear-gradient(180deg, #020611 0%, #041228 100%)', position: 'relative' }}>
                     <h1 className="vr_text d-none d-lg-block neon-text" style={{
                         color: '#00ff88',
-                        textShadow: '0 0 5px #00ff88, 0 0 10px #00ff88'
+                        textShadow: '0 0 5px #00ff88, 0 0 10px #00ff88',
+                        marginTop: '5rem'
                     }}>Themes List</h1>
                     <div className="container">
                         <div className="double_line">
@@ -622,7 +623,7 @@ export default function IndexPage() {
                                         <h3 className="neon-text" style={{
                                             color: '#00ffff',
                                             textShadow: '0 0 3px #00ffff, 0 0 6px #00ffff',
-                                            marginTop: '-1.5rem'
+                                            // marginTop: '-1.5rem'
                                         }}>
                                             Hackathon Themes
                                         </h3>
