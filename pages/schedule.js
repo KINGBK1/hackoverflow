@@ -102,7 +102,7 @@ export default function SchedulePage() {
                         {/* 3D Background */}
                         {/* <BlobScene /> */}
                         <div className="hero-bg">
-                            <img src={isMobile ? "/hero/mobile123.jpg" : "/hero/new_image123 (1).jpg"} alt="Background" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 0, opacity: 1 }} />
+                            <img src={isMobile ? "/hero/Firefly 20251009100346.png" : "/hero/new_image123 (1).jpg"} alt="Background" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 0, opacity: 1 }} />
                         </div>
                         {/* Original Content with positioning */}
                         <div className="slider_area" style={{ position: 'relative', zIndex: 1, background: 'transparent' }}>
@@ -115,7 +115,7 @@ export default function SchedulePage() {
                                                     <h3
                                                         style={{
                                                             color: '#aaffff !important',
-                                                            //                                                         textShadow: `
+                                                            //     textShadow: `
                                                             //     0 0 5px #0ff,
                                                             //     0 0 10px #0ff,
                                                             //     0 0 20px #0ff,
@@ -342,7 +342,8 @@ export default function SchedulePage() {
                         color: '#00ff88',
                         textShadow: '0 0 20px #00ff88, 0 0 40px #00ff88',
                         right: '-120px',
-                        zIndex: 0
+                        zIndex: 0,
+                        marginRight: '-190px'
                     }}>
                         Event Schedule
                     </h1> */}
