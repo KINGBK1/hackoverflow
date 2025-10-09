@@ -102,7 +102,7 @@ export default function SchedulePage() {
                         {/* 3D Background */}
                         {/* <BlobScene /> */}
                         <div className="hero-bg">
-                            <img src={isMobile ? "/hero/final.png" : "/hero/new_image123 (1).jpg"} alt="Background" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 0, opacity: 1 }} />
+                            <img src={isMobile ? "/hero/final2.jpg" : "/hero/new_image123 (1).jpg"} alt="Background" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 0, opacity: 1 }} />
                         </div>
                         {/* Original Content with positioning */}
                         <div className="slider_area" style={{ position: 'relative', zIndex: 1, background: 'transparent' }}>
