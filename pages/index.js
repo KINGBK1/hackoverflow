@@ -108,7 +108,7 @@ export default function IndexPage() {
                         {/* 3D Background */}
                         {/* <BlobScene /> */}
                         <div className="hero-bg">
-                            <img src={isMobile ? "/hero/final3.jpg" : "/hero/new_image123 (1).jpg"} alt="Background" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 0, opacity: 1 }} />
+                            <img src={isMobile ? "/hero/final2.jpg" : "/hero/final3.jpg"} alt="Background" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 0, opacity: 1 }} />
                         </div>
 
 
