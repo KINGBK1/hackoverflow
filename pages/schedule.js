@@ -133,7 +133,7 @@ export default function SchedulePage() {
                                                     <br />
                                                     <div className="relative flex gap-4">
                                                         <a
-                                                            href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+9.0&dates=20250321/20250324"
+                                                            href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+9.0&dates=20251017/20251020"
                                                             style={{
                                                                 padding: '0.8rem 1.5rem',
                                                                 color: '#0ff',
@@ -244,7 +244,7 @@ export default function SchedulePage() {
                                             </a>
 
                                             <a
-                                                href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+9.0&dates=20250321/20250324"
+                                                href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+9.0&dates=20251017/20251020"
                                                 style={{
                                                     display: 'inline-block',
                                                     padding: '0.8rem 1.5rem',

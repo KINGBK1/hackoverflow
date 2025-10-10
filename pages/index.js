@@ -136,7 +136,7 @@ export default function IndexPage() {
                                                     <br />
                                                     <div className="relative flex gap-4">
                                                         <a
-                                                            href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+9.0&dates=20250321/20250324"
+                                                            href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+9.0&dates=20251017/20251020"
                                                             style={{
                                                                 padding: '0.8rem 1.5rem',
                                                                 color: '#0ff',
@@ -265,7 +265,7 @@ export default function IndexPage() {
                                                 Apply
                                             </a>
                                             <a
-                                                href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+9.0&dates=20250321/20250324"
+                                                href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+9.0&dates=20251017/20251020"
                                                 style={{
                                                     padding: '0.8rem 1.5rem',
                                                     color: '#0ff',
@@ -468,7 +468,7 @@ export default function IndexPage() {
                     </div>
                 </div>
 
-                {/* <div className="speakers_area" style={{ background: 'linear-gradient(180deg, #041228 0%, #020611 100%)', position: 'relative' }}>
+                <div className="speakers_area" style={{ background: 'linear-gradient(180deg, #041228 0%, #020611 100%)', position: 'relative' }}>
                     <h1 className="horizontal_text d-none d-lg-block neon-text" style={{
                         color: '#00ffff',
                         textShadow: '0 0 5px #00ffff, 0 0 10px #00ffff'
@@ -489,7 +489,7 @@ export default function IndexPage() {
                         </div>
 
                         <div className="flex flex-col md:flex-row justify-center gap-6 items-center">
-                            <div className="flex flex-col rounded-lg items-center justify-between w-72 neon-border scanline-effect float-animation"
+                            {/* <div className="flex flex-col rounded-lg items-center justify-between w-72 neon-border scanline-effect float-animation"
                                 style={{
                                     border: '3px solid #00ffff',
                                     background: 'linear-gradient(135deg, rgba(0, 255, 255, 0.1) 0%, rgba(0, 255, 255, 0.05) 100%)',
@@ -547,8 +547,8 @@ export default function IndexPage() {
                                         <p>India</p>
                                     </div>
                                 </div>
-                            </div>
-
+                            </div> */}
+{/* 
                             <div className="flex flex-col rounded-lg items-center justify-between w-72 neon-border scanline-effect float-animation"
                                 style={{
                                     border: '3px solid #ff00ff',
@@ -607,10 +607,12 @@ export default function IndexPage() {
                                         <p>India</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
+
+                            <h1 style={{ color: '#aaffff', textAlign: 'center', margin: '2rem 0', fontSize: '2rem', fontWeight: 'bold', padding: '1rem 0' , textShadow: '0 0 2px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff, 0 0 0px #0ff'}}>To Be Announced Soon....</h1>
                         </div>
                     </div>
-                </div> */}
+                </div>
 
                 <div className="event_area" style={{ background: 'linear-gradient(180deg, #020611 0%, #041228 100%)', position: 'relative' }}>
                     <h1 className="vr_text d-none d-lg-block neon-text" style={{
