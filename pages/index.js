@@ -215,7 +215,7 @@ export default function IndexPage() {
                                                 marginBottom: '0.5rem'
                                             }}
                                         >
-                                            HackOverflow 8.0
+                                            HackOverflow 9.0
                                         </h3>
                                         <h3
                                             style={{
