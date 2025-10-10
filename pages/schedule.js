@@ -31,10 +31,10 @@ export default function SchedulePage() {
                 {/* Basic Meta */}
                 <meta charSet="utf-8" />
                 <meta httpEquiv="x-ua-compatible" content="IE=edge" />
-                <title>HackOverflow 8.0</title>
+                <title>HackOverflow 9.0</title>
                 <meta
                     name="description"
-                    content="HackOverflow 8.0 - NIT Durgapur's official hackathon platform"
+                    content="HackOverflow 9.0 - NIT Durgapur's official hackathon platform"
                 />
                 <meta
                     name="viewport"
@@ -133,7 +133,7 @@ export default function SchedulePage() {
                                                     <br />
                                                     <div className="relative flex gap-4">
                                                         <a
-                                                            href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
+                                                            href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+9.0&dates=20250321/20250324"
                                                             style={{
                                                                 padding: '0.8rem 1.5rem',
                                                                 color: '#0ff',
@@ -158,7 +158,7 @@ export default function SchedulePage() {
                                                             Add to your Calendar
                                                         </a>
                                                         <a
-                                                            href="https://unstop.com/p/hackoverflow-80-gnulinux-users-group-nit-durgapur-1437266"
+                                                            href="https://unstop.com/p/hackoverflow-90-gnulinux-users-group-nit-durgapur-1437266"
                                                             style={{
                                                                 padding: '0.8rem 1.5rem',
                                                                 color: 'rgba(255, 255, 255, 1)',
@@ -215,7 +215,7 @@ export default function SchedulePage() {
                                         </h3>
                                         <div className="relative flex flex-col flex-wrap gap-4 justify-center mb-5" style={{ width: '100%', maxWidth: '400px' }}>
                                             <a
-                                                href="https://unstop.com/p/hackoverflow-80-gnulinux-users-group-nit-durgapur-1437266"
+                                                href="https://unstop.com/p/hackoverflow-90-gnulinux-users-group-nit-durgapur-1437266"
                                                 style={{
                                                     display: 'inline-block',
                                                     padding: '0.8rem 1.5rem',
@@ -244,7 +244,7 @@ export default function SchedulePage() {
                                             </a>
 
                                             <a
-                                                href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
+                                                href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+9.0&dates=20250321/20250324"
                                                 style={{
                                                     display: 'inline-block',
                                                     padding: '0.8rem 1.5rem',
@@ -319,11 +319,11 @@ export default function SchedulePage() {
                                             style={{
                                                 fontSize: 'clamp(1.1rem, 3vw, 1.5rem)',
                                                 marginBottom: '0',
-                                                color: '#ff00ff',
+                                                color: 'skyblue',
                                                 textShadow: '0 0 10px #ff00ff'
                                             }}
                                         >
-                                            20th March, 2025
+                                            17th October, 2025
                                         </p>
 
                                     </div>
@@ -357,12 +357,12 @@ export default function SchedulePage() {
                                             textShadow: '0 0 10px #00ffff, 0 0 20px #00ffff',
                                             fontSize: '1.5rem'
                                         }}>
-                                            20 March, 2025
+                                            11 October, 2025
                                         </h3>
                                     </div>
                                 </div>
                                 <div className="col-xl-9 col-lg-9 col-md-12">
-                                    <div className="single_speaker slide-in-up" style={{
+                                    {/* <div className="single_speaker slide-in-up" style={{
                                         background: 'linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(0, 255, 255, 0.02) 100%)',
                                         border: '2px solid rgba(0, 255, 255, 0.3)',
                                         borderRadius: '15px',
@@ -420,9 +420,9 @@ export default function SchedulePage() {
                                                 Contestants stop the coding and submit their codes for further evaluation process.
                                             </p>
                                         </div>
-                                    </div>
+                                    </div> */}
 
-                                    <div className="single_speaker slide-in-up" style={{
+                                    {/* <div className="single_speaker slide-in-up" style={{
                                         background: 'linear-gradient(135deg, rgba(255, 0, 255, 0.05) 0%, rgba(255, 0, 255, 0.02) 100%)',
                                         border: '2px solid rgba(255, 0, 255, 0.3)',
                                         borderRadius: '15px',
@@ -459,13 +459,13 @@ export default function SchedulePage() {
                                                 marginBottom: '10px'
                                             }}>
                                                 <span className="neon-text" style={{
-                                                    color: '#ff00ff',
+                                                    color: 'skyblue',
                                                     fontWeight: 'bold',
                                                     fontSize: '1.1rem',
                                                     flex: 1,
                                                     minWidth: '200px'
                                                 }}>
-                                                    Judges' Address
+                                                    Judges Address
                                                 </span>
                                                 <div className="time neon-text" style={{
                                                     color: '#00ff88',
@@ -480,7 +480,7 @@ export default function SchedulePage() {
                                                 Few words of motivation from our knowledgeable and experienced judges!
                                             </p>
                                         </div>
-                                    </div>
+                                    </div> */}
 
                                     <div className="single_speaker slide-in-up" style={{
                                         background: 'linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(0, 255, 255, 0.02) 100%)',
@@ -549,11 +549,11 @@ export default function SchedulePage() {
                                 <div className="col-xl-3 col-lg-3 col-md-12" style={{ marginBottom: '20px' }}>
                                     <div className="date">
                                         <h3 className="neon-text" style={{
-                                            color: '#ff00ff',
-                                            textShadow: '0 0 10px #ff00ff, 0 0 20px #ff00ff',
+                                            color: '#84b1e4ff',
+                                            textShadow: '0 0 10px #7bb8f1ff, 0 0 20px #79c0e9ff',
                                             fontSize: '1.5rem'
                                         }}>
-                                            21 March, 2025
+                                            17 October, 2025
                                         </h3>
                                     </div>
                                 </div>
@@ -595,7 +595,7 @@ export default function SchedulePage() {
                                                 marginBottom: '10px'
                                             }}>
                                                 <span className="neon-text" style={{
-                                                    color: '#ff00ff',
+                                                    color: 'skyblue',
                                                     fontWeight: 'bold',
                                                     fontSize: '1.1rem',
                                                     flex: 1,
@@ -627,7 +627,7 @@ export default function SchedulePage() {
                                             textShadow: '0 0 10px #00ff88, 0 0 20px #00ff88',
                                             fontSize: '1.5rem'
                                         }}>
-                                            22 March, 2025
+                                            18 October, 2025
                                         </h3>
                                     </div>
                                 </div>
@@ -705,7 +705,7 @@ export default function SchedulePage() {
                                             textShadow: '0 0 10px #00ffff, 0 0 20px #00ffff',
                                             fontSize: '1.5rem'
                                         }}>
-                                            23 March, 2025
+                                            19 October, 2025
                                         </h3>
                                     </div>
                                 </div>
@@ -780,11 +780,11 @@ export default function SchedulePage() {
                                         <div className="speaker-name">
                                             <div className="heading d-flex justify-content-between align-items-center">
                                                 <span className="neon-text" style={{
-                                                    color: '#ff00ff',
+                                                    color: 'skyblue',
                                                     fontWeight: 'bold',
                                                     fontSize: '1.3rem'
                                                 }}>
-                                                    Judges' Address
+                                                    Judges Address
                                                 </span>
                                                 <div className="time neon-text" style={{
                                                     color: '#00ff88',
@@ -808,11 +808,11 @@ export default function SchedulePage() {
                                 <div className="col-xl-3 col-lg-3 col-md-12" style={{ marginBottom: '20px' }}>
                                     <div className="date">
                                         <h3 className="neon-text" style={{
-                                            color: '#ff00ff',
+                                            color: 'skyblue',
                                             textShadow: '0 0 10px #ff00ff, 0 0 20px #ff00ff',
                                             fontSize: '1.5rem'
                                         }}>
-                                            23 March, 2025
+                                            19 October, 2025
                                         </h3>
                                     </div>
                                 </div>
@@ -975,7 +975,7 @@ export default function SchedulePage() {
                                                 marginBottom: '10px'
                                             }}>
                                                 <span className="neon-text" style={{
-                                                    color: '#ff00ff',
+                                                    color: 'skyblue',
                                                     fontWeight: 'bold',
                                                     fontSize: '1.1rem',
                                                     flex: 1,

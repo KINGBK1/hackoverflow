@@ -97,20 +97,31 @@ export default function Timer() {
           font-family: "Courier New", monospace;
           font-weight: bold;
           line-height: 1.4;
+          width: 100%;
+          padding: 0 10px;
         }
 
-        .countdown_text .numbers {
-          font-size: 1.8rem;
+        .countdown_text .container {
           display: flex;
           justify-content: center;
           gap: 15px;
+          width: 100%;
         }
 
-        .countdown_text .labels {
-          font-size: 0.85rem;
+        .countdown_text .time-unit {
           display: flex;
-          justify-content: center;
-          gap: 25px;
+          flex-direction: column;
+          align-items: center;
+          gap: 5px;
+        }
+
+        .countdown_text .time-unit .number {
+          font-size: 1.8rem;
+          color: #00ffff;
+        }
+
+        .countdown_text .time-unit .label {
+          font-size: 0.75rem;
           color: #b0c4de;
           text-transform: uppercase;
           font-weight: 600;
@@ -149,17 +160,23 @@ export default function Timer() {
 
       {/* Mobile version */}
       <div className="countdown_text">
-        <div className="numbers">
-          <span>{day.toString().padStart(2, "0")}</span>
-          <span>{hour.toString().padStart(2, "0")}</span>
-          <span>{minute.toString().padStart(2, "0")}</span>
-          <span>{second.toString().padStart(2, "0")}</span>
-        </div>
-        <div className="labels">
-          <span>Days</span>
-          <span>Hours</span>
-          <span>Minutes</span>
-          <span>Seconds</span>
+        <div className="container">
+          <div className="time-unit">
+            <span className="number">{day.toString().padStart(2, "0")}</span>
+            <span className="label">Days</span>
+          </div>
+          <div className="time-unit">
+            <span className="number">{hour.toString().padStart(2, "0")}</span>
+            <span className="label">Hours</span>
+          </div>
+          <div className="time-unit">
+            <span className="number">{minute.toString().padStart(2, "0")}</span>
+            <span className="label">Minutes</span>
+          </div>
+          <div className="time-unit">
+            <span className="number">{second.toString().padStart(2, "0")}</span>
+            <span className="label">Seconds</span>
+          </div>
         </div>
       </div>
     </div>

@@ -35,10 +35,10 @@ export default function IndexPage() {
                 {/* Basic Meta */}
                 <meta charSet="utf-8" />
                 <meta httpEquiv="x-ua-compatible" content="IE=edge" />
-                <title>HackOverflow 8.0</title>
+                <title>HackOverflow 9.0</title>
                 <meta
                     name="description"
-                    content="HackOverflow 8.0 - NIT Durgapur's official hackathon platform"
+                    content="HackOverflow 9.0 - NIT Durgapur's official hackathon platform"
                 />
                 <meta
                     name="viewport"
@@ -129,14 +129,14 @@ export default function IndexPage() {
                                                             filter: 'drop-shadow(0 0 10px #0ff)',
                                                         }}
                                                     >
-                                                        HackOverflow 8.0
+                                                        HackOverflow 9.0
                                                         <br />
                                                         Aarohan, 2025
                                                     </h3>
                                                     <br />
                                                     <div className="relative flex gap-4">
                                                         <a
-                                                            href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
+                                                            href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+9.0&dates=20250321/20250324"
                                                             style={{
                                                                 padding: '0.8rem 1.5rem',
                                                                 color: '#0ff',
@@ -161,7 +161,7 @@ export default function IndexPage() {
                                                             Add to your Calendar
                                                         </a>
                                                         <a
-                                                            href="https://unstop.com/p/hackoverflow-80-gnulinux-users-group-nit-durgapur-1437266"
+                                                            href="https://unstop.com/p/hackoverflow-90-gnulinux-users-group-nit-durgapur-1437266"
                                                             style={{
                                                                 padding: '0.8rem 1.5rem',
                                                                 color: 'rgba(255, 255, 255, 1)',
@@ -237,7 +237,7 @@ export default function IndexPage() {
                                         </h3>
                                         <div className="relative flex flex-col flex-wrap gap-4 justify-center mb-5">
                                             <a
-                                                href="https://unstop.com/p/hackoverflow-80-gnulinux-users-group-nit-durgapur-1437266"
+                                                href="https://unstop.com/p/hackoverflow-90-gnulinux-users-group-nit-durgapur-1437266"
                                                 style={{
                                                     display: 'inline-block',
                                                     padding: '0.8rem 1.5rem',
@@ -265,7 +265,7 @@ export default function IndexPage() {
                                                 Apply
                                             </a>
                                             <a
-                                                href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+8.0&dates=20250321/20250324"
+                                                href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+9.0&dates=20250321/20250324"
                                                 style={{
                                                     padding: '0.8rem 1.5rem',
                                                     color: '#0ff',
@@ -439,7 +439,7 @@ export default function IndexPage() {
                                     }}>
                                         <br />
                                         <br />
-                                        Hackoverflow 8.0 is conducted by team
+                                        Hackoverflow 9.0 is conducted by team
                                         Aavishkar during Aarohan, the second
                                         largest techno-management of Eastern
                                         India!
@@ -468,7 +468,7 @@ export default function IndexPage() {
                     </div>
                 </div>
 
-                <div className="speakers_area" style={{ background: 'linear-gradient(180deg, #041228 0%, #020611 100%)', position: 'relative' }}>
+                {/* <div className="speakers_area" style={{ background: 'linear-gradient(180deg, #041228 0%, #020611 100%)', position: 'relative' }}>
                     <h1 className="horizontal_text d-none d-lg-block neon-text" style={{
                         color: '#00ffff',
                         textShadow: '0 0 5px #00ffff, 0 0 10px #00ffff'
@@ -577,7 +577,7 @@ export default function IndexPage() {
                                 <div className="flex flex-col gap-2 justify-start" style={{ padding: "1rem" }}>
                                     <div className="flex justify-between items-center">
                                         <div className="text-xl neon-text" style={{
-                                            color: '#ff00ff',
+                                            color: 'skyblue',
                                             fontWeight: 'bold'
                                         }}>
                                             Harshavardhan Bajoria
@@ -610,7 +610,7 @@ export default function IndexPage() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="event_area" style={{ background: 'linear-gradient(180deg, #020611 0%, #041228 100%)', position: 'relative' }}>
                     <h1 className="vr_text d-none d-lg-block neon-text" style={{
@@ -693,7 +693,7 @@ export default function IndexPage() {
                                         <div className="speaker-name">
                                             <div className="heading d-flex justify-content-between align-items-center">
                                                 <span className="neon-text" style={{
-                                                    color: '#ff00ff',
+                                                    color: '#7fb4f1ff',
                                                     fontWeight: 'bold',
                                                     fontSize: '1.3rem'
                                                 }}>Road Safety</span>
