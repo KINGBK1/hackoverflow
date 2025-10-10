@@ -5,7 +5,7 @@ export default function Timer() {
   const [hour, setHour] = React.useState(0);
   const [minute, setMinute] = React.useState(0);
   const [second, setSecond] = React.useState(0);
-  const endDate = new Date("March 20, 2025 20:00:00").getTime();
+  const endDate = new Date("October 17, 2025 00:00:00").getTime();
 
   React.useEffect(() => {
     const timer = setInterval(() => {
@@ -17,21 +17,20 @@ export default function Timer() {
         setHour(Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
         setMinute(Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)));
         setSecond(Math.floor((t % (1000 * 60)) / 1000));
+      } else {
+        // Event has passed, set all to 0
+        setDay(0);
+        setHour(0);
+        setMinute(0);
+        setSecond(0);
       }
     }, 1000);
     return () => clearInterval(timer);
-  }, []);
+  }, [endDate]);
 
   return (
     <div className="timer-container">
       <style jsx>{`
-        @keyframes borderScan {
-          0% { border-color: #00ffff; }
-          33% { border-color: #ff00ff; }
-          66% { border-color: #00ff88; }
-          100% { border-color: #00ffff; }
-        }
-
         .countdown_time {
           display: flex;
           justify-content: center;
@@ -54,10 +53,10 @@ export default function Timer() {
           background: rgba(0, 255, 255, 0.05);
           border: 3px solid #00ffff;
           border-radius: 15px;
-          animation: borderScan 6s linear infinite;
           backdrop-filter: blur(10px);
           transition: all 0.3s ease;
           box-sizing: border-box;
+          padding: 10px;
         }
 
         .single_countdown h3 {
@@ -65,20 +64,32 @@ export default function Timer() {
           font-weight: bold;
           color: #00ffff;
           margin: 0;
+          padding: 0;
           font-family: "Courier New", monospace;
           letter-spacing: 3px;
+          text-align: center;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
 
         .single_countdown span {
           margin-top: 5px;
+          margin-bottom: 0;
+          padding: 0;
           font-size: 0.9rem;
           color: #b0c4de;
           text-transform: uppercase;
           letter-spacing: 2px;
           font-weight: 600;
+          text-align: center;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
 
-        /* ✅ Mobile (simple bold row) */
         .countdown_text {
           display: none;
           text-align: center;

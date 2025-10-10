@@ -97,7 +97,7 @@ export default function Navbar() {
 
         .nav-links a.active {
           color: #00ffff;
-          text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+          // text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
         }
 
         /* Hamburger for mobile */

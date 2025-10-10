@@ -338,7 +338,7 @@ export default function IndexPage() {
                                                 marginBottom: '0'
                                             }}
                                         >
-                                            20th March, 2025
+                                            17th October, 2025
                                         </p>
                                     </div>
                                 </div>
@@ -451,10 +451,13 @@ export default function IndexPage() {
                                         href="https://www.facebook.com/arhn.nitd/"
                                         className="boxed-btn-red neon-border"
                                         style={{
-                                            background: 'linear-gradient(135deg, #ff00ff 0%, #ff0080 100%)',
-                                            border: '2px solid #ff00ff',
+                                            background: 'linear-gradient(135deg, #866be6ff 0%, #ff0080 100%)',
+                                            border: '2px solid #a0c0e5ff',
                                             boxShadow: '0 0 20px rgba(255, 0, 255, 0.5)',
-                                            transition: 'all 0.3s ease'
+                                            transition: 'all 0.3s ease',
+                                            color: "white",
+                                            textShadow: '0 0 5px rgba(255, 255, 255, 0.7)',
+                                            fontWeight:"bolder",
                                         }}
                                     >
                                         Learn More about Aarohan
@@ -478,7 +481,7 @@ export default function IndexPage() {
                             <div className="col-xl-12">
                                 <div className="serction_title_large mb-95">
                                     <h3 className="neon-text" style={{
-                                        color: '#ff00ff',
+                                        color: '#afa2ecff',
                                         textShadow: '0 0 4px #ff00ff, 0 0 8px #ff00ff'
                                     }}>Judges</h3>
                                 </div>
@@ -562,8 +565,8 @@ export default function IndexPage() {
                                 </div>
                                 <div className="rounded-full self-start" style={{
                                     marginTop: "-2rem", marginLeft: "1rem",
-                                    border: "4px solid #ff00ff",
-                                    boxShadow: '0 0 20px rgba(255, 0, 255, 0.6)'
+                                    border: "4px solid skyblue",
+                                    boxShadow: '0 0 20px rgba(142, 144, 231, 0.6)'
                                 }}>
                                     <img
                                         src="/img/speakers/judge2025_1.jpeg"
