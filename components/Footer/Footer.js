@@ -142,6 +142,27 @@ export default function Footer() {
           color: #ff69b4;
           animation: heartbeat 1.5s infinite;
         }
+
+        .footer_links2 ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+        .footer_links2 li {
+          margin: 10px 0;
+        }
+        .footer_links2 a {
+          color: #b0c4de;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          display: inline-block;
+        }
+        .footer_links2 a:hover {
+          color: #00ffff;
+          text-shadow: 0 0 10px #00ffff;
+          animation: linkHover2 0.6s ease-in-out infinite;
+        }
+           
       `}</style>
 
       <div className="container">
@@ -170,7 +191,7 @@ export default function Footer() {
           {/* Links */}
           <div className="footer_section">
             <h3 className="footer_title">Links</h3>
-            <div className="footer_links">
+            <div className="footer_links2">
               <ul>
                 <li>
                   <Link href="/schedule">Schedule</Link>
