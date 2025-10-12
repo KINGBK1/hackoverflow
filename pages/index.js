@@ -13,6 +13,12 @@ import BlobScene from "../components/Flow";
 
 export default function IndexPage() {
 
+    const [openFAQ, setOpenFAQ] = useState(1);
+
+    const toggleFAQ = (index) => {
+        setOpenFAQ(openFAQ === index ? null : index);
+    };
+
     const [isMobile, setIsMobile] = useState(false);
     useEffect(() => {
         const script = document.createElement("script");
@@ -905,6 +911,889 @@ export default function IndexPage() {
                         </div>
                     </div>
                 </div>
+
+                <div className="resister_book" style={{
+                    background: 'linear-gradient(180deg, #041228 0%, #020611 100%)',
+                    position: 'relative',
+                    padding: '80px 0',
+                    overflow: 'hidden'
+                }}>
+                    <div style={{
+                        position: 'absolute',
+                        width: '100%',
+                        height: '100%',
+                        top: 0,
+                        left: 0,
+                        opacity: 0.1,
+                        background: 'radial-gradient(circle at 20% 50%, #00ffff 0%, transparent 50%), radial-gradient(circle at 80% 80%, #ff00ff 0%, transparent 50%)',
+                        animation: 'pulse 4s ease-in-out infinite',
+                    }}></div>
+
+                    <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+                        <div className="row">
+                            <div className="col-xl-12">
+                                <div className="resister_text text-center">
+                                    <h3 className="neon-text" style={{
+                                        color: '#00ffff',
+                                        // textShadow: '0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff',
+                                        fontSize: 'clamp(2rem, 5vw, 3rem)',
+                                        fontWeight: 'bold',
+                                        marginBottom: '3rem',
+                                        // animation: 'glow 2s ease-in-out infinite alternate'
+                                    }}>
+                                        Specific Sponsor Track Benefits and Prizes!
+                                    </h3>
+                                    <ul style={{
+                                        fontFamily: "Poppins",
+                                        listStyle: 'none',
+                                        padding: 0
+                                    }}>
+                                        {/* Polygon */}
+                                        <li className="fade-in" style={{ animationDelay: '0.1s' }}>
+                                            <div
+                                                className="p-4 flex flex-col items-center justify-around rounded shadow md:w-3/5 md:mx-auto"
+                                                style={{
+                                                    marginBottom: "25px",
+                                                    background: 'linear-gradient(135deg, rgba(130, 71, 229, 0.1) 0%, rgba(130, 71, 229, 0.05) 100%)',
+                                                    border: '2px solid rgba(130, 71, 229, 0.4)',
+                                                    borderRadius: '20px',
+                                                    boxShadow: '0 0 30px rgba(130, 71, 229, 0.3)',
+                                                    transition: 'all 0.3s ease',
+                                                    cursor: 'pointer'
+                                                }}
+                                                onMouseEnter={(e) => {
+                                                    e.currentTarget.style.transform = 'translateY(-10px) scale(1.02)';
+                                                    e.currentTarget.style.boxShadow = '0 0 50px rgba(130, 71, 229, 0.6)';
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.currentTarget.style.transform = 'translateY(0) scale(1)';
+                                                    e.currentTarget.style.boxShadow = '0 0 30px rgba(130, 71, 229, 0.3)';
+                                                }}
+                                            >
+                                                <Link href="https://polygon.technology/">
+                                                    <img
+                                                        className="mb-10"
+                                                        src="/Portis_Logo-Colored.png"
+                                                        style={{
+                                                            filter: 'drop-shadow(0 0 10px rgba(130, 71, 229, 0.5))',
+                                                            transition: 'all 0.3s ease'
+                                                        }}
+                                                    />
+                                                </Link>
+                                                <span style={{
+                                                    color: '#e0e0ff',
+                                                    fontSize: '1.1rem',
+                                                    lineHeight: '1.8',
+                                                    textShadow: '0 0 5px rgba(255, 255, 255, 0.3)'
+                                                }}>
+                                                    <strong style={{ color: '#00ffff' }}>$200</strong> for best hack built on Ethereum + Polygon
+                                                    <br />
+                                                    <strong style={{ color: '#00ffff' }}>$150</strong> for best hack built on Ethereum
+                                                </span>
+                                            </div>
+                                        </li>
+
+                                        {/* Replit */}
+                                        <li className="fade-in" style={{ animationDelay: '0.2s' }}>
+                                            <div
+                                                className="p-4 flex flex-col items-center justify-around rounded shadow md:w-3/5 md:mx-auto"
+                                                style={{
+                                                    marginBottom: "25px",
+                                                    background: 'linear-gradient(135deg, rgba(255, 0, 255, 0.1) 0%, rgba(255, 0, 255, 0.05) 100%)',
+                                                    border: '2px solid rgba(255, 0, 255, 0.4)',
+                                                    borderRadius: '20px',
+                                                    boxShadow: '0 0 30px rgba(255, 0, 255, 0.3)',
+                                                    transition: 'all 0.3s ease',
+                                                    cursor: 'pointer'
+                                                }}
+                                                onMouseEnter={(e) => {
+                                                    e.currentTarget.style.transform = 'translateY(-10px) scale(1.02)';
+                                                    e.currentTarget.style.boxShadow = '0 0 50px rgba(255, 0, 255, 0.6)';
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.currentTarget.style.transform = 'translateY(0) scale(1)';
+                                                    e.currentTarget.style.boxShadow = '0 0 30px rgba(255, 0, 255, 0.3)';
+                                                }}
+                                            >
+                                                <Link href="https://replit.com/">
+                                                    <img
+                                                        src="/Replit-light-background.png"
+                                                        className="h-20 mb-4"
+                                                        style={{
+                                                            filter: 'drop-shadow(0 0 10px rgba(255, 0, 255, 0.5))',
+                                                        }}
+                                                    />
+                                                </Link>
+                                                <span style={{
+                                                    color: '#e0e0ff',
+                                                    fontSize: '1.1rem',
+                                                    lineHeight: '1.8',
+                                                    textShadow: '0 0 5px rgba(255, 255, 255, 0.3)'
+                                                }}>
+                                                    <strong style={{ color: '#ff00ff' }}>$50</strong> for winning Project deployed on Replit
+                                                </span>
+                                            </div>
+                                        </li>
+
+                                        {/* Filecoin */}
+                                        <li className="fade-in" style={{ animationDelay: '0.3s' }}>
+                                            <div
+                                                className="p-4 flex flex-col items-center justify-around rounded shadow md:w-3/5 md:mx-auto"
+                                                style={{
+                                                    marginBottom: "25px",
+                                                    background: 'linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 255, 136, 0.05) 100%)',
+                                                    border: '2px solid rgba(0, 255, 136, 0.4)',
+                                                    borderRadius: '20px',
+                                                    boxShadow: '0 0 30px rgba(0, 255, 136, 0.3)',
+                                                    transition: 'all 0.3s ease',
+                                                    cursor: 'pointer'
+                                                }}
+                                                onMouseEnter={(e) => {
+                                                    e.currentTarget.style.transform = 'translateY(-10px) scale(1.02)';
+                                                    e.currentTarget.style.boxShadow = '0 0 50px rgba(0, 255, 136, 0.6)';
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.currentTarget.style.transform = 'translateY(0) scale(1)';
+                                                    e.currentTarget.style.boxShadow = '0 0 30px rgba(0, 255, 136, 0.3)';
+                                                }}
+                                            >
+                                                <Link href="https://filecoin.io">
+                                                    <img
+                                                        src="/Filecoin.png"
+                                                        className="w-45 h-20 mb-6"
+                                                        style={{
+                                                            filter: 'drop-shadow(0 0 10px rgba(0, 255, 136, 0.5))',
+                                                        }}
+                                                    />
+                                                </Link>
+                                                <span style={{
+                                                    color: '#e0e0ff',
+                                                    fontSize: '1.1rem',
+                                                    lineHeight: '1.8',
+                                                    textShadow: '0 0 5px rgba(255, 255, 255, 0.3)'
+                                                }}>
+                                                    <strong style={{ color: '#00ff88' }}>$250</strong> for best use of Filecoin and/or IPFS
+                                                </span>
+                                            </div>
+                                        </li>
+
+                                        {/* Solana */}
+                                        <li className="fade-in" style={{ animationDelay: '0.4s' }}>
+                                            <div
+                                                className="p-4 flex flex-col items-center justify-around rounded shadow md:w-3/5 md:mx-auto"
+                                                style={{
+                                                    marginBottom: "25px",
+                                                    background: 'linear-gradient(135deg, rgba(0, 255, 255, 0.1) 0%, rgba(0, 255, 255, 0.05) 100%)',
+                                                    border: '2px solid rgba(0, 255, 255, 0.4)',
+                                                    borderRadius: '20px',
+                                                    boxShadow: '0 0 30px rgba(0, 255, 255, 0.3)',
+                                                    transition: 'all 0.3s ease',
+                                                    cursor: 'pointer'
+                                                }}
+                                                onMouseEnter={(e) => {
+                                                    e.currentTarget.style.transform = 'translateY(-10px) scale(1.02)';
+                                                    e.currentTarget.style.boxShadow = '0 0 50px rgba(0, 255, 255, 0.6)';
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.currentTarget.style.transform = 'translateY(0) scale(1)';
+                                                    e.currentTarget.style.boxShadow = '0 0 30px rgba(0, 255, 255, 0.3)';
+                                                }}
+                                            >
+                                                <Link href="https://solana.com/">
+                                                    <img
+                                                        src="/Solana-Colored.svg"
+                                                        className="w-45 h-10 mb-10"
+                                                        style={{
+                                                            filter: 'drop-shadow(0 0 10px rgba(0, 255, 255, 0.5))',
+                                                        }}
+                                                    />
+                                                </Link>
+                                                <div style={{
+                                                    color: '#e0e0ff',
+                                                    fontSize: '1.1rem',
+                                                    lineHeight: '1.8',
+                                                    textShadow: '0 0 5px rgba(255, 255, 255, 0.3)',
+                                                    display: 'flex',
+                                                    flexDirection: 'column',
+                                                    gap: '10px',
+                                                    textAlign: 'center'
+                                                }}>
+                                                    <span>
+                                                        <strong style={{ color: '#00ffff' }}>$USDC 100</strong> for the best project beginners just starting out on Solana
+                                                    </span>
+                                                    <span>
+                                                        <strong style={{ color: '#00ffff' }}>$USDC 250</strong> for the best project that goes into depth, demonstrating higher-order code
+                                                    </span>
+                                                    <span>
+                                                        <strong style={{ color: '#00ffff' }}>$USDC 500</strong> for the best advanced project that is almost ready for full-time development
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        {/* Digital Ocean */}
+                                        <li className="fade-in" style={{ animationDelay: '0.5s' }}>
+                                            <div
+                                                className="p-4 flex flex-col items-center justify-around rounded shadow md:w-3/5 md:mx-auto"
+                                                style={{
+                                                    marginBottom: "25px",
+                                                    background: 'linear-gradient(135deg, rgba(0, 123, 255, 0.1) 0%, rgba(0, 123, 255, 0.05) 100%)',
+                                                    border: '2px solid rgba(0, 123, 255, 0.4)',
+                                                    borderRadius: '20px',
+                                                    boxShadow: '0 0 30px rgba(0, 123, 255, 0.3)',
+                                                    transition: 'all 0.3s ease',
+                                                    cursor: 'pointer'
+                                                }}
+                                                onMouseEnter={(e) => {
+                                                    e.currentTarget.style.transform = 'translateY(-10px) scale(1.02)';
+                                                    e.currentTarget.style.boxShadow = '0 0 50px rgba(0, 123, 255, 0.6)';
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.currentTarget.style.transform = 'translateY(0) scale(1)';
+                                                    e.currentTarget.style.boxShadow = '0 0 30px rgba(0, 123, 255, 0.3)';
+                                                }}
+                                            >
+                                                <Link href="https://www.digitalocean.com/">
+                                                    <img
+                                                        src="/digital_ocean.png"
+                                                        className="w-45 h-12 md:h-16 mb-10"
+                                                        style={{
+                                                            filter: 'drop-shadow(0 0 10px rgba(0, 123, 255, 0.5))',
+                                                        }}
+                                                    />
+                                                </Link>
+                                                <div style={{
+                                                    color: '#e0e0ff',
+                                                    fontSize: '1.1rem',
+                                                    lineHeight: '1.8',
+                                                    textShadow: '0 0 5px rgba(255, 255, 255, 0.3)',
+                                                    display: 'flex',
+                                                    flexDirection: 'column',
+                                                    gap: '10px',
+                                                    textAlign: 'center'
+                                                }}>
+                                                    <span>
+                                                        A total of <strong style={{ color: '#007bff' }}>$2,000</strong> in credits to the winning team(s) - these can be distributed only in sums of $100, $125, and $250, per winning team
+                                                    </span>
+                                                    <span>
+                                                        <strong style={{ color: '#007bff' }}>$50</strong>, 30-day free trial for all the attendees
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        {/* Wolfram */}
+                                        <li className="fade-in" style={{ animationDelay: '0.6s' }}>
+                                            <div
+                                                className="p-4 flex flex-col items-center justify-around rounded shadow md:w-3/5 md:mx-auto"
+                                                style={{
+                                                    marginBottom: "25px",
+                                                    background: 'linear-gradient(135deg, rgba(255, 69, 0, 0.1) 0%, rgba(255, 69, 0, 0.05) 100%)',
+                                                    border: '2px solid rgba(255, 69, 0, 0.4)',
+                                                    borderRadius: '20px',
+                                                    boxShadow: '0 0 30px rgba(255, 69, 0, 0.3)',
+                                                    transition: 'all 0.3s ease',
+                                                    cursor: 'pointer'
+                                                }}
+                                                onMouseEnter={(e) => {
+                                                    e.currentTarget.style.transform = 'translateY(-10px) scale(1.02)';
+                                                    e.currentTarget.style.boxShadow = '0 0 50px rgba(255, 69, 0, 0.6)';
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.currentTarget.style.transform = 'translateY(0) scale(1)';
+                                                    e.currentTarget.style.boxShadow = '0 0 30px rgba(255, 69, 0, 0.3)';
+                                                }}
+                                            >
+                                                <Link href="https://www.wolfram.com/">
+                                                    <img
+                                                        src="/img/wolf.jpg"
+                                                        className="w-45 h-20 mb-10"
+                                                        style={{
+                                                            filter: 'drop-shadow(0 0 10px rgba(255, 69, 0, 0.5))',
+                                                            borderRadius: '10px'
+                                                        }}
+                                                    />
+                                                </Link>
+                                                <div style={{
+                                                    color: '#e0e0ff',
+                                                    fontSize: '1.1rem',
+                                                    lineHeight: '1.8',
+                                                    textShadow: '0 0 5px rgba(255, 255, 255, 0.3)',
+                                                    display: 'flex',
+                                                    flexDirection: 'column',
+                                                    gap: '10px',
+                                                    textAlign: 'center'
+                                                }}>
+                                                    <span>
+                                                        A year of <strong style={{ color: '#ff4500' }}>Wolfram|One Personal Edition</strong> plus a one-year subscription to <strong style={{ color: '#ff4500' }}>Wolfram|Alpha Pro</strong> to all the members of top 10 teams
+                                                    </span>
+                                                    <span>
+                                                        The value of each individual award is <strong style={{ color: '#ff4500' }}>$375.00</strong>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* FAQ Section with Neon Theme */}
+                <div className="faq_area" style={{
+                    background: 'linear-gradient(180deg, #020611 0%, #041228 100%)',
+                    position: 'relative',
+                    padding: '80px 0',
+                    overflow: 'hidden'
+                }}>
+                    <div style={{
+                        position: 'absolute',
+                        width: '100%',
+                        height: '100%',
+                        top: 0,
+                        left: 0,
+                        opacity: 0.05,
+                        background: 'radial-gradient(circle at 50% 50%, #ff00ff 0%, transparent 50%)',
+                    }}></div>
+
+                    <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+                        <div className="row">
+                            <div className="col-xl-12">
+                                <div className="serction_title_large mb-95 text-center">
+                                    <h3 className="neon-text" style={{
+                                        color: '#7799e4ff',
+                                        // textShadow: '0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff',
+                                        fontSize: 'clamp(2rem, 5vw, 3rem)',
+                                        fontWeight: 'bold',
+                                        marginBottom: '3rem',
+                                        animation: 'glow 2s ease-in-out infinite alternate'
+                                    }}>
+                                        Frequently Asked Questions
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-xl-12">
+                                <div>
+                                    {/* FAQ 1 */}
+                                    <div className="fade-in" style={{
+                                        background: 'linear-gradient(135deg, rgba(255, 0, 255, 0.05) 0%, rgba(255, 0, 255, 0.02) 100%)',
+                                        border: '2px solid rgba(255, 0, 255, 0.3)',
+                                        borderRadius: '15px',
+                                        marginBottom: '20px',
+                                        boxShadow: '0 0 20px rgba(255, 0, 255, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        animationDelay: '0.1s',
+                                        overflow: 'hidden'
+                                    }}>
+                                        <div style={{
+                                            background: 'transparent',
+                                            border: 'none',
+                                            padding: '20px',
+                                            cursor: 'pointer'
+                                        }}
+                                            onClick={() => toggleFAQ(1)}>
+                                            <h5 className="mb-0" style={{
+                                                color: '#ff00ff',
+                                                fontSize: '1.2rem',
+                                                fontWeight: 'bold',
+                                                textShadow: '0 0 5px rgba(255, 0, 255, 0.5)',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                gap: '15px',
+                                                margin: 0
+                                            }}>
+                                                <img
+                                                    src="img/barnd/info.png"
+                                                    style={{
+                                                        height: "50px",
+                                                        width: "50px",
+                                                        borderRadius: "50%",
+                                                        filter: 'drop-shadow(0 0 10px rgba(255, 0, 255, 0.5))',
+                                                        flexShrink: 0
+                                                    }}
+                                                    alt=""
+                                                />
+                                                <span style={{ flex: 1 }}>Do I need to have any specific qualifications to be a participant for the Hackathon?</span>
+                                                <span style={{ fontSize: '1.5rem', transition: 'transform 0.3s', transform: openFAQ === 1 ? 'rotate(180deg)' : 'rotate(0)' }}>▼</span>
+                                            </h5>
+                                        </div>
+                                        <div style={{
+                                            maxHeight: openFAQ === 1 ? '500px' : '0',
+                                            overflow: 'hidden',
+                                            transition: 'max-height 0.4s ease-in-out',
+                                        }}>
+                                            <div style={{
+                                                color: '#b0c4de',
+                                                fontSize: '1.1rem',
+                                                lineHeight: '1.8',
+                                                padding: '0 20px 20px 85px'
+                                            }}>
+                                                If you love to code, you are more than welcome to participate in the Hackathon.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* FAQ 2 */}
+                                    <div className="fade-in" style={{
+                                        background: 'linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(0, 255, 255, 0.02) 100%)',
+                                        border: '2px solid rgba(0, 255, 255, 0.3)',
+                                        borderRadius: '15px',
+                                        marginBottom: '20px',
+                                        boxShadow: '0 0 20px rgba(0, 255, 255, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        animationDelay: '0.2s',
+                                        overflow: 'hidden'
+                                    }}>
+                                        <div style={{
+                                            background: 'transparent',
+                                            border: 'none',
+                                            padding: '20px',
+                                            cursor: 'pointer'
+                                        }}
+                                            onClick={() => toggleFAQ(2)}>
+                                            <h5 className="mb-0" style={{
+                                                color: '#00ffff',
+                                                fontSize: '1.2rem',
+                                                fontWeight: 'bold',
+                                                textShadow: '0 0 5px rgba(0, 255, 255, 0.5)',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                gap: '15px',
+                                                margin: 0
+                                            }}>
+                                                <img
+                                                    src="img/barnd/info.png"
+                                                    style={{
+                                                        height: "50px",
+                                                        width: "50px",
+                                                        borderRadius: "50%",
+                                                        filter: 'drop-shadow(0 0 10px rgba(0, 255, 255, 0.5))',
+                                                        flexShrink: 0
+                                                    }}
+                                                    alt=""
+                                                />
+                                                <span style={{ flex: 1 }}>Do I need to pay any money to register for the Hackathon?</span>
+                                                <span style={{ fontSize: '1.5rem', transition: 'transform 0.3s', transform: openFAQ === 2 ? 'rotate(180deg)' : 'rotate(0)' }}>▼</span>
+                                            </h5>
+                                        </div>
+                                        <div style={{
+                                            maxHeight: openFAQ === 2 ? '500px' : '0',
+                                            overflow: 'hidden',
+                                            transition: 'max-height 0.4s ease-in-out',
+                                        }}>
+                                            <div style={{
+                                                color: '#b0c4de',
+                                                fontSize: '1.1rem',
+                                                lineHeight: '1.8',
+                                                padding: '0 20px 20px 85px'
+                                            }}>
+                                                No. You do not have to pay anything to anyone to register yourself for any Hackathon on Devfolio.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* FAQ 3 */}
+                                    <div className="fade-in" style={{
+                                        background: 'linear-gradient(135deg, rgba(0, 255, 136, 0.05) 0%, rgba(0, 255, 136, 0.02) 100%)',
+                                        border: '2px solid rgba(0, 255, 136, 0.3)',
+                                        borderRadius: '15px',
+                                        marginBottom: '20px',
+                                        boxShadow: '0 0 20px rgba(0, 255, 136, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        animationDelay: '0.3s',
+                                        overflow: 'hidden'
+                                    }}>
+                                        <div style={{
+                                            background: 'transparent',
+                                            border: 'none',
+                                            padding: '20px',
+                                            cursor: 'pointer'
+                                        }}
+                                            onClick={() => toggleFAQ(3)}>
+                                            <h5 className="mb-0" style={{
+                                                color: '#00ff88',
+                                                fontSize: '1.2rem',
+                                                fontWeight: 'bold',
+                                                textShadow: '0 0 5px rgba(0, 255, 136, 0.5)',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                gap: '15px',
+                                                margin: 0
+                                            }}>
+                                                <img
+                                                    src="img/barnd/info.png"
+                                                    style={{
+                                                        height: "50px",
+                                                        width: "50px",
+                                                        borderRadius: "50%",
+                                                        filter: 'drop-shadow(0 0 10px rgba(0, 255, 136, 0.5))',
+                                                        flexShrink: 0
+                                                    }}
+                                                    alt=""
+                                                />
+                                                <span style={{ flex: 1 }}>How do I submit what I have made for the Hackathon?</span>
+                                                <span style={{ fontSize: '1.5rem', transition: 'transform 0.3s', transform: openFAQ === 3 ? 'rotate(180deg)' : 'rotate(0)' }}>▼</span>
+                                            </h5>
+                                        </div>
+                                        <div style={{
+                                            maxHeight: openFAQ === 3 ? '500px' : '0',
+                                            overflow: 'hidden',
+                                            transition: 'max-height 0.4s ease-in-out',
+                                        }}>
+                                            <div style={{
+                                                color: '#b0c4de',
+                                                fontSize: '1.1rem',
+                                                lineHeight: '1.8',
+                                                padding: '0 20px 20px 85px'
+                                            }}>
+                                                You have to develop the application on your local system and submit it on DevFolio in tar/zip file format along with instructions to run the application and source code.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* FAQ 4 */}
+                                    <div className="fade-in" style={{
+                                        background: 'linear-gradient(135deg, rgba(130, 71, 229, 0.05) 0%, rgba(130, 71, 229, 0.02) 100%)',
+                                        border: '2px solid rgba(130, 71, 229, 0.3)',
+                                        borderRadius: '15px',
+                                        marginBottom: '20px',
+                                        boxShadow: '0 0 20px rgba(130, 71, 229, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        animationDelay: '0.4s',
+                                        overflow: 'hidden'
+                                    }}>
+                                        <div style={{
+                                            background: 'transparent',
+                                            border: 'none',
+                                            padding: '20px',
+                                            cursor: 'pointer'
+                                        }}
+                                            onClick={() => toggleFAQ(4)}>
+                                            <h5 className="mb-0" style={{
+                                                color: '#8247e5',
+                                                fontSize: '1.2rem',
+                                                fontWeight: 'bold',
+                                                textShadow: '0 0 5px rgba(130, 71, 229, 0.5)',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                gap: '15px',
+                                                margin: 0
+                                            }}>
+                                                <img
+                                                    src="img/barnd/info.png"
+                                                    style={{
+                                                        height: "50px",
+                                                        width: "50px",
+                                                        borderRadius: "50%",
+                                                        filter: 'drop-shadow(0 0 10px rgba(130, 71, 229, 0.5))',
+                                                        flexShrink: 0
+                                                    }}
+                                                    alt=""
+                                                />
+                                                <span style={{ flex: 1 }}>Do we need to have the entire idea fully working?</span>
+                                                <span style={{ fontSize: '1.5rem', transition: 'transform 0.3s', transform: openFAQ === 4 ? 'rotate(180deg)' : 'rotate(0)' }}>▼</span>
+                                            </h5>
+                                        </div>
+                                        <div style={{
+                                            maxHeight: openFAQ === 4 ? '500px' : '0',
+                                            overflow: 'hidden',
+                                            transition: 'max-height 0.4s ease-in-out',
+                                        }}>
+                                            <div style={{
+                                                color: '#b0c4de',
+                                                fontSize: '1.1rem',
+                                                lineHeight: '1.8',
+                                                padding: '0 20px 20px 85px'
+                                            }}>
+                                                The entire idea need not be fully implemented however, the submission should be functional so that it can be reviewed by the judges.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* FAQ 5 */}
+                                    <div className="fade-in" style={{
+                                        background: 'linear-gradient(135deg, rgba(255, 0, 255, 0.05) 0%, rgba(255, 0, 255, 0.02) 100%)',
+                                        border: '2px solid rgba(255, 0, 255, 0.3)',
+                                        borderRadius: '15px',
+                                        marginBottom: '20px',
+                                        boxShadow: '0 0 20px rgba(255, 0, 255, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        animationDelay: '0.5s',
+                                        overflow: 'hidden'
+                                    }}>
+                                        <div style={{
+                                            background: 'transparent',
+                                            border: 'none',
+                                            padding: '20px',
+                                            cursor: 'pointer'
+                                        }}
+                                            onClick={() => toggleFAQ(5)}>
+                                            <h5 className="mb-0" style={{
+                                                color: '#ff00ff',
+                                                fontSize: '1.2rem',
+                                                fontWeight: 'bold',
+                                                textShadow: '0 0 5px rgba(255, 0, 255, 0.5)',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                gap: '15px',
+                                                margin: 0
+                                            }}>
+                                                <img
+                                                    src="img/barnd/info.png"
+                                                    style={{
+                                                        height: "50px",
+                                                        width: "50px",
+                                                        borderRadius: "50%",
+                                                        filter: 'drop-shadow(0 0 10px rgba(255, 0, 255, 0.5))',
+                                                        flexShrink: 0
+                                                    }}
+                                                    alt=""
+                                                />
+                                                <span style={{ flex: 1 }}>How do we submit our hack?</span>
+                                                <span style={{ fontSize: '1.5rem', transition: 'transform 0.3s', transform: openFAQ === 5 ? 'rotate(180deg)' : 'rotate(0)' }}>▼</span>
+                                            </h5>
+                                        </div>
+                                        <div style={{
+                                            maxHeight: openFAQ === 5 ? '500px' : '0',
+                                            overflow: 'hidden',
+                                            transition: 'max-height 0.4s ease-in-out',
+                                        }}>
+                                            <div style={{
+                                                color: '#b0c4de',
+                                                fontSize: '1.1rem',
+                                                lineHeight: '1.8',
+                                                padding: '0 20px 20px 85px'
+                                            }}>
+                                                You have to develop the entire software application on your local system and submit it on Devfolio in tar/zip file format along with instructions to run the application and source code. If it is a mobile app, package it as an apk and send along with the source code.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* FAQ 6 */}
+                                    <div className="fade-in" style={{
+                                        background: 'linear-gradient(135deg, rgba(0, 255, 255, 0.05) 0%, rgba(0, 255, 255, 0.02) 100%)',
+                                        border: '2px solid rgba(0, 255, 255, 0.3)',
+                                        borderRadius: '15px',
+                                        marginBottom: '20px',
+                                        boxShadow: '0 0 20px rgba(0, 255, 255, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        animationDelay: '0.6s',
+                                        overflow: 'hidden'
+                                    }}>
+                                        <div style={{
+                                            background: 'transparent',
+                                            border: 'none',
+                                            padding: '20px',
+                                            cursor: 'pointer'
+                                        }}
+                                            onClick={() => toggleFAQ(6)}>
+                                            <h5 className="mb-0" style={{
+                                                color: '#00ffff',
+                                                fontSize: '1.2rem',
+                                                fontWeight: 'bold',
+                                                textShadow: '0 0 5px rgba(0, 255, 255, 0.5)',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                gap: '15px',
+                                                margin: 0
+                                            }}>
+                                                <img
+                                                    src="img/barnd/info.png"
+                                                    style={{
+                                                        height: "50px",
+                                                        width: "50px",
+                                                        borderRadius: "50%",
+                                                        filter: 'drop-shadow(0 0 10px rgba(0, 255, 255, 0.5))',
+                                                        flexShrink: 0
+                                                    }}
+                                                    alt=""
+                                                />
+                                                <span style={{ flex: 1 }}>Does one have to be online and available for the entire duration of the Hackathon?</span>
+                                                <span style={{ fontSize: '1.5rem', transition: 'transform 0.3s', transform: openFAQ === 6 ? 'rotate(180deg)' : 'rotate(0)' }}>▼</span>
+                                            </h5>
+                                        </div>
+                                        <div style={{
+                                            maxHeight: openFAQ === 6 ? '500px' : '0',
+                                            overflow: 'hidden',
+                                            transition: 'max-height 0.4s ease-in-out',
+                                        }}>
+                                            <div style={{
+                                                color: '#b0c4de',
+                                                fontSize: '1.1rem',
+                                                lineHeight: '1.8',
+                                                padding: '0 20px 20px 85px'
+                                            }}>
+                                                No, one does not need to be logged in on DevFolio or be online for the entire duration. You can develop the application on your local system based on the given themes and then submit it on DevFolio, on the specific challenge page.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* FAQ 7 */}
+                                    <div className="fade-in" style={{
+                                        background: 'linear-gradient(135deg, rgba(0, 255, 136, 0.05) 0%, rgba(0, 255, 136, 0.02) 100%)',
+                                        border: '2px solid rgba(0, 255, 136, 0.3)',
+                                        borderRadius: '15px',
+                                        marginBottom: '20px',
+                                        boxShadow: '0 0 20px rgba(0, 255, 136, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        animationDelay: '0.7s',
+                                        overflow: 'hidden'
+                                    }}>
+                                        <div style={{
+                                            background: 'transparent',
+                                            border: 'none',
+                                            padding: '20px',
+                                            cursor: 'pointer'
+                                        }}
+                                            onClick={() => toggleFAQ(7)}>
+                                            <h5 className="mb-0" style={{
+                                                color: '#00ff88',
+                                                fontSize: '1.2rem',
+                                                fontWeight: 'bold',
+                                                textShadow: '0 0 5px rgba(0, 255, 136, 0.5)',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                gap: '15px',
+                                                margin: 0
+                                            }}>
+                                                <img
+                                                    src="img/barnd/info.png"
+                                                    style={{
+                                                        height: "50px",
+                                                        width: "50px",
+                                                        borderRadius: "50%",
+                                                        filter: 'drop-shadow(0 0 10px rgba(0, 255, 136, 0.5))',
+                                                        flexShrink: 0
+                                                    }}
+                                                    alt=""
+                                                />
+                                                <span style={{ flex: 1 }}>Since there is no specific technology mentioned, are there any restrictions on using number of pre-built libraries?</span>
+                                                <span style={{ fontSize: '1.5rem', transition: 'transform 0.3s', transform: openFAQ === 7 ? 'rotate(180deg)' : 'rotate(0)' }}>▼</span>
+                                            </h5>
+                                        </div>
+                                        <div style={{
+                                            maxHeight: openFAQ === 7 ? '500px' : '0',
+                                            overflow: 'hidden',
+                                            transition: 'max-height 0.4s ease-in-out',
+                                        }}>
+                                            <div style={{
+                                                color: '#b0c4de',
+                                                fontSize: '1.1rem',
+                                                lineHeight: '1.8',
+                                                padding: '0 20px 20px 85px'
+                                            }}>
+                                                There is no restriction to use any language, technology stack, or libraries. You can use any of them to create the web/mobile application.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* FAQ 8 */}
+                                    <div className="fade-in" style={{
+                                        background: 'linear-gradient(135deg, rgba(255, 69, 0, 0.05) 0%, rgba(255, 69, 0, 0.02) 100%)',
+                                        border: '2px solid rgba(255, 69, 0, 0.3)',
+                                        borderRadius: '15px',
+                                        marginBottom: '20px',
+                                        boxShadow: '0 0 20px rgba(255, 69, 0, 0.2)',
+                                        transition: 'all 0.3s ease',
+                                        animationDelay: '0.8s',
+                                        overflow: 'hidden'
+                                    }}>
+                                        <div style={{
+                                            background: 'transparent',
+                                            border: 'none',
+                                            padding: '20px',
+                                            cursor: 'pointer'
+                                        }}
+                                            onClick={() => toggleFAQ(8)}>
+                                            <h5 className="mb-0" style={{
+                                                color: '#ff4500',
+                                                fontSize: '1.2rem',
+                                                fontWeight: 'bold',
+                                                textShadow: '0 0 5px rgba(255, 69, 0, 0.5)',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                gap: '15px',
+                                                margin: 0
+                                            }}>
+                                                <img
+                                                    src="img/barnd/info.png"
+                                                    style={{
+                                                        height: "50px",
+                                                        width: "50px",
+                                                        borderRadius: "50%",
+                                                        filter: 'drop-shadow(0 0 10px rgba(255, 69, 0, 0.5))',
+                                                        flexShrink: 0
+                                                    }}
+                                                    alt=""
+                                                />
+                                                <span style={{ flex: 1 }}>Do I need to give a demo for the product that I have built?</span>
+                                                <span style={{ fontSize: '1.5rem', transition: 'transform 0.3s', transform: openFAQ === 8 ? 'rotate(180deg)' : 'rotate(0)' }}>▼</span>
+                                            </h5>
+                                        </div>
+                                        <div style={{
+                                            maxHeight: openFAQ === 8 ? '500px' : '0',
+                                            overflow: 'hidden',
+                                            transition: 'max-height 0.4s ease-in-out',
+                                        }}>
+                                            <div style={{
+                                                color: '#b0c4de',
+                                                fontSize: '1.1rem',
+                                                lineHeight: '1.8',
+                                                padding: '0 20px 20px 85px'
+                                            }}>
+                                                If you want you can submit a small presentation or video that demos your submission, however it's not mandatory, and only good to have. In case you are one of the winners, you might be invited to demo your application at a physical event, details of which will be shared with sufficient advance notice.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Add CSS animations */}
+                <style jsx>{`
+            // @keyframes glow {
+            //     from {
+            //         text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+            //     }
+            //     to {
+            //         text-shadow: 0 0 20px currentColor, 0 0 30px currentColor, 0 0 40px currentColor, 0 0 50px currentColor;
+            //     }
+            // }
+
+            @keyframes pulse {
+                0%, 100% {
+                    opacity: 0.1;
+                }
+                50% {
+                    opacity: 0.15;
+                }
+            }
+
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .fade-in {
+                animation: fadeIn 0.6s ease-out forwards;
+                opacity: 0;
+            }
+
+            .neon-text {
+                animation: glow 2s ease-in-out infinite alternate;
+            }
+        `}</style>
 
                 <Footer />
             </div>

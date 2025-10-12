@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import { useEffect, useState } from "react";
 import Timer from "../components/Timer";
 import BlobScene from "../components/Flow";
+import Sponsors from "../components/sponsors";
 
 export default function SchedulePage() {
     const [isMobile, setIsMobile] = useState(false);
@@ -17,8 +18,15 @@ export default function SchedulePage() {
 
     useEffect(() => {
         const script = document.createElement("script");
+        script.src = "https://apply.devfolio.co/v2/sdk.js";
         script.async = true;
         script.defer = true;
+        script.onload = () => {
+            console.log("Devfolio SDK loaded");
+            if (window.Devfolio) {
+                window.Devfolio.setup();
+            }
+        };
         document.body.appendChild(script);
         return () => {
             document.body.removeChild(script);
@@ -157,7 +165,7 @@ export default function SchedulePage() {
                                                         >
                                                             Add to your Calendar
                                                         </a>
-                                                        <a
+                                                        {/* <a
                                                             href="https://unstop.com/p/hackoverflow-90-gnulinux-users-group-nit-durgapur-1437266"
                                                             style={{
                                                                 padding: '0.8rem 1.5rem',
@@ -182,7 +190,8 @@ export default function SchedulePage() {
                                                             }}
                                                         >
                                                             Apply
-                                                        </a>
+                                                        </a> */}
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -214,7 +223,7 @@ export default function SchedulePage() {
                                             Event Schedule
                                         </h3>
                                         <div className="relative flex flex-col flex-wrap gap-4 justify-center mb-5" style={{ width: '100%', maxWidth: '400px' }}>
-                                            <a
+                                            {/* <a
                                                 href="https://unstop.com/p/hackoverflow-90-gnulinux-users-group-nit-durgapur-1437266"
                                                 style={{
                                                     display: 'inline-block',
@@ -241,7 +250,13 @@ export default function SchedulePage() {
                                                 }}
                                             >
                                                 Apply
-                                            </a>
+                                            </a> */}
+                                            <div
+                                                className="apply-button"
+                                                data-hackathon-slug="hackoverflow09"
+                                                data-button-theme="light"
+                                                style={{ height: 400, width: 312, margin: '1rem 0' }}
+                                            ></div>
 
                                             <a
                                                 href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+9.0&dates=20251017/20251020"
@@ -1002,7 +1017,7 @@ export default function SchedulePage() {
                         </div>
                     </div>
                 </div>
-
+                <Sponsors />
                 <Footer />
             </div>
         </>
