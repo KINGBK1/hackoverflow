@@ -41,7 +41,7 @@ export default function Sponsors() {
             </Link>
           </div>
 
-          {/* <div className="p-1 mb-10">
+          <div className="p-1 mb-10">
                     <Link href="https://replit.com/">
                         <img
                             src="/Replit-light-background.png"
@@ -74,7 +74,7 @@ export default function Sponsors() {
                             className="h-10 md:h-14"
                         />
                     </Link>
-                </div> */}
+                </div>
         </div>
       </div>
     </React.Fragment>

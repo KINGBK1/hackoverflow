@@ -1,3 +1,5 @@
+// my new version of index.js with 3D background and improved styling 
+
 import Head from "next/head";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
@@ -14,8 +16,15 @@ export default function IndexPage() {
     const [isMobile, setIsMobile] = useState(false);
     useEffect(() => {
         const script = document.createElement("script");
+        script.src = "https://apply.devfolio.co/v2/sdk.js";
         script.async = true;
         script.defer = true;
+        script.onload = () => {
+            console.log("Devfolio SDK loaded");
+            if (window.Devfolio) {
+                window.Devfolio.setup(); // Ensure it initializes after loading
+            }
+        };
         document.body.appendChild(script);
         return () => {
             document.body.removeChild(script);
@@ -160,7 +169,14 @@ export default function IndexPage() {
                                                         >
                                                             Add to your Calendar
                                                         </a>
-                                                        <a
+
+                                                        <div
+                                                            className="apply-button"
+                                                            data-hackathon-slug="hackoverflow09"
+                                                            data-button-theme="light"
+                                                            style={{ height: 44, width: 312, margin: '1rem 0', color: 'white' }}
+                                                        ></div>
+                                                        {/* <a
                                                             href="https://unstop.com/p/hackoverflow-90-gnulinux-users-group-nit-durgapur-1437266"
                                                             style={{
                                                                 padding: '0.8rem 1.5rem',
@@ -185,7 +201,15 @@ export default function IndexPage() {
                                                             }}
                                                         >
                                                             Apply
-                                                        </a>
+                                                        </a> */}
+
+                                                        <div
+                                                            className="apply-button"
+                                                            data-hackathon-slug="hackoverflow09"  // change this to your actual slug on Devfolio
+                                                            data-button-theme="light"
+                                                            style={{ height: 44, width: 312, margin: '1rem 0', color: 'white', borderRadius: '8px' , backgroundColor: 'black'}}
+                                                        ></div>
+
                                                     </div>
                                                 </div>
 
@@ -457,7 +481,7 @@ export default function IndexPage() {
                                             transition: 'all 0.3s ease',
                                             color: "white",
                                             textShadow: '0 0 5px rgba(255, 255, 255, 0.7)',
-                                            fontWeight:"bolder",
+                                            fontWeight: "bolder",
                                         }}
                                     >
                                         Learn More about Aarohan
@@ -548,7 +572,7 @@ export default function IndexPage() {
                                     </div>
                                 </div>
                             </div> */}
-{/* 
+                            {/* 
                             <div className="flex flex-col rounded-lg items-center justify-between w-72 neon-border scanline-effect float-animation"
                                 style={{
                                     border: '3px solid #ff00ff',
@@ -609,7 +633,7 @@ export default function IndexPage() {
                                 </div>
                             </div> */}
 
-                            <h1 style={{ color: '#aaffff', textAlign: 'center', margin: '2rem 0', fontSize: '2rem', fontWeight: 'bold', padding: '1rem 0' , textShadow: '0 0 2px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff, 0 0 0px #0ff'}}>To Be Announced Soon....</h1>
+                            <h1 style={{ color: '#aaffff', textAlign: 'center', margin: '2rem 0', fontSize: '2rem', fontWeight: 'bold', padding: '1rem 0', textShadow: '0 0 2px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff, 0 0 0px #0ff' }}>To Be Announced Soon....</h1>
                         </div>
                     </div>
                 </div>
