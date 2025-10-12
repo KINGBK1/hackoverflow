@@ -187,8 +187,8 @@ export default function Sponsors() {
               <div className="sponsor-card delay-2">
                 <div className="sponsor-logo-wrapper">
                   <img
-                    alt="ETHIndia Logo"
-                    src="/ETHIndia.png"
+                    alt="ETHINDIA LOGO"
+                    src="/ethindia-dark.png"
                     className="sponsor-logo"
                   />
                 </div>

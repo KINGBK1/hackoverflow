@@ -1282,7 +1282,7 @@ export default function SchedulePage() {
                                 >
                                     <div className="brand-logo-wrapper">
                                         <img
-                                            src="/ETHIndia.png"
+                                            src="/ethindia-dark.png"
                                             alt="ETHINDIA LOGO"
                                             className="brand-logo"
                                         />
