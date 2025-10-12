@@ -1046,7 +1046,7 @@ export default function IndexPage() {
                                                 <Link href="https://ethindia2024.devfolio.co">
                                                     <img
                                                         className="mb-10"
-                                                        src="/ETHIndiaDark.png"
+                                                        src="/ethindia-light.png"
                                                         alt="ETHINDIA LOGO"
                                                         style={{
                                                             filter: 'drop-shadow(0 0 10px rgba(130, 71, 229, 0.5))',
