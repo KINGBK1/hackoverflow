@@ -8,7 +8,7 @@ import Sponsors from "../components/sponsors";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import BlobScene from "../components/Flow";
-
+import Shuffle from "../components/font/Shuffle";
 
 
 export default function IndexPage() {
@@ -135,7 +135,7 @@ export default function IndexPage() {
                                         <div className="row">
                                             <div className="col-xl-9">
                                                 <div className="title_text ml-3">
-                                                    <h3
+                                                    {/* <h3
                                                         style={{
                                                             color: '#aaffff !important',
                                                             fontWeight: 'bold',
@@ -147,7 +147,51 @@ export default function IndexPage() {
                                                         HackOverflow 9.0
                                                         <br />
                                                         Aarohan, 2025
-                                                    </h3>
+                                                    </h3> */}
+                                                    <Shuffle
+                                                        text="HackOverflow 9.0"
+                                                        shuffleDirection="right"
+                                                        duration={1}
+                                                        animationMode="evenodd"
+                                                        shuffleTimes={1}
+                                                        ease="power3.out"
+                                                        stagger={0.03}
+                                                        threshold={0.1}
+                                                        triggerOnce={true}
+                                                        triggerOnHover={true}
+                                                        // loop={true}
+                                                        respectReducedMotion={true}
+                                                        style={{
+                                                            color: '#aaffff !important',
+                                                            fontWeight: 'bold',
+                                                            fontSize: '4rem',
+                                                            WebkitTextFillColor: '#aaffff',
+                                                            filter: 'drop-shadow(0 0 10px #0ff)',
+                                                            textTransform: 'none',
+                                                        }}
+                                                    />
+                                                    <br />
+                                                        <Shuffle
+                                                        text="Aarohan, 2025"
+                                                        shuffleDirection="right"
+                                                        duration={1}
+                                                        animationMode="evenodd"
+                                                        shuffleTimes={1}
+                                                        ease="power3.out"
+                                                        stagger={0.03}
+                                                        threshold={0.1}
+                                                        triggerOnce={true}
+                                                        triggerOnHover={true}
+                                                        respectReducedMotion={true}
+                                                            style={{
+                                                            color: '#aaffff !important',
+                                                            fontWeight: 'bold',
+                                                            fontSize: '4rem',
+                                                            WebkitTextFillColor: '#aaffff',
+                                                            filter: 'drop-shadow(0 0 10px #0ff)',
+                                                            textTransform: 'none',
+                                                        }}
+                                                    />
                                                     <br />
                                                     <div className="relative flex gap-4">
                                                         <a
@@ -949,7 +993,7 @@ export default function IndexPage() {
                                         padding: 0
                                     }}>
 
-                                                                                 <li className="fade-in" style={{ animationDelay: '0.1s' }}>
+                                        <li className="fade-in" style={{ animationDelay: '0.1s' }}>
                                             <div
                                                 className="p-4 flex flex-col items-center justify-around rounded shadow md:w-3/5 md:mx-auto"
                                                 style={{
@@ -987,12 +1031,12 @@ export default function IndexPage() {
                                                     lineHeight: '1.8',
                                                     textShadow: '0 0 5px rgba(255, 255, 255, 0.3)'
                                                 }}>
-                                                    ETHIndia is empowering the Ethereum Community through its various initiatives including hackathons, 
+                                                    ETHIndia is empowering the Ethereum Community through its various initiatives including hackathons,
                                                     <br />
                                                     fellowships, grants, and more
                                                 </span>
                                             </div>
-                                        </li> 
+                                        </li>
 
                                         {/* Polygon */}
                                         {/* <li className="fade-in" style={{ animationDelay: '0.1s' }}>
@@ -1280,7 +1324,7 @@ export default function IndexPage() {
                                             </div>
                                         </li> */}
                                     </ul>
-                                    
+
                                 </div>
                             </div>
                         </div>

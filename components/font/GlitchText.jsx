@@ -1,146 +1,28 @@
-import React from 'react';
+const GlitchText = ({ children, speed = 0.5, enableShadows = true, enableOnHover = false, className = '' }) => {
+  const inlineStyles = {
+    '--after-duration': `${speed * 3}s`,
+    '--before-duration': `${speed * 2}s`,
+    '--after-shadow': enableShadows ? '-5px 0 red' : 'none',
+    '--before-shadow': enableShadows ? '5px 0 cyan' : 'none'
+  };
 
-export default function GlitchText({ children, className = '', style = {} }) {
+  const baseClasses = 'text-white text-[clamp(2rem,10vw,8rem)] font-black relative mx-auto select-none cursor-pointer';
+
+  const pseudoClasses = !enableOnHover
+    ? 'after:content-[attr(data-text)] after:absolute after:top-0 after:left-[10px] after:text-white after:bg-[#060010] after:overflow-hidden after:[clip-path:inset(0_0_0_0)] after:[text-shadow:var(--after-shadow)] after:animate-glitch-after ' +
+      'before:content-[attr(data-text)] before:absolute before:top-0 before:left-[-10px] before:text-white before:bg-[#060010] before:overflow-hidden before:[clip-path:inset(0_0_0_0)] before:[text-shadow:var(--before-shadow)] before:animate-glitch-before'
+    : "after:content-[''] after:absolute after:top-0 after:left-[10px] after:text-white after:bg-[#060010] after:overflow-hidden after:[clip-path:inset(0_0_0_0)] after:opacity-0 " +
+      "before:content-[''] before:absolute before:top-0 before:left-[-10px] before:text-white before:bg-[#060010] before:overflow-hidden before:[clip-path:inset(0_0_0_0)] before:opacity-0 " +
+      'hover:after:content-[attr(data-text)] hover:after:opacity-100 hover:after:[text-shadow:var(--after-shadow)] hover:after:animate-glitch-after ' +
+      'hover:before:content-[attr(data-text)] hover:before:opacity-100 hover:before:[text-shadow:var(--before-shadow)] hover:before:animate-glitch-before';
+
+  const combinedClasses = `${baseClasses} ${pseudoClasses} ${className}`;
+
   return (
-    <h3 className={`glitch-text ${className}`} style={style} data-text={children}>
+    <div style={inlineStyles} data-text={children} className={combinedClasses}>
       {children}
-      <style jsx>{`
-        @keyframes glitch-anim {
-          0% {
-            clip-path: inset(40% 0 61% 0);
-            transform: translate(0);
-          }
-          20% {
-            clip-path: inset(92% 0 1% 0);
-            transform: translate(-2px, 2px);
-          }
-          40% {
-            clip-path: inset(43% 0 1% 0);
-            transform: translate(-2px, -2px);
-          }
-          60% {
-            clip-path: inset(25% 0 58% 0);
-            transform: translate(2px, 2px);
-          }
-          80% {
-            clip-path: inset(54% 0 7% 0);
-            transform: translate(2px, -2px);
-          }
-          100% {
-            clip-path: inset(58% 0 43% 0);
-            transform: translate(0);
-          }
-        }
-
-        @keyframes glitch-anim-2 {
-          0% {
-            clip-path: inset(65% 0 15% 0);
-            transform: translate(0);
-          }
-          20% {
-            clip-path: inset(22% 0 58% 0);
-            transform: translate(2px, -2px);
-          }
-          40% {
-            clip-path: inset(81% 0 8% 0);
-            transform: translate(2px, 2px);
-          }
-          60% {
-            clip-path: inset(47% 0 23% 0);
-            transform: translate(-2px, -2px);
-          }
-          80% {
-            clip-path: inset(91% 0 2% 0);
-            transform: translate(-2px, 2px);
-          }
-          100% {
-            clip-path: inset(34% 0 55% 0);
-            transform: translate(0);
-          }
-        }
-
-        .glitch-text {
-          position: relative;
-          color: #aaffff;
-          font-weight: bold;
-          text-shadow: 
-            0 0 10px #0ff,
-            0 0 20px #0ff,
-            0 0 30px #0ff;
-          animation: glitch-skew 1s infinite linear alternate-reverse;
-        }
-
-        @keyframes glitch-skew {
-          0% {
-            transform: skew(0deg);
-          }
-          10% {
-            transform: skew(-1deg);
-          }
-          20% {
-            transform: skew(0deg);
-          }
-          30% {
-            transform: skew(1deg);
-          }
-          40% {
-            transform: skew(0deg);
-          }
-          50% {
-            transform: skew(-1deg);
-          }
-          60% {
-            transform: skew(0deg);
-          }
-          70% {
-            transform: skew(1deg);
-          }
-          80% {
-            transform: skew(0deg);
-          }
-          90% {
-            transform: skew(-1deg);
-          }
-          100% {
-            transform: skew(0deg);
-          }
-        }
-
-        .glitch-text::before,
-        .glitch-text::after {
-          content: attr(data-text);
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-        }
-
-        .glitch-text::before {
-          animation: glitch-anim 2s infinite linear alternate-reverse;
-          color: #ff00ff;
-          text-shadow: 
-            -2px 0 #ff00ff,
-            0 0 10px #ff00ff;
-          z-index: -1;
-        }
-
-        .glitch-text::after {
-          animation: glitch-anim-2 3s infinite linear alternate-reverse;
-          color: #00ffff;
-          text-shadow: 
-            2px 0 #00ffff,
-            0 0 10px #00ffff;
-          z-index: -2;
-        }
-
-        @media (max-width: 768px) {
-          .glitch-text::before,
-          .glitch-text::after {
-            animation-duration: 3s;
-          }
-        }
-      `}</style>
-    </h3>
+    </div>
   );
-}
+};
+
+export default GlitchText;
