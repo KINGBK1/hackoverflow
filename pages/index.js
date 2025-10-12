@@ -22,7 +22,7 @@ export default function IndexPage() {
         script.onload = () => {
             console.log("Devfolio SDK loaded");
             if (window.Devfolio) {
-                window.Devfolio.setup(); // Ensure it initializes after loading
+                window.Devfolio.setup();
             }
         };
         document.body.appendChild(script);
@@ -174,7 +174,7 @@ export default function IndexPage() {
                                                             className="apply-button"
                                                             data-hackathon-slug="hackoverflow09"
                                                             data-button-theme="light"
-                                                            style={{ height: 44, width: 312, margin: '1rem 0', color: 'white' }}
+                                                            style={{ height: 44, width: 312, margin: '1rem 0' }}
                                                         ></div>
                                                         {/* <a
                                                             href="https://unstop.com/p/hackoverflow-90-gnulinux-users-group-nit-durgapur-1437266"
@@ -205,9 +205,9 @@ export default function IndexPage() {
 
                                                         <div
                                                             className="apply-button"
-                                                            data-hackathon-slug="hackoverflow09"  // change this to your actual slug on Devfolio
-                                                            data-button-theme="light"
-                                                            style={{ height: 44, width: 312, margin: '1rem 0', color: 'white', borderRadius: '8px' , backgroundColor: 'black'}}
+                                                            data-hackathon-slug="hackoverflow09"
+                                                            data-button-theme="dark"
+                                                            style={{ height: 44, width: 312, margin: '1rem 0', color: 'white', borderRadius: '8px', backgroundColor: 'black' }}
                                                         ></div>
 
                                                     </div>
@@ -260,7 +260,7 @@ export default function IndexPage() {
                                             Aarohan, 2025
                                         </h3>
                                         <div className="relative flex flex-col flex-wrap gap-4 justify-center mb-5">
-                                            <a
+                                            {/* <a
                                                 href="https://unstop.com/p/hackoverflow-90-gnulinux-users-group-nit-durgapur-1437266"
                                                 style={{
                                                     display: 'inline-block',
@@ -287,7 +287,13 @@ export default function IndexPage() {
                                                 }}
                                             >
                                                 Apply
-                                            </a>
+                                            </a> */}
+                                            {/* <div
+                                                className="apply-button"
+                                                data-hackathon-slug="hackoverflow09"
+                                                data-button-theme="light"
+                                                style={{ height: 400, width: 312, margin: '1rem 0' }}
+                                            ></div> */}
                                             <a
                                                 href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+9.0&dates=20251017/20251020"
                                                 style={{
@@ -313,6 +319,10 @@ export default function IndexPage() {
                                             >
                                                 Add to your Calendar
                                             </a>
+
+
+
+
                                         </div>
                                     </div>
                                 </div>
