@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Timer from "../components/Timer";
 import BlobScene from "../components/Flow";
 import Sponsors from "../components/sponsors";
+import Shuffle from "../components/font/Shuffle";
 
 export default function SchedulePage() {
     const [isMobile, setIsMobile] = useState(false);
@@ -120,7 +121,7 @@ export default function SchedulePage() {
                                         <div className="row">
                                             <div className="col-xl-9">
                                                 <div className="title_text ml-3">
-                                                    <h3
+                                                    {/* <h3
                                                         style={{
                                                             color: '#aaffff !important',
                                                             //     textShadow: `
@@ -137,7 +138,38 @@ export default function SchedulePage() {
                                                         }}
                                                     >
                                                         Event Schedule
-                                                    </h3>
+                                                    </h3> */}
+                                                        <Shuffle
+                                                            text="Event Schedule"
+                                                            shuffleDirection="right"
+                                                            duration={1}
+                                                            animationMode="evenodd"
+                                                            shuffleTimes={1}
+                                                            ease="power3.out"
+                                                            stagger={0.03}
+                                                            threshold={0.1}
+                                                            triggerOnce={true}
+                                                            triggerOnHover={true}
+                                                            // loop={true}
+                                                            respectReducedMotion={true}
+                                                            style={{
+                                                                color: '#aaffff !important',
+                                                                //     textShadow: `
+                                                                //     0 0 5px #0ff,
+                                                                //     0 0 10px #0ff,
+                                                                //     0 0 20px #0ff,
+                                                            //     0 0 40px #0ff,
+                                                            //     0 0 80px #0ff
+                                                            //   `,
+                                                            fontWeight: 'bold',
+                                                            fontSize: '4rem',
+                                                            WebkitTextFillColor: '#aaffff',
+                                                            // filter: 'drop-shadow(0 0 10px #0ff)',
+                                                            textTransform: 'none'
+                                                            }}
+                                                        />
+
+
                                                     <br />
                                                     <div className="relative flex gap-4">
                                                         <a
@@ -1250,7 +1282,7 @@ export default function SchedulePage() {
                                 >
                                     <div className="brand-logo-wrapper">
                                         <img
-                                            src="/ETHIndia.png"
+                                            src="/ETHIndiaDark.png"
                                             alt="ETHINDIA LOGO"
                                             className="brand-logo"
                                         />
