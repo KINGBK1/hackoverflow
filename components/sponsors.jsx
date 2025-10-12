@@ -171,7 +171,7 @@ export default function Sponsors() {
           <h3 className="neon-title">Our Sponsors</h3>
 
           <div className="sponsors-grid">
-            <Link href="https://polygon.technology/" target="_blank" rel="noopener noreferrer">
+            {/* <Link href="https://polygon.technology/" target="_blank" rel="noopener noreferrer">
               <div className="sponsor-card delay-1">
                 <div className="sponsor-logo-wrapper">
                   <img
@@ -181,7 +181,7 @@ export default function Sponsors() {
                   />
                 </div>
               </div>
-            </Link>
+            </Link> */}
 
             <Link href="https://ethindia.co/" target="_blank" rel="noopener noreferrer">
               <div className="sponsor-card delay-2">
@@ -195,7 +195,7 @@ export default function Sponsors() {
               </div>
             </Link>
 
-            <Link href="https://replit.com/" target="_blank" rel="noopener noreferrer">
+            {/* <Link href="https://replit.com/" target="_blank" rel="noopener noreferrer">
               <div className="sponsor-card delay-3">
                 <div className="sponsor-logo-wrapper">
                   <img
@@ -205,9 +205,9 @@ export default function Sponsors() {
                   />
                 </div>
               </div>
-            </Link>
+            </Link> */}
 
-            <Link href="https://wolframlanguage.org/" target="_blank" rel="noopener noreferrer">
+            {/* <Link href="https://wolframlanguage.org/" target="_blank" rel="noopener noreferrer">
               <div className="sponsor-card delay-4">
                 <div className="sponsor-logo-wrapper">
                   <img
@@ -217,9 +217,9 @@ export default function Sponsors() {
                   />
                 </div>
               </div>
-            </Link>
+            </Link> */}
 
-            <Link href="https://solana.com/" target="_blank" rel="noopener noreferrer">
+            {/* <Link href="https://solana.com/" target="_blank" rel="noopener noreferrer">
               <div className="sponsor-card delay-5">
                 <div className="sponsor-logo-wrapper">
                   <img
@@ -229,9 +229,9 @@ export default function Sponsors() {
                   />
                 </div>
               </div>
-            </Link>
+            </Link> */}
 
-            <Link href="https://filecoin.io" target="_blank" rel="noopener noreferrer">
+            {/* <Link href="https://filecoin.io" target="_blank" rel="noopener noreferrer">
               <div className="sponsor-card delay-6">
                 <div className="sponsor-logo-wrapper">
                   <img
@@ -241,9 +241,9 @@ export default function Sponsors() {
                   />
                 </div>
               </div>
-            </Link>
+            </Link> */}
 
-            <Link href="https://digitalocean.com" target="_blank" rel="noopener noreferrer">
+            {/* <Link href="https://digitalocean.com" target="_blank" rel="noopener noreferrer">
               <div className="sponsor-card delay-7">
                 <div className="sponsor-logo-wrapper">
                   <img
@@ -253,7 +253,7 @@ export default function Sponsors() {
                   />
                 </div>
               </div>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

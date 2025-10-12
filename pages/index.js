@@ -948,8 +948,54 @@ export default function IndexPage() {
                                         listStyle: 'none',
                                         padding: 0
                                     }}>
+
+                                                                                 <li className="fade-in" style={{ animationDelay: '0.1s' }}>
+                                            <div
+                                                className="p-4 flex flex-col items-center justify-around rounded shadow md:w-3/5 md:mx-auto"
+                                                style={{
+                                                    marginBottom: "25px",
+                                                    background: 'linear-gradient(135deg, rgba(130, 71, 229, 0.1) 0%, rgba(130, 71, 229, 0.05) 100%)',
+                                                    border: '2px solid rgba(130, 71, 229, 0.4)',
+                                                    borderRadius: '20px',
+                                                    boxShadow: '0 0 30px rgba(130, 71, 229, 0.3)',
+                                                    transition: 'all 0.3s ease',
+                                                    cursor: 'pointer'
+                                                }}
+                                                onMouseEnter={(e) => {
+                                                    e.currentTarget.style.transform = 'translateY(-10px) scale(1.02)';
+                                                    e.currentTarget.style.boxShadow = '0 0 50px rgba(130, 71, 229, 0.6)';
+                                                }}
+                                                onMouseLeave={(e) => {
+                                                    e.currentTarget.style.transform = 'translateY(0) scale(1)';
+                                                    e.currentTarget.style.boxShadow = '0 0 30px rgba(130, 71, 229, 0.3)';
+                                                }}
+                                            >
+                                                <Link href="https://ethindia2024.devfolio.co">
+                                                    <img
+                                                        className="mb-10"
+                                                        src="/ETHIndia.png"
+                                                        alt="ETHINDIA LOGO"
+                                                        style={{
+                                                            filter: 'drop-shadow(0 0 10px rgba(130, 71, 229, 0.5))',
+                                                            transition: 'all 0.3s ease'
+                                                        }}
+                                                    />
+                                                </Link>
+                                                <span style={{
+                                                    color: '#e0e0ff',
+                                                    fontSize: '1.1rem',
+                                                    lineHeight: '1.8',
+                                                    textShadow: '0 0 5px rgba(255, 255, 255, 0.3)'
+                                                }}>
+                                                    ETHIndia is empowering the Ethereum Community through its various initiatives including hackathons, 
+                                                    <br />
+                                                    fellowships, grants, and more
+                                                </span>
+                                            </div>
+                                        </li> 
+
                                         {/* Polygon */}
-                                        <li className="fade-in" style={{ animationDelay: '0.1s' }}>
+                                        {/* <li className="fade-in" style={{ animationDelay: '0.1s' }}>
                                             <div
                                                 className="p-4 flex flex-col items-center justify-around rounded shadow md:w-3/5 md:mx-auto"
                                                 style={{
@@ -991,10 +1037,10 @@ export default function IndexPage() {
                                                     <strong style={{ color: '#00ffff' }}>$150</strong> for best hack built on Ethereum
                                                 </span>
                                             </div>
-                                        </li>
+                                        </li> */}
 
                                         {/* Replit */}
-                                        <li className="fade-in" style={{ animationDelay: '0.2s' }}>
+                                        {/* <li className="fade-in" style={{ animationDelay: '0.2s' }}>
                                             <div
                                                 className="p-4 flex flex-col items-center justify-around rounded shadow md:w-3/5 md:mx-auto"
                                                 style={{
@@ -1033,10 +1079,10 @@ export default function IndexPage() {
                                                     <strong style={{ color: '#ff00ff' }}>$50</strong> for winning Project deployed on Replit
                                                 </span>
                                             </div>
-                                        </li>
+                                        </li> */}
 
                                         {/* Filecoin */}
-                                        <li className="fade-in" style={{ animationDelay: '0.3s' }}>
+                                        {/* <li className="fade-in" style={{ animationDelay: '0.3s' }}>
                                             <div
                                                 className="p-4 flex flex-col items-center justify-around rounded shadow md:w-3/5 md:mx-auto"
                                                 style={{
@@ -1075,10 +1121,10 @@ export default function IndexPage() {
                                                     <strong style={{ color: '#00ff88' }}>$250</strong> for best use of Filecoin and/or IPFS
                                                 </span>
                                             </div>
-                                        </li>
+                                        </li> */}
 
                                         {/* Solana */}
-                                        <li className="fade-in" style={{ animationDelay: '0.4s' }}>
+                                        {/* <li className="fade-in" style={{ animationDelay: '0.4s' }}>
                                             <div
                                                 className="p-4 flex flex-col items-center justify-around rounded shadow md:w-3/5 md:mx-auto"
                                                 style={{
@@ -1129,10 +1175,10 @@ export default function IndexPage() {
                                                     </span>
                                                 </div>
                                             </div>
-                                        </li>
+                                        </li> */}
 
                                         {/* Digital Ocean */}
-                                        <li className="fade-in" style={{ animationDelay: '0.5s' }}>
+                                        {/* <li className="fade-in" style={{ animationDelay: '0.5s' }}>
                                             <div
                                                 className="p-4 flex flex-col items-center justify-around rounded shadow md:w-3/5 md:mx-auto"
                                                 style={{
@@ -1180,10 +1226,10 @@ export default function IndexPage() {
                                                     </span>
                                                 </div>
                                             </div>
-                                        </li>
+                                        </li> */}
 
                                         {/* Wolfram */}
-                                        <li className="fade-in" style={{ animationDelay: '0.6s' }}>
+                                        {/* <li className="fade-in" style={{ animationDelay: '0.6s' }}>
                                             <div
                                                 className="p-4 flex flex-col items-center justify-around rounded shadow md:w-3/5 md:mx-auto"
                                                 style={{
@@ -1232,8 +1278,9 @@ export default function IndexPage() {
                                                     </span>
                                                 </div>
                                             </div>
-                                        </li>
+                                        </li> */}
                                     </ul>
+                                    
                                 </div>
                             </div>
                         </div>
