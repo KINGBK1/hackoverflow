@@ -171,7 +171,7 @@ export default function IndexPage() {
                                                         }}
                                                     />
                                                     <br />
-                                                        <Shuffle
+                                                    <Shuffle
                                                         text="Aarohan, 2025"
                                                         shuffleDirection="right"
                                                         duration={1}
@@ -183,7 +183,7 @@ export default function IndexPage() {
                                                         triggerOnce={true}
                                                         triggerOnHover={true}
                                                         respectReducedMotion={true}
-                                                            style={{
+                                                        style={{
                                                             color: '#aaffff !important',
                                                             fontWeight: 'bold',
                                                             fontSize: '4rem',
@@ -272,7 +272,7 @@ export default function IndexPage() {
                             <div className="slider_text_mobile">
                                 <div className="container flex flex-wrap flex-column justify-center">
                                     <div className="position_relv flex flex-col gap-2 items-center text-center">
-                                        <h3
+                                        {/* <h3
                                             className="md:mt-5"
                                             style={{
                                                 color: '#aaffff',
@@ -290,7 +290,36 @@ export default function IndexPage() {
                                             }}
                                         >
                                             HackOverflow 9.0
-                                        </h3>
+                                        </h3> */}
+                                        <Shuffle
+                                            text="HackOverflow 9.0"
+                                            shuffleDirection="right"
+                                            duration={1}
+                                            animationMode="evenodd"
+                                            shuffleTimes={1}
+                                            ease="power3.out"
+                                            stagger={0.03}
+                                            threshold={0.1}
+                                            triggerOnce={true}
+                                            triggerOnHover={true}
+                                            // loop={true}
+                                            respectReducedMotion={true}
+                                            style={{
+                                                 color: '#aaffff',
+                                                // textShadow: `
+                                                //     0 0 5px #0ff,
+                                                //     0 0 10px #0ff,
+                                                //     0 0 20px #0ff,
+                                                //     0 0 30px #0ff
+                                                // `,
+                                                fontWeight: 'bold',
+                                                fontSize: 'clamp(2rem, 8vw, 3.5rem)',
+                                                WebkitTextFillColor: '#aaffff',
+                                                filter: 'drop-shadow(0 0 10px #0ff)',
+                                                marginBottom: '0.5rem',
+                                                textTransform: 'none'
+                                            }}
+                                        />
                                         <h3
                                             style={{
                                                 color: '#aaffff',
