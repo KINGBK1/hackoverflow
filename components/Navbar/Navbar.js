@@ -138,7 +138,7 @@ export default function Navbar() {
       `}</style>
 
       <a href="/" className="logo">
-        <img src="/img/IMG-20240307-WA0009.jpg" alt="HackOverflow Logo" />
+        <img src="/aarohan 113.png" alt="HackOverflow Logo" />
         <span style={{ color: "#00ffff", fontWeight: "700", fontSize: "1.3rem" }}>
           HackOverflow
         </span>

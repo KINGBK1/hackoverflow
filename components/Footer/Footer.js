@@ -128,7 +128,7 @@ export default function Footer() {
           display: block;
           margin: 10px auto;
           height: 50px;
-          animation: spin 10s linear infinite;
+          // animation: spin 10s linear infinite;
         }
         // @keyframes spin {
         //   0% {
@@ -210,7 +210,7 @@ export default function Footer() {
 
         <div className="footer_bottom">
           <img
-            src="/img/IMG-20240307-WA0009.jpg"
+            src="/aarohan 113.png"
             alt="Logo"
             className="footer_logo"
           />
