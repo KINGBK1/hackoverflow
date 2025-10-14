@@ -20,22 +20,22 @@ export default function IndexPage() {
     };
 
     const [isMobile, setIsMobile] = useState(false);
-    useEffect(() => {
-        const script = document.createElement("script");
-        script.src = "https://apply.devfolio.co/v2/sdk.js";
-        script.async = true;
-        script.defer = true;
-        script.onload = () => {
-            console.log("Devfolio SDK loaded");
-            if (window.Devfolio) {
-                window.Devfolio.setup();
-            }
-        };
-        document.body.appendChild(script);
-        return () => {
-            document.body.removeChild(script);
-        };
-    }, []);
+    // useEffect(() => {
+    //     const script = document.createElement("script");
+    //     script.src = "https://apply.devfolio.co/v2/sdk.js";
+    //     script.async = true;
+    //     script.defer = true;
+    //     script.onload = () => {
+    //         console.log("Devfolio SDK loaded");
+    //         if (window.Devfolio) {
+    //             window.Devfolio.setup();
+    //         }
+    //     };
+    //     document.body.appendChild(script);
+    //     return () => {
+    //         document.body.removeChild(script);
+    //     };
+    // }, []);
 
     useEffect(() => {
         const handleResize = () => setIsMobile(window.innerWidth <= 768);
@@ -219,15 +219,15 @@ export default function IndexPage() {
                                                         >
                                                             Add to your Calendar
                                                         </a>
-
+{/* 
                                                         <div
                                                             className="apply-button"
                                                             data-hackathon-slug="hackoverflow09"
                                                             data-button-theme="light"
                                                             style={{ height: 44, width: 312, margin: '1rem 0' }}
-                                                        ></div>
-                                                        {/* <a
-                                                            href="https://unstop.com/p/hackoverflow-90-gnulinux-users-group-nit-durgapur-1437266"
+                                                        ></div> */}
+                                                        <a
+                                                            href="https://unstop.com/o/FSRT05D?lb=WeP5uM4g&utm_medium=Share&utm_source=WhatsApp"
                                                             style={{
                                                                 padding: '0.8rem 1.5rem',
                                                                 color: 'rgba(255, 255, 255, 1)',
@@ -251,14 +251,14 @@ export default function IndexPage() {
                                                             }}
                                                         >
                                                             Apply
-                                                        </a> */}
-
+                                                        </a>
+{/* 
                                                         <div
                                                             className="apply-button"
                                                             data-hackathon-slug="hackoverflow09"
                                                             data-button-theme="dark"
                                                             style={{ height: 44, width: 312, margin: '1rem 0', color: 'white', borderRadius: '8px', backgroundColor: 'black' }}
-                                                        ></div>
+                                                        ></div> */}
 
                                                     </div>
                                                 </div>
@@ -339,8 +339,8 @@ export default function IndexPage() {
                                             Aarohan, 2025
                                         </h3>
                                         <div className="relative flex flex-col flex-wrap gap-4 justify-center mb-5">
-                                            {/* <a
-                                                href="https://unstop.com/p/hackoverflow-90-gnulinux-users-group-nit-durgapur-1437266"
+                                            <a
+                                                href="https://unstop.com/o/FSRT05D?lb=WeP5uM4g&utm_medium=Share&utm_source=WhatsApp"
                                                 style={{
                                                     display: 'inline-block',
                                                     padding: '0.8rem 1.5rem',
@@ -366,7 +366,7 @@ export default function IndexPage() {
                                                 }}
                                             >
                                                 Apply
-                                            </a> */}
+                                            </a>
                                             {/* <div
                                                 className="apply-button"
                                                 data-hackathon-slug="hackoverflow09"

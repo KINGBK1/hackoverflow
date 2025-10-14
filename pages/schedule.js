@@ -17,22 +17,22 @@ export default function SchedulePage() {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    useEffect(() => {
-        const script = document.createElement("script");
-        script.src = "https://apply.devfolio.co/v2/sdk.js";
-        script.async = true;
-        script.defer = true;
-        script.onload = () => {
-            console.log("Devfolio SDK loaded");
-            if (window.Devfolio) {
-                window.Devfolio.setup();
-            }
-        };
-        document.body.appendChild(script);
-        return () => {
-            document.body.removeChild(script);
-        };
-    }, []);
+    // useEffect(() => {
+    //     const script = document.createElement("script");
+    //     script.src = "https://apply.devfolio.co/v2/sdk.js";
+    //     script.async = true;
+    //     script.defer = true;
+    //     script.onload = () => {
+    //         console.log("Devfolio SDK loaded");
+    //         if (window.Devfolio) {
+    //             window.Devfolio.setup();
+    //         }
+    //     };
+    //     document.body.appendChild(script);
+    //     return () => {
+    //         document.body.removeChild(script);
+    //     };
+    // }, []);
 
     return (
         <>
@@ -197,8 +197,8 @@ export default function SchedulePage() {
                                                         >
                                                             Add to your Calendar
                                                         </a>
-                                                        {/* <a
-                                                            href="https://unstop.com/p/hackoverflow-90-gnulinux-users-group-nit-durgapur-1437266"
+                                                        <a
+                                                            href="https://unstop.com/o/FSRT05D?lb=WeP5uM4g&utm_medium=Share&utm_source=WhatsApp"
                                                             style={{
                                                                 padding: '0.8rem 1.5rem',
                                                                 color: 'rgba(255, 255, 255, 1)',
@@ -222,7 +222,7 @@ export default function SchedulePage() {
                                                             }}
                                                         >
                                                             Apply
-                                                        </a> */}
+                                                        </a>
 
                                                     </div>
                                                 </div>
@@ -255,8 +255,8 @@ export default function SchedulePage() {
                                             Event Schedule
                                         </h3>
                                         <div className="relative flex flex-col flex-wrap gap-4 justify-center mb-5" style={{ width: '100%', maxWidth: '400px' }}>
-                                            {/* <a
-                                                href="https://unstop.com/p/hackoverflow-90-gnulinux-users-group-nit-durgapur-1437266"
+                                            <a
+                                                href="https://unstop.com/o/FSRT05D?lb=WeP5uM4g&utm_medium=Share&utm_source=WhatsApp"
                                                 style={{
                                                     display: 'inline-block',
                                                     padding: '0.8rem 1.5rem',
@@ -282,13 +282,13 @@ export default function SchedulePage() {
                                                 }}
                                             >
                                                 Apply
-                                            </a> */}
-                                            <div
+                                            </a>
+                                            {/* <div
                                                 className="apply-button"
                                                 data-hackathon-slug="hackoverflow09"
                                                 data-button-theme="light"
                                                 style={{ height: 400, width: 312, margin: '1rem 0' }}
-                                            ></div>
+                                            ></div> */}
 
                                             <a
                                                 href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Hackoverflow+9.0&dates=20251017/20251020"
@@ -1257,7 +1257,7 @@ export default function SchedulePage() {
                         <div className="brand-cards-container">
                             <div className="brand-card delay-1">
                                 <a
-                                    href="https://devfolio.co"
+                                    href="https://unstop.com/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     style={{ textDecoration: 'none' }}
@@ -1265,7 +1265,7 @@ export default function SchedulePage() {
                                     <div className="brand-logo-wrapper">
                                         <img
                                             src="/Unstop_idGARQA_PG_0.png"
-                                            alt="DEVFOLIO LOGO"
+                                            alt="UNSTOP LOGO"
                                             className="brand-logo"
                                         />
                                     </div>
