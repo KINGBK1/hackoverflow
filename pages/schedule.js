@@ -1264,7 +1264,7 @@ export default function SchedulePage() {
                                 >
                                     <div className="brand-logo-wrapper">
                                         <img
-                                            src="/devfolio.png"
+                                            src="/Unstop_idGARQA_PG_0.png"
                                             alt="DEVFOLIO LOGO"
                                             className="brand-logo"
                                         />
@@ -1273,7 +1273,7 @@ export default function SchedulePage() {
                                 </a>
                             </div>
 
-                            <div className="brand-card delay-2">
+                            {/* <div className="brand-card delay-2">
                                 <a
                                     href="https://ethindia.co"
                                     target="_blank"
@@ -1289,13 +1289,13 @@ export default function SchedulePage() {
                                     </div>
                                     <div className="brand-label">Season Partner</div>
                                 </a>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
 
 
-                <Sponsors />
+                {/* <Sponsors /> */}
                 <Footer />
             </div>
         </>

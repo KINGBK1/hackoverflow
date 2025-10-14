@@ -1006,7 +1006,7 @@ export default function IndexPage() {
                         <div className="row">
                             <div className="col-xl-12">
                                 <div className="resister_text text-center">
-                                    <h3 className="neon-text" style={{
+                                    {/* <h3 className="neon-text" style={{
                                         color: '#00ffff',
                                         // textShadow: '0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff',
                                         fontSize: 'clamp(2rem, 5vw, 3rem)',
@@ -1015,14 +1015,15 @@ export default function IndexPage() {
                                         // animation: 'glow 2s ease-in-out infinite alternate'
                                     }}>
                                         Specific Sponsor Track Benefits and Prizes!
-                                    </h3>
+                                    </h3> */}
                                     <ul style={{
                                         fontFamily: "Poppins",
                                         listStyle: 'none',
                                         padding: 0
                                     }}>
 
-                                        <li className="fade-in" style={{ animationDelay: '0.1s' }}>
+
+                                        {/* <li className="fade-in" style={{ animationDelay: '0.1s' }}>
                                             <div
                                                 className="p-4 flex flex-col items-center justify-around rounded shadow md:w-3/5 md:mx-auto"
                                                 style={{
@@ -1065,7 +1066,7 @@ export default function IndexPage() {
                                                     fellowships, grants, and more
                                                 </span>
                                             </div>
-                                        </li>
+                                        </li> */}
 
                                         {/* Polygon */}
                                         {/* <li className="fade-in" style={{ animationDelay: '0.1s' }}>
