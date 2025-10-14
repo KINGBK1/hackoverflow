@@ -159,7 +159,7 @@ export default function Navbar() {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://discord.com/invite/v9j8kd2Vz7"
+            href="https://discord.gg/bFnT3nUe3"
             onClick={() => setIsOpen(false)}
           >
             Discord

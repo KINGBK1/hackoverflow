@@ -674,7 +674,7 @@ export default function SchedulePage() {
                                             textShadow: '0 0 10px #00ff88, 0 0 20px #00ff88',
                                             fontSize: '1.5rem'
                                         }}>
-                                            18 October, 2025
+                                            17 October, 2025
                                         </h3>
                                     </div>
                                 </div>
