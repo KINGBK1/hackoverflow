@@ -1570,7 +1570,7 @@ export default function IndexPage() {
                                                 lineHeight: '1.8',
                                                 padding: '0 20px 20px 85px'
                                             }}>
-                                                You have to develop the application on your local system and submit it on DevFolio in tar/zip file format along with instructions to run the application and source code.
+                                                You have to develop the application on your local system and submit it on unstop in tar/zip file format along with instructions to run the application and source code.
                                             </div>
                                         </div>
                                     </div>
