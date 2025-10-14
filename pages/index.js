@@ -1511,7 +1511,7 @@ export default function IndexPage() {
                                                 lineHeight: '1.8',
                                                 padding: '0 20px 20px 85px'
                                             }}>
-                                                No. You do not have to pay anything to anyone to register yourself for any Hackathon on Unstop.
+                                                No. You do not have to pay anything to anyone to register yourself for any Hackathon on unstop.
                                             </div>
                                         </div>
                                     </div>
@@ -1688,7 +1688,7 @@ export default function IndexPage() {
                                                 lineHeight: '1.8',
                                                 padding: '0 20px 20px 85px'
                                             }}>
-                                                You have to develop the entire software application on your local system and submit it on Devfolio in tar/zip file format along with instructions to run the application and source code. If it is a mobile app, package it as an apk and send along with the source code.
+                                                You have to develop the entire software application on your local system and submit it on unstop in tar/zip file format along with instructions to run the application and source code. If it is a mobile app, package it as an apk and send along with the source code.
                                             </div>
                                         </div>
                                     </div>
@@ -1747,7 +1747,7 @@ export default function IndexPage() {
                                                 lineHeight: '1.8',
                                                 padding: '0 20px 20px 85px'
                                             }}>
-                                                No, one does not need to be logged in on DevFolio or be online for the entire duration. You can develop the application on your local system based on the given themes and then submit it on DevFolio, on the specific challenge page.
+                                                No, one does not need to be logged in on Unstop or be online for the entire duration. You can develop the application on your local system based on the given themes and then submit it on Unstop, on the specific challenge page.
                                             </div>
                                         </div>
                                     </div>
