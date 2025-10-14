@@ -1511,7 +1511,7 @@ export default function IndexPage() {
                                                 lineHeight: '1.8',
                                                 padding: '0 20px 20px 85px'
                                             }}>
-                                                No. You do not have to pay anything to anyone to register yourself for any Hackathon on Devfolio.
+                                                No. You do not have to pay anything to anyone to register yourself for any Hackathon on Unstop.
                                             </div>
                                         </div>
                                     </div>
