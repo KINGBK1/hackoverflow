@@ -656,7 +656,7 @@ export default function SchedulePage() {
                                                     fontWeight: 'bold',
                                                     whiteSpace: 'nowrap'
                                                 }}>
-                                                    6:00 PM
+                                                    12:00 PM
                                                 </div>
                                             </div>
                                         </div>
@@ -731,7 +731,7 @@ export default function SchedulePage() {
                                                     fontWeight: 'bold',
                                                     whiteSpace: 'nowrap'
                                                 }}>
-                                                    00:00 AM
+                                                    12:00 PM
                                                 </div>
                                             </div>
                                             <p style={{ color: '#b0c4de', lineHeight: '1.7', margin: 0 }}>
@@ -793,7 +793,7 @@ export default function SchedulePage() {
                                                     fontSize: '1.1rem',
                                                     fontWeight: 'bold'
                                                 }}>
-                                                    1:00 PM
+                                                    12:00 AM
                                                 </div>
                                             </div>
                                             <p style={{ color: '#b0c4de', lineHeight: '1.7', marginTop: '10px' }}>
