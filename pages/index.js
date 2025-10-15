@@ -61,7 +61,7 @@ export default function IndexPage() {
                 />
 
                 {/* Favicon */}
-                <link rel="icon" href="/img/IMG-20240307-WA0009.jpg" type="image/jpeg" />
+                <link rel="icon" href="/aarohan 113.png" type="image/jpeg" />
 
                 {/* Bootstrap CSS */}
                 <link
