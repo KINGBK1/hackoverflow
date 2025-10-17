@@ -219,7 +219,7 @@ export default function IndexPage() {
                                                         >
                                                             Add to your Calendar
                                                         </a>
-{/* 
+                                                        {/* 
                                                         <div
                                                             className="apply-button"
                                                             data-hackathon-slug="hackoverflow09"
@@ -252,7 +252,7 @@ export default function IndexPage() {
                                                         >
                                                             Apply
                                                         </a>
-{/* 
+                                                        {/* 
                                                         <div
                                                             className="apply-button"
                                                             data-hackathon-slug="hackoverflow09"
@@ -305,7 +305,7 @@ export default function IndexPage() {
                                             // loop={true}
                                             respectReducedMotion={true}
                                             style={{
-                                                 color: '#aaffff',
+                                                color: '#aaffff',
                                                 // textShadow: `
                                                 //     0 0 5px #0ff,
                                                 //     0 0 10px #0ff,
@@ -587,7 +587,7 @@ export default function IndexPage() {
                         textShadow: '0 0 5px #00ffff, 0 0 10px #00ffff'
 
                     }}>
-                        Judges
+                        Judge
                     </h1>
                     <div className="container">
                         <div className="row">
@@ -596,13 +596,13 @@ export default function IndexPage() {
                                     <h3 className="neon-text" style={{
                                         color: '#afa2ecff',
                                         textShadow: '0 0 4px #ff00ff, 0 0 8px #ff00ff'
-                                    }}>Judges</h3>
+                                    }}>Judge</h3>
                                 </div>
                             </div>
                         </div>
 
                         <div className="flex flex-col md:flex-row justify-center gap-6 items-center">
-                            {/* <div className="flex flex-col rounded-lg items-center justify-between w-72 neon-border scanline-effect float-animation"
+                            <div className="flex flex-col rounded-lg items-center justify-between w-72 neon-border scanline-effect float-animation"
                                 style={{
                                     border: '3px solid #00ffff',
                                     background: 'linear-gradient(135deg, rgba(0, 255, 255, 0.1) 0%, rgba(0, 255, 255, 0.05) 100%)',
@@ -622,7 +622,7 @@ export default function IndexPage() {
                                     boxShadow: '0 0 20px rgba(0, 255, 255, 0.6)'
                                 }}>
                                     <img
-                                        src="/img/speakers/judge2025.jpeg"
+                                        src="/vivekYadav.jpeg"
                                         alt="Veer Pratap Singh"
                                         className="w-20 h-20 mx-auto rounded-full dark:bg-gray-500 aspect-square border-white"
                                     />
@@ -633,11 +633,11 @@ export default function IndexPage() {
                                             color: '#00ffff',
                                             fontWeight: 'bold'
                                         }}>
-                                            Veer Pratap Singh
+                                            Vivek Yadav
                                         </div>
                                         <a
                                             rel="noopener noreferrer"
-                                            href="https://www.linkedin.com/in/veer-pratap-singh/"
+                                            href="https://www.linkedin.com/in/viveky259/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BgYUnTMAHRq6eJ22PgA16vw%3D%3D"
                                             aria-label="LinkedIn"
                                             className="rounded-md dark:text-gray-100 hover:dark:text-violet-400"
                                             style={{ filter: 'drop-shadow(0 0 5px #00ffff)' }}
@@ -647,8 +647,7 @@ export default function IndexPage() {
                                     </div>
                                     <div>
                                         <p className="text-xs sm:text-base" style={{ color: '#b0c4de' }}>
-                                            Senior Software Developer at Antier Solutions; Tech Lead; Technical Speaker
-                                        </p>
+                                            Enterprise Solutions Architect at FlutterFlow | Google Developer Expert (Flutter & Dart) | EdTech Founder | Hackathon Judge & Mentor                                        </p>
                                     </div>
                                     <div>
                                         <h6>
@@ -660,7 +659,7 @@ export default function IndexPage() {
                                         <p>India</p>
                                     </div>
                                 </div>
-                            </div> */}
+                            </div>
                             {/* 
                             <div className="flex flex-col rounded-lg items-center justify-between w-72 neon-border scanline-effect float-animation"
                                 style={{
@@ -722,7 +721,7 @@ export default function IndexPage() {
                                 </div>
                             </div> */}
 
-                            <h1 style={{ color: '#aaffff', textAlign: 'center', margin: '2rem 0', fontSize: '2rem', fontWeight: 'bold', padding: '1rem 0', textShadow: '0 0 2px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff, 0 0 0px #0ff' }}>To Be Announced Soon....</h1>
+                            {/* <h1 style={{ color: '#aaffff', textAlign: 'center', margin: '2rem 0', fontSize: '2rem', fontWeight: 'bold', padding: '1rem 0', textShadow: '0 0 2px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff, 0 0 0px #0ff' }}>To Be Announced Soon....</h1> */}
                         </div>
                     </div>
                 </div>
